@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "typecheck": "next typegen && tsc --noEmit -p tsconfig.json",
     "test:logic": "node --experimental-strip-types --no-warnings scripts/verify-logic.ts",
     "test:ui": "node scripts/qa.mjs"
   },
