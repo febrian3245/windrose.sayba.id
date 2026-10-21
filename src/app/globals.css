@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/*
+  Palet (semua pasangan teks/latar diukur, WCAG AA):
+  --surface #f4f6f5  latar halaman, abu kehijauan agar senada dengan brand
+  --panel   #ffffff  permukaan kerja (solid, kontras pasti)
+  --ink     #1c2321  teks utama      14,75:1 pada surface
+  --muted   #4a5552  teks sekunder    7,13:1 pada surface
+  --brand   #0f5249  teal lingkungan  9,04:1 pada panel; teks putih di atasnya juga lolos
+  --brand-soft #e6efed  tint untuk sorotan; teks brand 7,72:1
+  --alert   #9a4a0b  aksen tunggal: penanda pelampauan baku mutu, 6,25:1 pada panel
+*/
+:root {
+  --surface: #f4f6f5;
+  --panel: #ffffff;
+  --ink: #1c2321;
+  --muted: #4a5552;
+  --line: #d5dcda;
+  --brand: #0f5249;
+  --brand-soft: #e6efed;
+  --alert: #9a4a0b;
+  --alert-soft: #fbefe5;
+}
+
+@theme inline {
+  --color-surface: var(--surface);
+  --color-panel: var(--panel);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-alert: var(--alert);
+  --color-alert-soft: var(--alert-soft);
+  --font-sans: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h, 7rem) + 12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
