@@ -26,8 +26,8 @@ export default function ComparePanel({
   if (!stats.n) {
     return (
       <p className="rounded-md border border-line bg-surface px-4 py-3 text-sm text-muted">
-        Belum ada pasangan waktu yang cukup berdekatan (±5 menit) antara {mainLabel} dan {compareLabel} untuk
-        rentang ini.
+        Belum ada pasangan waktu yang cukup berdekatan (±35 menit, karena {compareLabel} mencatat tiap 1 jam) antara{" "}
+        {mainLabel} dan {compareLabel} untuk rentang ini.
       </p>
     );
   }
@@ -48,8 +48,11 @@ export default function ComparePanel({
   return (
     <div>
       <p className="text-sm text-muted">
-        {stats.n} pasang data berwaktu berdekatan (±5 menit). {mainLabel} dibandingkan terhadap {compareLabel}
-        sebagai acuan.
+        {stats.n} pasang data dibandingkan: {mainLabel} (kirim tiap 10 menit) dicocokkan dengan waktu pembacaan{" "}
+        {compareLabel} (dibaca tiap 1 jam, sesuai siklus sampling alat itu) — dipilih titik {mainLabel} TERDEKAT
+        pada jam tersebut (bukan rata-rata). Semua selisih dihitung sebagai{" "}
+        <strong className="text-ink">{mainLabel} dikurangi {compareLabel}</strong> — {compareLabel} diperlakukan
+        sebagai acuan karena merupakan instrumen referensi.
       </p>
       <dl className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
         <Stat

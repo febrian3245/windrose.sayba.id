@@ -19,8 +19,9 @@ export interface SensorDataState {
   reload: () => void;
 }
 
-// Batas jumlah baris yang diambil: 2 device x 7 hari x 144 data/hari (interval 10 menit).
-const MAX_ROWS = 2016;
+// Batas jumlah baris yang diambil: AQMS-01 7 hari x 144 data/hari (10 menit) = 1008,
+// + Stasiun02 7 hari x 24 data/hari (1 jam) = 168. Dibulatkan ke atas untuk aman.
+const MAX_ROWS = 1200;
 
 function sortAsc(list: SensorRecord[]): SensorRecord[] {
   return [...list].sort((a, b) => a.ts - b.ts);

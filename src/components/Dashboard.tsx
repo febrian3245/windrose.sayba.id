@@ -248,8 +248,8 @@ export default function Dashboard() {
 
       <Panel
         id="peta"
-        title="Lokasi alat dan titik pembanding"
-        question={`${STATIONS[MAIN_DEVICE_ID].name} (objek penelitian) dan ${STATIONS[COMPARE_DEVICE_ID].name} (objek pembanding), peta satelit Esri.`}
+        title="Lokasi alat, titik pembanding, dan arah angin"
+        question={`Peta satelit Esri: ${STATIONS[MAIN_DEVICE_ID].name} (objek penelitian), ${STATIONS[COMPARE_DEVICE_ID].name} (objek pembanding), dan overlay arah angin langsung di atas lokasi alat utama.`}
       >
         <MapPanelClient
           latestByDevice={{ [MAIN_DEVICE_ID]: latest ?? undefined, [COMPARE_DEVICE_ID]: latestCompare ?? undefined }}
@@ -259,13 +259,13 @@ export default function Dashboard() {
             label={STATIONS[MAIN_DEVICE_ID].shortName}
             value={fmt(latest.pm25)}
             unit="µg/m³ PM2.5"
-            note={<span className="text-muted">alat IoT utama</span>}
+            note={<span className="text-muted">alat IoT utama, kirim tiap {SEND_INTERVAL_MIN} menit</span>}
           />
           <Stat
             label={STATIONS[COMPARE_DEVICE_ID].shortName}
             value={latestCompare ? fmt(latestCompare.pm25) : "–"}
             unit={latestCompare ? "µg/m³ PM2.5" : undefined}
-            note={<span className="text-muted">objek pembanding</span>}
+            note={<span className="text-muted">objek pembanding, data tiap 1 jam</span>}
           />
         </dl>
       </Panel>
@@ -635,10 +635,16 @@ function Shell({
           </div>
           <div className="flex shrink-0 items-center gap-x-4 text-sm">
             <span
-              className={`rounded-md px-2.5 py-1 font-medium ${
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 font-medium ${
                 mode === "demo" ? "bg-alert-soft text-alert" : live === "live" ? "bg-brand-soft text-brand" : "bg-surface text-muted"
               }`}
             >
+              {live === "live" && mode !== "demo" ? (
+                <span className="relative flex h-2 w-2" aria-hidden>
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand opacity-60" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-brand" />
+                </span>
+              ) : null}
               <span className="sm:hidden">{mode === "demo" ? "Demo" : live === "live" ? "Realtime" : "Offline"}</span>
               <span className="hidden sm:inline">{sourceLabel}</span>
             </span>
