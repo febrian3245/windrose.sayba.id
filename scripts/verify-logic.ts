@@ -32,9 +32,16 @@ check("348,74° -> UBL", sectorIndex(348.74) === 15);
 check("225° -> BD", sectorIndex(225) === 10);
 check("-90° -> B", sectorIndex(-90) === 12);
 
-// Data dummy
-const recs = (data as SensorRow[]).map(normalizeRow).sort((a, b) => a.ts - b.ts);
-check("289 baris terbaca", recs.length === 289);
+// Data dummy: file berisi 2 device (AQMS-01-SAYBA utama + STASIUN-02-UNTAN pembanding),
+// masing-masing 289 baris. Uji logika inti difokuskan pada device utama (objek penelitian);
+// mekanisme pemisahan per device sendiri diuji terpisah di bawah.
+const all = (data as SensorRow[]).map(normalizeRow).sort((a, b) => a.ts - b.ts);
+check("578 baris terbaca (2 device x 289)", all.length === 578, `(${all.length})`);
+
+const recs = all.filter((r) => r.deviceId === "AQMS-01-SAYBA");
+const compareRecs = all.filter((r) => r.deviceId === "STASIUN-02-UNTAN");
+check("289 baris device utama", recs.length === 289);
+check("289 baris device pembanding", compareRecs.length === 289);
 check("Semua timestamp valid", recs.every((r) => Number.isFinite(r.ts)));
 check("Urutan naik & interval 10 menit", recs.every((r, i) => i === 0 || r.ts - recs[i - 1].ts === 600_000));
 
@@ -55,6 +62,15 @@ const pm25m = w24.reduce((a, r) => a + r.pm25, 0) / w24.length;
 const pm10m = w24.reduce((a, r) => a + r.pm10, 0) / w24.length;
 const isp = computeIspu(pm25m, pm10m);
 console.log(`      24 jam: PM2.5 ${pm25m.toFixed(3)}  PM10 ${pm10m.toFixed(3)}  ISPU ${isp.value} ${isp.style.category} (kritis ${isp.critical})`);
+
+// Pembanding AQMS-01-SAYBA vs STASIUN-02-UNTAN
+const { pairByNearestTime, compareStats } = await import("../src/lib/compare.ts");
+const pairs = pairByNearestTime(recs, compareRecs, "pm25");
+check("Pasangan pembanding ditemukan untuk data dummy berinterval sama", pairs.length === 289, `(${pairs.length})`);
+const cs = compareStats(pairs);
+check("RMSE pembanding >= 0 dan terhingga", Number.isFinite(cs.rmse) && cs.rmse >= 0);
+check("Korelasi pembanding berada di rentang [-1, 1]", cs.r === null || (cs.r >= -1 && cs.r <= 1));
+console.log(`      pembanding PM2.5: selisih rata-rata ${cs.meanDiff.toFixed(3)}, RMSE ${cs.rmse.toFixed(3)}, r=${cs.r?.toFixed(3) ?? "n/a"}`);
 
 console.log(fail ? `\n${fail} UJI GAGAL` : "\nSEMUA UJI LULUS");
 process.exit(fail ? 1 : 0);

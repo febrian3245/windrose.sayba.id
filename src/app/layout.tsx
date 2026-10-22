@@ -17,9 +17,9 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dasbor Kualitas Udara | Stasiun 02 FMIPA UNTAN",
+  title: "AQMS 4G LTE Pontianak | Dasbor Pemantau Kualitas Udara",
   description:
-    "Pemantauan PM2.5, PM10, dan VOC berbasis IoT 4G LTE serta analisis sebaran polutan dengan pemodelan Wind Rose di Pontianak.",
+    "Pemantauan PM2.5, PM10, dan VOC oleh AQMS 4G LTE Pontianak (alat IoT skripsi), dengan analisis spasial sebaran polutan (pemodelan Wind Rose) dan pembanding data Stasiun 02 Lab Geofisika FMIPA UNTAN.",
 };
 
 export const viewport: Viewport = {

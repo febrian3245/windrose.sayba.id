@@ -42,7 +42,8 @@ const csvText = await page.textContent("button:has-text('Unduh CSV')");
 report(/\(288 baris\)/.test(csvText), `data Supabase terbaca, 48 jam = 288 baris (${csvText})`);
 report((await page.textContent("main")).includes("sumber = 'dummy'"), "label data dummy Supabase tampil");
 
-// Realtime: kirim satu data lewat RPC seperti ESP32, harus muncul tanpa muat ulang.
+// Realtime: kirim satu data lewat RPC seperti ESP32 ke device UTAMA (AQMS-01-SAYBA),
+// karena status "dummy"/"data terakhir" di header kini di-scope ke device utama saja.
 if (KUNCI) {
   await page.waitForTimeout(2500);
   const before = await page.textContent("header");
@@ -50,7 +51,7 @@ if (KUNCI) {
     method: "POST",
     headers: { apikey: SB_KEY, "Content-Type": "application/json" },
     body: JSON.stringify({
-      p_device_id: "STASIUN-02-UNTAN", p_kunci: KUNCI,
+      p_device_id: "AQMS-01-SAYBA", p_kunci: KUNCI,
       p_pm2_5: 77.7, p_pm10: 99.9, p_voc_index: 150, p_temperature: 30.5, p_humidity: 70,
       p_pressure: 1010.5, p_wind_speed: 2.2, p_wind_direction: 90, p_battery_volt: 4.01,
     }),
@@ -61,9 +62,9 @@ if (KUNCI) {
     .catch(() => report(false, "data baru tidak muncul via Realtime"));
   const after = await page.textContent("header");
   report(before !== after, "jam 'Data terakhir' di header ikut berganti");
-  report(!(await page.textContent("main")).includes("sumber = 'dummy'"), "label dummy hilang saat data stasiun masuk");
+  report(!(await page.textContent("main")).includes("sumber = 'dummy'"), "label dummy AQMS-01 hilang saat data stasiun masuk");
   const csvAfter = await page.textContent("button:has-text('Unduh CSV')");
-  report(/\(1 baris\)/.test(csvAfter), `data dummy disisihkan, hanya hasil ukur yang dihitung (${csvAfter})`);
+  report(/\(1 baris\)/.test(csvAfter), `data dummy AQMS-01 disisihkan, hanya hasil ukur yang dihitung (${csvAfter})`);
 }
 
 report(cspErr.length === 0, `tidak ada pelanggaran CSP ${cspErr.join(" | ")}`);

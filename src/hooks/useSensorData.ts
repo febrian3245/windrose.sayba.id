@@ -19,18 +19,19 @@ export interface SensorDataState {
   reload: () => void;
 }
 
-// Batas jumlah baris yang diambil: 7 hari x 144 data/hari (interval 10 menit).
-const MAX_ROWS = 1008;
+// Batas jumlah baris yang diambil: 2 device x 7 hari x 144 data/hari (interval 10 menit).
+const MAX_ROWS = 2016;
 
 function sortAsc(list: SensorRecord[]): SensorRecord[] {
   return [...list].sort((a, b) => a.ts - b.ts);
 }
 
-// Data dummy (sumber = 'dummy') hanya ditampilkan selama belum ada hasil ukur.
-// Begitu stasiun mengirim data pertama, data simulasi disisihkan agar tidak ikut
-// dihitung dalam rata-rata 24 jam, ISPU, Wind Rose, maupun unduhan CSV.
+// Data dummy (sumber = 'dummy') hanya ditampilkan selama device yang bersangkutan
+// belum punya hasil ukur. Keputusan dibuat PER DEVICE (bukan global) karena AQMS-01-SAYBA
+// dan STASIUN-02-UNTAN berpindah dari data uji ke data asli secara independen.
 function preferMeasured(list: SensorRecord[]): SensorRecord[] {
-  return list.some((r) => !r.isDummy) ? list.filter((r) => !r.isDummy) : list;
+  const measuredDevices = new Set(list.filter((r) => !r.isDummy).map((r) => r.deviceId));
+  return list.filter((r) => !r.isDummy || !measuredDevices.has(r.deviceId));
 }
 
 function loadDemo(): SensorRecord[] {

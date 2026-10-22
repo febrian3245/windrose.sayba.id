@@ -1,6 +1,21 @@
 [
   {
     "created_at": "2026-08-26 18:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 53.42,
+    "pm10": 78.15,
+    "voc_index": 189,
+    "temperature": 32.77,
+    "humidity": 63.58,
+    "pressure": 1009.95,
+    "wind_speed": 1.53,
+    "wind_direction": 237,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.2
+  },
+  {
+    "created_at": "2026-08-26 18:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 47.91,
     "pm10": 71.72,
@@ -13,6 +28,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.17
+  },
+  {
+    "created_at": "2026-08-26 18:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.53,
+    "pm10": 70.69,
+    "voc_index": 209,
+    "temperature": 32.45,
+    "humidity": 64.7,
+    "pressure": 1010.01,
+    "wind_speed": 1.83,
+    "wind_direction": 209,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.18
   },
   {
     "created_at": "2026-08-26 18:10:00+07:00",
@@ -31,6 +61,21 @@
   },
   {
     "created_at": "2026-08-26 18:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.55,
+    "pm10": 69.84,
+    "voc_index": 190,
+    "temperature": 31.84,
+    "humidity": 66.81,
+    "pressure": 1010.29,
+    "wind_speed": 1.57,
+    "wind_direction": 263,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.18
+  },
+  {
+    "created_at": "2026-08-26 18:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.25,
     "pm10": 63.74,
@@ -42,6 +87,21 @@
     "wind_direction": 266,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.18
+  },
+  {
+    "created_at": "2026-08-26 18:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 44.13,
+    "pm10": 74.21,
+    "voc_index": 170,
+    "temperature": 32.3,
+    "humidity": 64.23,
+    "pressure": 1010.23,
+    "wind_speed": 1.53,
+    "wind_direction": 227,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.18
   },
   {
@@ -61,6 +121,21 @@
   },
   {
     "created_at": "2026-08-26 18:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 41.16,
+    "pm10": 56.67,
+    "voc_index": 168,
+    "temperature": 31.54,
+    "humidity": 66.28,
+    "pressure": 1010.17,
+    "wind_speed": 1.57,
+    "wind_direction": 269,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.18
+  },
+  {
+    "created_at": "2026-08-26 18:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 35.11,
     "pm10": 54.97,
@@ -76,6 +151,21 @@
   },
   {
     "created_at": "2026-08-26 18:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 37.13,
+    "pm10": 57.56,
+    "voc_index": 152,
+    "temperature": 30.98,
+    "humidity": 66.37,
+    "pressure": 1010.6,
+    "wind_speed": 2.21,
+    "wind_direction": 249,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 18:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 32.01,
     "pm10": 49.86,
@@ -87,6 +177,21 @@
     "wind_direction": 253,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.17
+  },
+  {
+    "created_at": "2026-08-26 19:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 30.48,
+    "pm10": 42.47,
+    "voc_index": 146,
+    "temperature": 32.29,
+    "humidity": 71.11,
+    "pressure": 1010.62,
+    "wind_speed": 2.5,
+    "wind_direction": 266,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.17
   },
   {
@@ -106,6 +211,21 @@
   },
   {
     "created_at": "2026-08-26 19:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 29.73,
+    "pm10": 53.73,
+    "voc_index": 119,
+    "temperature": 31.55,
+    "humidity": 72.14,
+    "pressure": 1010.36,
+    "wind_speed": 2.27,
+    "wind_direction": 214,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 19:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 26.92,
     "pm10": 45.32,
@@ -121,6 +241,21 @@
   },
   {
     "created_at": "2026-08-26 19:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 31.15,
+    "pm10": 42.54,
+    "voc_index": 114,
+    "temperature": 30.67,
+    "humidity": 72.22,
+    "pressure": 1010.54,
+    "wind_speed": 2.44,
+    "wind_direction": 238,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 19:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 26.01,
     "pm10": 39.82,
@@ -132,6 +267,21 @@
     "wind_direction": 230,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 19:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 29.75,
+    "pm10": 44.29,
+    "voc_index": 122,
+    "temperature": 30.62,
+    "humidity": 73.69,
+    "pressure": 1010.78,
+    "wind_speed": 1.2,
+    "wind_direction": 258,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.16
   },
   {
@@ -151,6 +301,21 @@
   },
   {
     "created_at": "2026-08-26 19:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 32.18,
+    "pm10": 49.01,
+    "voc_index": 128,
+    "temperature": 29.64,
+    "humidity": 75.29,
+    "pressure": 1010.9,
+    "wind_speed": 0.89,
+    "wind_direction": 127,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.15
+  },
+  {
+    "created_at": "2026-08-26 19:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 26.06,
     "pm10": 41.1,
@@ -166,6 +331,21 @@
   },
   {
     "created_at": "2026-08-26 19:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 29.87,
+    "pm10": 52.55,
+    "voc_index": 116,
+    "temperature": 29.85,
+    "humidity": 70.81,
+    "pressure": 1010.6,
+    "wind_speed": 1.22,
+    "wind_direction": 208,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 19:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 26.72,
     "pm10": 42.18,
@@ -177,6 +357,21 @@
     "wind_direction": 199,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 20:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 22.2,
+    "pm10": 48.99,
+    "voc_index": 121,
+    "temperature": 30.12,
+    "humidity": 72.84,
+    "pressure": 1011.07,
+    "wind_speed": 1.01,
+    "wind_direction": 161,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.16
   },
   {
@@ -196,6 +391,21 @@
   },
   {
     "created_at": "2026-08-26 20:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 32.1,
+    "pm10": 42.73,
+    "voc_index": 109,
+    "temperature": 29.41,
+    "humidity": 73.52,
+    "pressure": 1011.29,
+    "wind_speed": 0,
+    "wind_direction": 145,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 20:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 25.45,
     "pm10": 39.48,
@@ -211,6 +421,21 @@
   },
   {
     "created_at": "2026-08-26 20:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 31.88,
+    "pm10": 42.98,
+    "voc_index": 114,
+    "temperature": 29.12,
+    "humidity": 75.61,
+    "pressure": 1011.0,
+    "wind_speed": 1.27,
+    "wind_direction": 86,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.17
+  },
+  {
+    "created_at": "2026-08-26 20:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 23.47,
     "pm10": 37.41,
@@ -222,6 +447,21 @@
     "wind_direction": 107,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.17
+  },
+  {
+    "created_at": "2026-08-26 20:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 28.34,
+    "pm10": 46.95,
+    "voc_index": 105,
+    "temperature": 29.55,
+    "humidity": 75.15,
+    "pressure": 1011.01,
+    "wind_speed": 0.33,
+    "wind_direction": 146,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.17
   },
   {
@@ -241,6 +481,21 @@
   },
   {
     "created_at": "2026-08-26 20:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 23.87,
+    "pm10": 39.76,
+    "voc_index": 81,
+    "temperature": 28.58,
+    "humidity": 78.39,
+    "pressure": 1011.25,
+    "wind_speed": 1.22,
+    "wind_direction": 144,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 20:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 21.7,
     "pm10": 34.27,
@@ -253,6 +508,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.17
+  },
+  {
+    "created_at": "2026-08-26 20:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 25.93,
+    "pm10": 38.28,
+    "voc_index": 105,
+    "temperature": 28.75,
+    "humidity": 80.56,
+    "pressure": 1011.58,
+    "wind_speed": 0.97,
+    "wind_direction": 136,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.18
   },
   {
     "created_at": "2026-08-26 20:50:00+07:00",
@@ -271,6 +541,21 @@
   },
   {
     "created_at": "2026-08-26 21:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 29.6,
+    "pm10": 49.53,
+    "voc_index": 103,
+    "temperature": 28.83,
+    "humidity": 79.87,
+    "pressure": 1012.01,
+    "wind_speed": 0.29,
+    "wind_direction": 107,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.17
+  },
+  {
+    "created_at": "2026-08-26 21:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 25.23,
     "pm10": 37.58,
@@ -286,6 +571,21 @@
   },
   {
     "created_at": "2026-08-26 21:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 27.11,
+    "pm10": 36.17,
+    "voc_index": 114,
+    "temperature": 28.33,
+    "humidity": 77.59,
+    "pressure": 1011.99,
+    "wind_speed": 0.66,
+    "wind_direction": 146,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.17
+  },
+  {
+    "created_at": "2026-08-26 21:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 24.48,
     "pm10": 37.42,
@@ -297,6 +597,21 @@
     "wind_direction": 158,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 21:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 26.5,
+    "pm10": 33.87,
+    "voc_index": 115,
+    "temperature": 28.7,
+    "humidity": 80.55,
+    "pressure": 1012.0,
+    "wind_speed": 0.43,
+    "wind_direction": 96,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.16
   },
   {
@@ -316,6 +631,21 @@
   },
   {
     "created_at": "2026-08-26 21:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 29.64,
+    "pm10": 41.8,
+    "voc_index": 98,
+    "temperature": 28.31,
+    "humidity": 86.31,
+    "pressure": 1011.48,
+    "wind_speed": 1.08,
+    "wind_direction": 133,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.17
+  },
+  {
+    "created_at": "2026-08-26 21:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 23.86,
     "pm10": 39.46,
@@ -331,6 +661,21 @@
   },
   {
     "created_at": "2026-08-26 21:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 30.0,
+    "pm10": 40.7,
+    "voc_index": 131,
+    "temperature": 28.12,
+    "humidity": 83.35,
+    "pressure": 1011.87,
+    "wind_speed": 0.57,
+    "wind_direction": 190,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.17
+  },
+  {
+    "created_at": "2026-08-26 21:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 22.48,
     "pm10": 36.2,
@@ -342,6 +687,21 @@
     "wind_direction": 190,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.15
+  },
+  {
+    "created_at": "2026-08-26 21:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 26.0,
+    "pm10": 33.5,
+    "voc_index": 121,
+    "temperature": 27.2,
+    "humidity": 87.28,
+    "pressure": 1011.96,
+    "wind_speed": 0.44,
+    "wind_direction": 192,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.15
   },
   {
@@ -361,6 +721,21 @@
   },
   {
     "created_at": "2026-08-26 22:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 21.41,
+    "pm10": 36.7,
+    "voc_index": 102,
+    "temperature": 27.51,
+    "humidity": 87.06,
+    "pressure": 1012.07,
+    "wind_speed": 0.48,
+    "wind_direction": 149,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.15
+  },
+  {
+    "created_at": "2026-08-26 22:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 21.15,
     "pm10": 34.17,
@@ -373,6 +748,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.15
+  },
+  {
+    "created_at": "2026-08-26 22:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.65,
+    "pm10": 63.52,
+    "voc_index": 166,
+    "temperature": 27.88,
+    "humidity": 87.85,
+    "pressure": 1012.24,
+    "wind_speed": 1.01,
+    "wind_direction": 188,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.18
   },
   {
     "created_at": "2026-08-26 22:10:00+07:00",
@@ -391,6 +781,21 @@
   },
   {
     "created_at": "2026-08-26 22:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 50.63,
+    "pm10": 86.4,
+    "voc_index": 167,
+    "temperature": 27.13,
+    "humidity": 84.33,
+    "pressure": 1012.07,
+    "wind_speed": 0.02,
+    "wind_direction": 177,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.15
+  },
+  {
+    "created_at": "2026-08-26 22:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 44.98,
     "pm10": 77.28,
@@ -402,6 +807,21 @@
     "wind_direction": 170,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 22:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.99,
+    "pm10": 73.7,
+    "voc_index": 180,
+    "temperature": 26.53,
+    "humidity": 89.06,
+    "pressure": 1012.55,
+    "wind_speed": 0.1,
+    "wind_direction": 65,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.16
   },
   {
@@ -421,6 +841,21 @@
   },
   {
     "created_at": "2026-08-26 22:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 53.14,
+    "pm10": 76.53,
+    "voc_index": 196,
+    "temperature": 26.71,
+    "humidity": 87.32,
+    "pressure": 1012.55,
+    "wind_speed": 0.33,
+    "wind_direction": 64,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.15
+  },
+  {
+    "created_at": "2026-08-26 22:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 45.46,
     "pm10": 68.11,
@@ -433,6 +868,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-26 22:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.04,
+    "pm10": 70.36,
+    "voc_index": 166,
+    "temperature": 26.84,
+    "humidity": 85.3,
+    "pressure": 1012.0,
+    "wind_speed": 0.26,
+    "wind_direction": 141,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.16
   },
   {
     "created_at": "2026-08-26 22:50:00+07:00",
@@ -451,6 +901,21 @@
   },
   {
     "created_at": "2026-08-26 23:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.35,
+    "pm10": 77.05,
+    "voc_index": 167,
+    "temperature": 25.79,
+    "humidity": 89.38,
+    "pressure": 1012.8,
+    "wind_speed": 0.87,
+    "wind_direction": 158,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-26 23:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.32,
     "pm10": 72.59,
@@ -463,6 +928,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.15
+  },
+  {
+    "created_at": "2026-08-26 23:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.97,
+    "pm10": 75.77,
+    "voc_index": 159,
+    "temperature": 25.44,
+    "humidity": 87.02,
+    "pressure": 1012.03,
+    "wind_speed": 0.8,
+    "wind_direction": 155,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.14
   },
   {
     "created_at": "2026-08-26 23:10:00+07:00",
@@ -481,6 +961,21 @@
   },
   {
     "created_at": "2026-08-26 23:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.02,
+    "pm10": 79.44,
+    "voc_index": 194,
+    "temperature": 26.09,
+    "humidity": 90.49,
+    "pressure": 1012.72,
+    "wind_speed": 0.83,
+    "wind_direction": 191,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.16
+  },
+  {
+    "created_at": "2026-08-26 23:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.3,
     "pm10": 71.19,
@@ -492,6 +987,21 @@
     "wind_direction": 207,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.15
+  },
+  {
+    "created_at": "2026-08-26 23:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.76,
+    "pm10": 80.81,
+    "voc_index": 179,
+    "temperature": 25.66,
+    "humidity": 90.03,
+    "pressure": 1012.52,
+    "wind_speed": 0.55,
+    "wind_direction": 149,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.15
   },
   {
@@ -511,6 +1021,21 @@
   },
   {
     "created_at": "2026-08-26 23:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 50.22,
+    "pm10": 85.89,
+    "voc_index": 174,
+    "temperature": 24.98,
+    "humidity": 91.45,
+    "pressure": 1012.34,
+    "wind_speed": 0.33,
+    "wind_direction": 97,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-26 23:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 46.17,
     "pm10": 72.05,
@@ -522,6 +1047,21 @@
     "wind_direction": 92,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.15
+  },
+  {
+    "created_at": "2026-08-26 23:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 41.29,
+    "pm10": 70.38,
+    "voc_index": 170,
+    "temperature": 25.68,
+    "humidity": 97.61,
+    "pressure": 1012.73,
+    "wind_speed": 0.4,
+    "wind_direction": 223,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.15
   },
   {
@@ -541,6 +1081,21 @@
   },
   {
     "created_at": "2026-08-27 00:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.1,
+    "pm10": 74.95,
+    "voc_index": 169,
+    "temperature": 25.95,
+    "humidity": 93.18,
+    "pressure": 1012.48,
+    "wind_speed": 0.64,
+    "wind_direction": 81,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-27 00:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.4,
     "pm10": 67.37,
@@ -553,6 +1108,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-27 00:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.62,
+    "pm10": 79.71,
+    "voc_index": 155,
+    "temperature": 25.2,
+    "humidity": 97.87,
+    "pressure": 1012.68,
+    "wind_speed": 0.51,
+    "wind_direction": 175,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.15
   },
   {
     "created_at": "2026-08-27 00:10:00+07:00",
@@ -571,6 +1141,21 @@
   },
   {
     "created_at": "2026-08-27 00:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.98,
+    "pm10": 75.9,
+    "voc_index": 166,
+    "temperature": 25.56,
+    "humidity": 94.58,
+    "pressure": 1012.54,
+    "wind_speed": 0.33,
+    "wind_direction": 94,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.15
+  },
+  {
+    "created_at": "2026-08-27 00:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.31,
     "pm10": 68.76,
@@ -583,6 +1168,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-27 00:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.6,
+    "pm10": 79.04,
+    "voc_index": 173,
+    "temperature": 24.91,
+    "humidity": 93.1,
+    "pressure": 1012.8,
+    "wind_speed": 0.14,
+    "wind_direction": 165,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.15
   },
   {
     "created_at": "2026-08-27 00:30:00+07:00",
@@ -601,6 +1201,21 @@
   },
   {
     "created_at": "2026-08-27 00:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.25,
+    "pm10": 68.8,
+    "voc_index": 159,
+    "temperature": 24.12,
+    "humidity": 91.36,
+    "pressure": 1012.74,
+    "wind_speed": 0.84,
+    "wind_direction": 160,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-27 00:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 40.36,
     "pm10": 65.16,
@@ -612,6 +1227,21 @@
     "wind_direction": 142,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-27 00:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.13,
+    "pm10": 67.01,
+    "voc_index": 174,
+    "temperature": 24.54,
+    "humidity": 92.38,
+    "pressure": 1012.38,
+    "wind_speed": 0.41,
+    "wind_direction": 102,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.14
   },
   {
@@ -631,6 +1261,21 @@
   },
   {
     "created_at": "2026-08-27 01:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.95,
+    "pm10": 77.96,
+    "voc_index": 175,
+    "temperature": 23.82,
+    "humidity": 95.1,
+    "pressure": 1012.5,
+    "wind_speed": 0.54,
+    "wind_direction": 106,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.13
+  },
+  {
+    "created_at": "2026-08-27 01:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.16,
     "pm10": 65.31,
@@ -643,6 +1288,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 01:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.49,
+    "pm10": 77.13,
+    "voc_index": 166,
+    "temperature": 24.41,
+    "humidity": 92.95,
+    "pressure": 1012.7,
+    "wind_speed": 0.87,
+    "wind_direction": 145,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.13
   },
   {
     "created_at": "2026-08-27 01:10:00+07:00",
@@ -661,6 +1321,21 @@
   },
   {
     "created_at": "2026-08-27 01:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.28,
+    "pm10": 78.05,
+    "voc_index": 166,
+    "temperature": 23.83,
+    "humidity": 95.57,
+    "pressure": 1012.52,
+    "wind_speed": 0.36,
+    "wind_direction": 187,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.13
+  },
+  {
+    "created_at": "2026-08-27 01:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.46,
     "pm10": 69.29,
@@ -673,6 +1348,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-27 01:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.05,
+    "pm10": 84.83,
+    "voc_index": 179,
+    "temperature": 23.93,
+    "humidity": 94.99,
+    "pressure": 1012.3,
+    "wind_speed": 0,
+    "wind_direction": 91,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.12
   },
   {
     "created_at": "2026-08-27 01:30:00+07:00",
@@ -691,6 +1381,21 @@
   },
   {
     "created_at": "2026-08-27 01:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.53,
+    "pm10": 79.12,
+    "voc_index": 163,
+    "temperature": 23.79,
+    "humidity": 96.58,
+    "pressure": 1012.08,
+    "wind_speed": 0.13,
+    "wind_direction": 119,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-27 01:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.01,
     "pm10": 71.4,
@@ -703,6 +1408,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 01:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 53.67,
+    "pm10": 78.23,
+    "voc_index": 179,
+    "temperature": 23.76,
+    "humidity": 96.63,
+    "pressure": 1012.01,
+    "wind_speed": 0.07,
+    "wind_direction": 137,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.15
   },
   {
     "created_at": "2026-08-27 01:50:00+07:00",
@@ -721,6 +1441,21 @@
   },
   {
     "created_at": "2026-08-27 02:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.78,
+    "pm10": 84.25,
+    "voc_index": 171,
+    "temperature": 23.55,
+    "humidity": 95.59,
+    "pressure": 1012.3,
+    "wind_speed": 0.31,
+    "wind_direction": 207,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-27 02:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.12,
     "pm10": 69.72,
@@ -733,6 +1468,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 02:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 44.67,
+    "pm10": 68.63,
+    "voc_index": 158,
+    "temperature": 23.71,
+    "humidity": 95.09,
+    "pressure": 1011.69,
+    "wind_speed": 0.15,
+    "wind_direction": 53,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.13
   },
   {
     "created_at": "2026-08-27 02:10:00+07:00",
@@ -751,6 +1501,21 @@
   },
   {
     "created_at": "2026-08-27 02:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.82,
+    "pm10": 67.45,
+    "voc_index": 162,
+    "temperature": 23.74,
+    "humidity": 96.06,
+    "pressure": 1012.06,
+    "wind_speed": 0.63,
+    "wind_direction": 183,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.13
+  },
+  {
+    "created_at": "2026-08-27 02:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.79,
     "pm10": 64.32,
@@ -763,6 +1528,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 02:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.83,
+    "pm10": 74.37,
+    "voc_index": 165,
+    "temperature": 23.33,
+    "humidity": 98.91,
+    "pressure": 1011.66,
+    "wind_speed": 0.71,
+    "wind_direction": 147,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.13
   },
   {
     "created_at": "2026-08-27 02:30:00+07:00",
@@ -781,6 +1561,21 @@
   },
   {
     "created_at": "2026-08-27 02:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.19,
+    "pm10": 70.41,
+    "voc_index": 155,
+    "temperature": 24.26,
+    "humidity": 95.71,
+    "pressure": 1011.85,
+    "wind_speed": 0.29,
+    "wind_direction": 103,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-27 02:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.94,
     "pm10": 65.05,
@@ -793,6 +1588,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.11
+  },
+  {
+    "created_at": "2026-08-27 02:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.35,
+    "pm10": 77.09,
+    "voc_index": 163,
+    "temperature": 23.64,
+    "humidity": 97.16,
+    "pressure": 1011.29,
+    "wind_speed": 1.04,
+    "wind_direction": 90,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.13
   },
   {
     "created_at": "2026-08-27 02:50:00+07:00",
@@ -811,6 +1621,21 @@
   },
   {
     "created_at": "2026-08-27 03:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.4,
+    "pm10": 84.43,
+    "voc_index": 151,
+    "temperature": 23.68,
+    "humidity": 97.29,
+    "pressure": 1011.36,
+    "wind_speed": 0.15,
+    "wind_direction": 110,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.14
+  },
+  {
+    "created_at": "2026-08-27 03:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 46.74,
     "pm10": 74.47,
@@ -822,6 +1647,21 @@
     "wind_direction": 109,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 03:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 50.44,
+    "pm10": 71.28,
+    "voc_index": 180,
+    "temperature": 23.45,
+    "humidity": 96.78,
+    "pressure": 1011.53,
+    "wind_speed": 0.78,
+    "wind_direction": 184,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.12
   },
   {
@@ -841,6 +1681,21 @@
   },
   {
     "created_at": "2026-08-27 03:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 50.82,
+    "pm10": 80.7,
+    "voc_index": 184,
+    "temperature": 23.74,
+    "humidity": 99.04,
+    "pressure": 1011.35,
+    "wind_speed": 0.49,
+    "wind_direction": 193,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 03:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.52,
     "pm10": 72.78,
@@ -853,6 +1708,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 03:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.82,
+    "pm10": 79.73,
+    "voc_index": 153,
+    "temperature": 23.48,
+    "humidity": 97.91,
+    "pressure": 1011.66,
+    "wind_speed": 0.43,
+    "wind_direction": 78,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.11
   },
   {
     "created_at": "2026-08-27 03:30:00+07:00",
@@ -871,6 +1741,21 @@
   },
   {
     "created_at": "2026-08-27 03:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.13,
+    "pm10": 74.18,
+    "voc_index": 153,
+    "temperature": 22.87,
+    "humidity": 98.39,
+    "pressure": 1011.26,
+    "wind_speed": 0.39,
+    "wind_direction": 159,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.11
+  },
+  {
+    "created_at": "2026-08-27 03:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 44.75,
     "pm10": 71.94,
@@ -882,6 +1767,21 @@
     "wind_direction": 159,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 03:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 53.16,
+    "pm10": 78.3,
+    "voc_index": 159,
+    "temperature": 23.12,
+    "humidity": 92.94,
+    "pressure": 1011.27,
+    "wind_speed": 0.73,
+    "wind_direction": 111,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.12
   },
   {
@@ -901,6 +1801,21 @@
   },
   {
     "created_at": "2026-08-27 04:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 50.02,
+    "pm10": 67.41,
+    "voc_index": 167,
+    "temperature": 23.31,
+    "humidity": 95.74,
+    "pressure": 1011.1,
+    "wind_speed": 1.0,
+    "wind_direction": 107,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 04:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.41,
     "pm10": 68.58,
@@ -916,6 +1831,21 @@
   },
   {
     "created_at": "2026-08-27 04:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.69,
+    "pm10": 75.57,
+    "voc_index": 164,
+    "temperature": 24.03,
+    "humidity": 99.26,
+    "pressure": 1010.92,
+    "wind_speed": 0.3,
+    "wind_direction": 98,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 04:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.12,
     "pm10": 70.38,
@@ -927,6 +1857,21 @@
     "wind_direction": 74,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 04:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.68,
+    "pm10": 70.78,
+    "voc_index": 169,
+    "temperature": 23.72,
+    "humidity": 93.48,
+    "pressure": 1010.53,
+    "wind_speed": 0.55,
+    "wind_direction": 41,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.1
   },
   {
@@ -946,6 +1891,21 @@
   },
   {
     "created_at": "2026-08-27 04:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 52.63,
+    "pm10": 67.08,
+    "voc_index": 161,
+    "temperature": 23.82,
+    "humidity": 93.5,
+    "pressure": 1010.37,
+    "wind_speed": 0,
+    "wind_direction": 114,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 04:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.89,
     "pm10": 64.75,
@@ -958,6 +1918,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 04:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 50.12,
+    "pm10": 81.56,
+    "voc_index": 159,
+    "temperature": 24.68,
+    "humidity": 95.91,
+    "pressure": 1010.99,
+    "wind_speed": 0.33,
+    "wind_direction": 165,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.11
   },
   {
     "created_at": "2026-08-27 04:40:00+07:00",
@@ -976,6 +1951,21 @@
   },
   {
     "created_at": "2026-08-27 04:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.12,
+    "pm10": 66.91,
+    "voc_index": 168,
+    "temperature": 23.58,
+    "humidity": 97.37,
+    "pressure": 1010.56,
+    "wind_speed": 0.67,
+    "wind_direction": 101,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.13
+  },
+  {
+    "created_at": "2026-08-27 04:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.83,
     "pm10": 64.92,
@@ -991,6 +1981,21 @@
   },
   {
     "created_at": "2026-08-27 05:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 50.98,
+    "pm10": 86.08,
+    "voc_index": 173,
+    "temperature": 23.99,
+    "humidity": 100,
+    "pressure": 1010.78,
+    "wind_speed": 0.61,
+    "wind_direction": 149,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 05:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 47.53,
     "pm10": 73.06,
@@ -1002,6 +2007,21 @@
     "wind_direction": 140,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 05:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.6,
+    "pm10": 83.02,
+    "voc_index": 161,
+    "temperature": 24.05,
+    "humidity": 97.02,
+    "pressure": 1010.39,
+    "wind_speed": 0.75,
+    "wind_direction": 69,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.1
   },
   {
@@ -1021,6 +2041,21 @@
   },
   {
     "created_at": "2026-08-27 05:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 52.83,
+    "pm10": 80.03,
+    "voc_index": 178,
+    "temperature": 24.53,
+    "humidity": 93.28,
+    "pressure": 1010.05,
+    "wind_speed": 0.18,
+    "wind_direction": 174,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 05:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 48.99,
     "pm10": 74.69,
@@ -1033,6 +2068,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 05:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 32.9,
+    "pm10": 53.37,
+    "voc_index": 122,
+    "temperature": 23.95,
+    "humidity": 93.92,
+    "pressure": 1010.64,
+    "wind_speed": 0.93,
+    "wind_direction": 115,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.11
   },
   {
     "created_at": "2026-08-27 05:30:00+07:00",
@@ -1051,6 +2101,21 @@
   },
   {
     "created_at": "2026-08-27 05:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 38.88,
+    "pm10": 55.56,
+    "voc_index": 117,
+    "temperature": 25.02,
+    "humidity": 95.57,
+    "pressure": 1010.61,
+    "wind_speed": 0.26,
+    "wind_direction": 155,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.13
+  },
+  {
+    "created_at": "2026-08-27 05:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 31.97,
     "pm10": 50.62,
@@ -1063,6 +2128,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 05:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 34.79,
+    "pm10": 55.37,
+    "voc_index": 128,
+    "temperature": 25.01,
+    "humidity": 93.52,
+    "pressure": 1010.42,
+    "wind_speed": 0.34,
+    "wind_direction": 178,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.11
   },
   {
     "created_at": "2026-08-27 05:50:00+07:00",
@@ -1081,6 +2161,21 @@
   },
   {
     "created_at": "2026-08-27 06:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 34.23,
+    "pm10": 53.58,
+    "voc_index": 150,
+    "temperature": 24.71,
+    "humidity": 96.44,
+    "pressure": 1010.44,
+    "wind_speed": 1.61,
+    "wind_direction": 262,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 06:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 32.07,
     "pm10": 47.55,
@@ -1096,6 +2191,21 @@
   },
   {
     "created_at": "2026-08-27 06:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 40.78,
+    "pm10": 61.29,
+    "voc_index": 153,
+    "temperature": 25.07,
+    "humidity": 92.61,
+    "pressure": 1010.19,
+    "wind_speed": 1.5,
+    "wind_direction": 151,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 06:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 34.82,
     "pm10": 53.71,
@@ -1107,6 +2217,21 @@
     "wind_direction": 150,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 06:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 43.3,
+    "pm10": 64.8,
+    "voc_index": 154,
+    "temperature": 25.48,
+    "humidity": 88.42,
+    "pressure": 1010.32,
+    "wind_speed": 1.86,
+    "wind_direction": 164,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.09
   },
   {
@@ -1126,6 +2251,21 @@
   },
   {
     "created_at": "2026-08-27 06:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 41.76,
+    "pm10": 67.67,
+    "voc_index": 152,
+    "temperature": 26.06,
+    "humidity": 91.68,
+    "pressure": 1010.3,
+    "wind_speed": 1.9,
+    "wind_direction": 240,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 06:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 38.76,
     "pm10": 61.85,
@@ -1141,6 +2281,21 @@
   },
   {
     "created_at": "2026-08-27 06:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 54.96,
+    "pm10": 82.56,
+    "voc_index": 196,
+    "temperature": 25.81,
+    "humidity": 90.75,
+    "pressure": 1010.76,
+    "wind_speed": 0.92,
+    "wind_direction": 112,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.13
+  },
+  {
+    "created_at": "2026-08-27 06:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 46.94,
     "pm10": 75.23,
@@ -1152,6 +2307,21 @@
     "wind_direction": 125,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 06:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.58,
+    "pm10": 89.53,
+    "voc_index": 192,
+    "temperature": 25.22,
+    "humidity": 83.63,
+    "pressure": 1010.27,
+    "wind_speed": 1.6,
+    "wind_direction": 146,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.09
   },
   {
@@ -1171,6 +2341,21 @@
   },
   {
     "created_at": "2026-08-27 07:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 59.24,
+    "pm10": 87.72,
+    "voc_index": 217,
+    "temperature": 26.69,
+    "humidity": 88.47,
+    "pressure": 1010.4,
+    "wind_speed": 1.37,
+    "wind_direction": 179,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 07:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 52.63,
     "pm10": 81.2,
@@ -1182,6 +2367,21 @@
     "wind_direction": 173,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 07:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 59.65,
+    "pm10": 102.46,
+    "voc_index": 221,
+    "temperature": 26.17,
+    "humidity": 89.18,
+    "pressure": 1010.89,
+    "wind_speed": 1.17,
+    "wind_direction": 222,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.1
   },
   {
@@ -1201,6 +2401,21 @@
   },
   {
     "created_at": "2026-08-27 07:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 60.68,
+    "pm10": 90.75,
+    "voc_index": 237,
+    "temperature": 25.9,
+    "humidity": 94.55,
+    "pressure": 1010.45,
+    "wind_speed": 1.95,
+    "wind_direction": 156,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 07:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 50.16,
     "pm10": 78.53,
@@ -1213,6 +2428,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.08
+  },
+  {
+    "created_at": "2026-08-27 07:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 60.56,
+    "pm10": 89.48,
+    "voc_index": 238,
+    "temperature": 26.72,
+    "humidity": 84.45,
+    "pressure": 1010.59,
+    "wind_speed": 1.31,
+    "wind_direction": 174,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.11
   },
   {
     "created_at": "2026-08-27 07:30:00+07:00",
@@ -1231,6 +2461,21 @@
   },
   {
     "created_at": "2026-08-27 07:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 54.85,
+    "pm10": 90.21,
+    "voc_index": 228,
+    "temperature": 26.62,
+    "humidity": 83.46,
+    "pressure": 1011.03,
+    "wind_speed": 1.67,
+    "wind_direction": 237,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.11
+  },
+  {
+    "created_at": "2026-08-27 07:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 49.95,
     "pm10": 80.1,
@@ -1243,6 +2488,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 07:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 54.48,
+    "pm10": 86.13,
+    "voc_index": 226,
+    "temperature": 26.67,
+    "humidity": 90.03,
+    "pressure": 1010.64,
+    "wind_speed": 1.85,
+    "wind_direction": 193,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.1
   },
   {
     "created_at": "2026-08-27 07:50:00+07:00",
@@ -1261,6 +2521,21 @@
   },
   {
     "created_at": "2026-08-27 08:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.24,
+    "pm10": 81.24,
+    "voc_index": 224,
+    "temperature": 27.5,
+    "humidity": 84.73,
+    "pressure": 1010.78,
+    "wind_speed": 1.86,
+    "wind_direction": 200,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.12
+  },
+  {
+    "created_at": "2026-08-27 08:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 47.55,
     "pm10": 74.92,
@@ -1273,6 +2548,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 08:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 50.77,
+    "pm10": 78.97,
+    "voc_index": 202,
+    "temperature": 27.79,
+    "humidity": 85.65,
+    "pressure": 1010.98,
+    "wind_speed": 1.83,
+    "wind_direction": 148,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.1
   },
   {
     "created_at": "2026-08-27 08:10:00+07:00",
@@ -1291,6 +2581,21 @@
   },
   {
     "created_at": "2026-08-27 08:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.46,
+    "pm10": 68.85,
+    "voc_index": 213,
+    "temperature": 28.13,
+    "humidity": 81.03,
+    "pressure": 1011.23,
+    "wind_speed": 2.06,
+    "wind_direction": 209,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 08:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.14,
     "pm10": 62.93,
@@ -1303,6 +2608,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.08
+  },
+  {
+    "created_at": "2026-08-27 08:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 41.85,
+    "pm10": 67.73,
+    "voc_index": 189,
+    "temperature": 28.57,
+    "humidity": 80.09,
+    "pressure": 1010.8,
+    "wind_speed": 1.8,
+    "wind_direction": 204,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.1
   },
   {
     "created_at": "2026-08-27 08:30:00+07:00",
@@ -1321,6 +2641,21 @@
   },
   {
     "created_at": "2026-08-27 08:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 42.4,
+    "pm10": 55.46,
+    "voc_index": 165,
+    "temperature": 28.61,
+    "humidity": 75.36,
+    "pressure": 1011.18,
+    "wind_speed": 1.33,
+    "wind_direction": 208,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 08:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 34.73,
     "pm10": 54.33,
@@ -1333,6 +2668,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.08
+  },
+  {
+    "created_at": "2026-08-27 08:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 42.3,
+    "pm10": 51.11,
+    "voc_index": 137,
+    "temperature": 28.2,
+    "humidity": 79.01,
+    "pressure": 1011.47,
+    "wind_speed": 0.95,
+    "wind_direction": 143,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.11
   },
   {
     "created_at": "2026-08-27 08:50:00+07:00",
@@ -1351,6 +2701,21 @@
   },
   {
     "created_at": "2026-08-27 09:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 33.88,
+    "pm10": 56.05,
+    "voc_index": 149,
+    "temperature": 29.69,
+    "humidity": 76.82,
+    "pressure": 1011.74,
+    "wind_speed": 1.61,
+    "wind_direction": 171,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.1
+  },
+  {
+    "created_at": "2026-08-27 09:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 31.34,
     "pm10": 49.74,
@@ -1363,6 +2728,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.07
+  },
+  {
+    "created_at": "2026-08-27 09:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 28.46,
+    "pm10": 52.2,
+    "voc_index": 127,
+    "temperature": 29.0,
+    "humidity": 73.91,
+    "pressure": 1011.95,
+    "wind_speed": 1.5,
+    "wind_direction": 224,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
   },
   {
     "created_at": "2026-08-27 09:10:00+07:00",
@@ -1381,6 +2761,21 @@
   },
   {
     "created_at": "2026-08-27 09:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 24.63,
+    "pm10": 41.84,
+    "voc_index": 121,
+    "temperature": 29.04,
+    "humidity": 76.16,
+    "pressure": 1011.76,
+    "wind_speed": 1.87,
+    "wind_direction": 153,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 09:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 24.5,
     "pm10": 40.68,
@@ -1393,6 +2788,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.07
+  },
+  {
+    "created_at": "2026-08-27 09:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 28.87,
+    "pm10": 39.93,
+    "voc_index": 126,
+    "temperature": 29.35,
+    "humidity": 78.22,
+    "pressure": 1011.42,
+    "wind_speed": 1.06,
+    "wind_direction": 176,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.08
   },
   {
     "created_at": "2026-08-27 09:30:00+07:00",
@@ -1411,6 +2821,21 @@
   },
   {
     "created_at": "2026-08-27 09:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 25.91,
+    "pm10": 44.73,
+    "voc_index": 114,
+    "temperature": 29.35,
+    "humidity": 76.05,
+    "pressure": 1012.06,
+    "wind_speed": 2.04,
+    "wind_direction": 180,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 09:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 23.62,
     "pm10": 38.04,
@@ -1422,6 +2847,21 @@
     "wind_direction": 173,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.07
+  },
+  {
+    "created_at": "2026-08-27 09:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 23.22,
+    "pm10": 39.02,
+    "voc_index": 94,
+    "temperature": 30.71,
+    "humidity": 78.38,
+    "pressure": 1012.3,
+    "wind_speed": 1.02,
+    "wind_direction": 181,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.07
   },
   {
@@ -1441,6 +2881,21 @@
   },
   {
     "created_at": "2026-08-27 10:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 23.9,
+    "pm10": 35.22,
+    "voc_index": 106,
+    "temperature": 30.55,
+    "humidity": 76.04,
+    "pressure": 1012.44,
+    "wind_speed": 1.57,
+    "wind_direction": 185,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 10:00:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 17.26,
     "pm10": 29.43,
@@ -1453,6 +2908,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.06
+  },
+  {
+    "created_at": "2026-08-27 10:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 23.85,
+    "pm10": 39.71,
+    "voc_index": 83,
+    "temperature": 29.87,
+    "humidity": 79.3,
+    "pressure": 1012.53,
+    "wind_speed": 1.35,
+    "wind_direction": 190,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.08
   },
   {
     "created_at": "2026-08-27 10:10:00+07:00",
@@ -1471,6 +2941,21 @@
   },
   {
     "created_at": "2026-08-27 10:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 27.5,
+    "pm10": 38.08,
+    "voc_index": 98,
+    "temperature": 29.77,
+    "humidity": 75.2,
+    "pressure": 1012.19,
+    "wind_speed": 1.15,
+    "wind_direction": 173,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 10:20:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 20.38,
     "pm10": 33.38,
@@ -1483,6 +2968,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.06
+  },
+  {
+    "created_at": "2026-08-27 10:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 10.79,
+    "pm10": 18.82,
+    "voc_index": 116,
+    "temperature": 30.4,
+    "humidity": 73.75,
+    "pressure": 1012.18,
+    "wind_speed": 4.11,
+    "wind_direction": 191,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
   },
   {
     "created_at": "2026-08-27 10:30:00+07:00",
@@ -1501,6 +3001,21 @@
   },
   {
     "created_at": "2026-08-27 10:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.17,
+    "pm10": 19.95,
+    "voc_index": 100,
+    "temperature": 30.43,
+    "humidity": 71.2,
+    "pressure": 1012.64,
+    "wind_speed": 3.98,
+    "wind_direction": 203,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 10:40:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 10.01,
     "pm10": 16.9,
@@ -1516,6 +3031,21 @@
   },
   {
     "created_at": "2026-08-27 10:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 13.75,
+    "pm10": 12.06,
+    "voc_index": 76,
+    "temperature": 31.1,
+    "humidity": 74.42,
+    "pressure": 1012.09,
+    "wind_speed": 3.62,
+    "wind_direction": 239,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.08
+  },
+  {
+    "created_at": "2026-08-27 10:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 10.44,
     "pm10": 16.28,
@@ -1527,6 +3057,21 @@
     "wind_direction": 250,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.07
+  },
+  {
+    "created_at": "2026-08-27 11:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 11.72,
+    "pm10": 14.84,
+    "voc_index": 64,
+    "temperature": 30.45,
+    "humidity": 65.19,
+    "pressure": 1012.53,
+    "wind_speed": 2.74,
+    "wind_direction": 251,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.07
   },
   {
@@ -1546,6 +3091,21 @@
   },
   {
     "created_at": "2026-08-27 11:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 17.75,
+    "pm10": 24.19,
+    "voc_index": 67,
+    "temperature": 31.01,
+    "humidity": 72.87,
+    "pressure": 1012.34,
+    "wind_speed": 2.38,
+    "wind_direction": 237,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.08
+  },
+  {
+    "created_at": "2026-08-27 11:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 13.99,
     "pm10": 20.89,
@@ -1558,6 +3118,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.05
+  },
+  {
+    "created_at": "2026-08-27 11:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 7.3,
+    "pm10": 19.14,
+    "voc_index": 68,
+    "temperature": 31.68,
+    "humidity": 69.34,
+    "pressure": 1012.63,
+    "wind_speed": 3.31,
+    "wind_direction": 220,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.08
   },
   {
     "created_at": "2026-08-27 11:20:00+07:00",
@@ -1576,6 +3151,21 @@
   },
   {
     "created_at": "2026-08-27 11:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 12.74,
+    "pm10": 19.87,
+    "voc_index": 73,
+    "temperature": 32.91,
+    "humidity": 66.6,
+    "pressure": 1012.56,
+    "wind_speed": 3.42,
+    "wind_direction": 232,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.08
+  },
+  {
+    "created_at": "2026-08-27 11:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 9.5,
     "pm10": 15.0,
@@ -1588,6 +3178,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.06
+  },
+  {
+    "created_at": "2026-08-27 11:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 9.95,
+    "pm10": 23.08,
+    "voc_index": 92,
+    "temperature": 32.49,
+    "humidity": 62.09,
+    "pressure": 1012.49,
+    "wind_speed": 3.27,
+    "wind_direction": 234,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.07
   },
   {
     "created_at": "2026-08-27 11:40:00+07:00",
@@ -1606,6 +3211,21 @@
   },
   {
     "created_at": "2026-08-27 11:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 8.5,
+    "pm10": 23.78,
+    "voc_index": 80,
+    "temperature": 32.89,
+    "humidity": 67.26,
+    "pressure": 1012.14,
+    "wind_speed": 3.39,
+    "wind_direction": 241,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.07
+  },
+  {
+    "created_at": "2026-08-27 11:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 10.53,
     "pm10": 18.55,
@@ -1618,6 +3238,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.05
+  },
+  {
+    "created_at": "2026-08-27 12:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.22,
+    "pm10": 12.02,
+    "voc_index": 62,
+    "temperature": 32.67,
+    "humidity": 67.99,
+    "pressure": 1012.88,
+    "wind_speed": 3.02,
+    "wind_direction": 240,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.08
   },
   {
     "created_at": "2026-08-27 12:00:00+07:00",
@@ -1636,6 +3271,21 @@
   },
   {
     "created_at": "2026-08-27 12:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 17.13,
+    "pm10": 26.35,
+    "voc_index": 80,
+    "temperature": 31.82,
+    "humidity": 63.01,
+    "pressure": 1012.6,
+    "wind_speed": 2.33,
+    "wind_direction": 238,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
+  },
+  {
+    "created_at": "2026-08-27 12:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 12.03,
     "pm10": 20.46,
@@ -1648,6 +3298,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.05
+  },
+  {
+    "created_at": "2026-08-27 12:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 11.75,
+    "pm10": 21.94,
+    "voc_index": 59,
+    "temperature": 32.53,
+    "humidity": 63.63,
+    "pressure": 1012.58,
+    "wind_speed": 3.35,
+    "wind_direction": 244,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.09
   },
   {
     "created_at": "2026-08-27 12:20:00+07:00",
@@ -1666,6 +3331,21 @@
   },
   {
     "created_at": "2026-08-27 12:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 13.72,
+    "pm10": 28.39,
+    "voc_index": 81,
+    "temperature": 31.61,
+    "humidity": 62.82,
+    "pressure": 1012.39,
+    "wind_speed": 2.64,
+    "wind_direction": 196,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.08
+  },
+  {
+    "created_at": "2026-08-27 12:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 12.37,
     "pm10": 20.74,
@@ -1677,6 +3357,21 @@
     "wind_direction": 194,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.06
+  },
+  {
+    "created_at": "2026-08-27 12:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.9,
+    "pm10": 17.79,
+    "voc_index": 58,
+    "temperature": 32.87,
+    "humidity": 64.77,
+    "pressure": 1012.8,
+    "wind_speed": 3.47,
+    "wind_direction": 223,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.06
   },
   {
@@ -1696,6 +3391,21 @@
   },
   {
     "created_at": "2026-08-27 12:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 13.78,
+    "pm10": 23.31,
+    "voc_index": 80,
+    "temperature": 32.95,
+    "humidity": 63.88,
+    "pressure": 1012.38,
+    "wind_speed": 3.77,
+    "wind_direction": 246,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.08
+  },
+  {
+    "created_at": "2026-08-27 12:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 9.5,
     "pm10": 15.0,
@@ -1708,6 +3418,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.04
+  },
+  {
+    "created_at": "2026-08-27 13:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 18.07,
+    "pm10": 19.95,
+    "voc_index": 65,
+    "temperature": 33.6,
+    "humidity": 61.51,
+    "pressure": 1012.58,
+    "wind_speed": 2.87,
+    "wind_direction": 210,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.06
   },
   {
     "created_at": "2026-08-27 13:00:00+07:00",
@@ -1726,6 +3451,21 @@
   },
   {
     "created_at": "2026-08-27 13:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 12.2,
+    "pm10": 18.28,
+    "voc_index": 84,
+    "temperature": 33.48,
+    "humidity": 63.41,
+    "pressure": 1012.34,
+    "wind_speed": 3.22,
+    "wind_direction": 257,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.06
+  },
+  {
+    "created_at": "2026-08-27 13:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 9.5,
     "pm10": 15.0,
@@ -1738,6 +3478,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.04
+  },
+  {
+    "created_at": "2026-08-27 13:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 12.36,
+    "pm10": 14.03,
+    "voc_index": 76,
+    "temperature": 33.6,
+    "humidity": 61.62,
+    "pressure": 1012.51,
+    "wind_speed": 3.28,
+    "wind_direction": 207,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.07
   },
   {
     "created_at": "2026-08-27 13:20:00+07:00",
@@ -1756,6 +3511,21 @@
   },
   {
     "created_at": "2026-08-27 13:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.64,
+    "pm10": 22.92,
+    "voc_index": 75,
+    "temperature": 32.79,
+    "humidity": 60.86,
+    "pressure": 1012.18,
+    "wind_speed": 1.98,
+    "wind_direction": 232,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.05
+  },
+  {
+    "created_at": "2026-08-27 13:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 12.34,
     "pm10": 18.45,
@@ -1768,6 +3538,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.04
+  },
+  {
+    "created_at": "2026-08-27 13:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 15.2,
+    "pm10": 23.22,
+    "voc_index": 79,
+    "temperature": 34.03,
+    "humidity": 60.39,
+    "pressure": 1011.87,
+    "wind_speed": 3.55,
+    "wind_direction": 272,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.07
   },
   {
     "created_at": "2026-08-27 13:40:00+07:00",
@@ -1786,6 +3571,21 @@
   },
   {
     "created_at": "2026-08-27 13:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 13.63,
+    "pm10": 22.58,
+    "voc_index": 77,
+    "temperature": 33.38,
+    "humidity": 55.38,
+    "pressure": 1011.75,
+    "wind_speed": 2.52,
+    "wind_direction": 234,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.06
+  },
+  {
+    "created_at": "2026-08-27 13:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 11.53,
     "pm10": 20.38,
@@ -1798,6 +3598,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 14:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 10.41,
+    "pm10": 18.78,
+    "voc_index": 66,
+    "temperature": 34.4,
+    "humidity": 58.87,
+    "pressure": 1012.18,
+    "wind_speed": 2.92,
+    "wind_direction": 228,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.07
   },
   {
     "created_at": "2026-08-27 14:00:00+07:00",
@@ -1816,6 +3631,21 @@
   },
   {
     "created_at": "2026-08-27 14:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 13.6,
+    "pm10": 20.42,
+    "voc_index": 62,
+    "temperature": 33.87,
+    "humidity": 61.06,
+    "pressure": 1012.12,
+    "wind_speed": 3.89,
+    "wind_direction": 250,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.05
+  },
+  {
+    "created_at": "2026-08-27 14:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 10.31,
     "pm10": 16.17,
@@ -1828,6 +3658,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 14:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 12.09,
+    "pm10": 20.62,
+    "voc_index": 77,
+    "temperature": 34.08,
+    "humidity": 59.26,
+    "pressure": 1012.18,
+    "wind_speed": 2.58,
+    "wind_direction": 213,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.07
   },
   {
     "created_at": "2026-08-27 14:20:00+07:00",
@@ -1846,6 +3691,21 @@
   },
   {
     "created_at": "2026-08-27 14:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 6.43,
+    "pm10": 15.49,
+    "voc_index": 65,
+    "temperature": 33.78,
+    "humidity": 59.89,
+    "pressure": 1011.97,
+    "wind_speed": 3.31,
+    "wind_direction": 229,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.07
+  },
+  {
+    "created_at": "2026-08-27 14:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 9.5,
     "pm10": 15.0,
@@ -1858,6 +3718,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 14:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 9.96,
+    "pm10": 26.04,
+    "voc_index": 66,
+    "temperature": 33.15,
+    "humidity": 63.46,
+    "pressure": 1011.25,
+    "wind_speed": 3.26,
+    "wind_direction": 254,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.06
   },
   {
     "created_at": "2026-08-27 14:40:00+07:00",
@@ -1876,6 +3751,21 @@
   },
   {
     "created_at": "2026-08-27 14:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 12.69,
+    "pm10": 27.6,
+    "voc_index": 72,
+    "temperature": 33.84,
+    "humidity": 61.59,
+    "pressure": 1011.74,
+    "wind_speed": 3.77,
+    "wind_direction": 247,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.07
+  },
+  {
+    "created_at": "2026-08-27 14:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 10.61,
     "pm10": 18.53,
@@ -1887,6 +3777,21 @@
     "wind_direction": 248,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 15:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 16.2,
+    "pm10": 16.98,
+    "voc_index": 83,
+    "temperature": 33.66,
+    "humidity": 58.05,
+    "pressure": 1011.23,
+    "wind_speed": 3.99,
+    "wind_direction": 208,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.03
   },
   {
@@ -1906,6 +3811,21 @@
   },
   {
     "created_at": "2026-08-27 15:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 19.29,
+    "pm10": 24.75,
+    "voc_index": 111,
+    "temperature": 34.0,
+    "humidity": 55.98,
+    "pressure": 1011.36,
+    "wind_speed": 2.82,
+    "wind_direction": 270,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.06
+  },
+  {
+    "created_at": "2026-08-27 15:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 15.47,
     "pm10": 24.74,
@@ -1918,6 +3838,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 15:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 21.16,
+    "pm10": 32.59,
+    "voc_index": 98,
+    "temperature": 33.11,
+    "humidity": 56.97,
+    "pressure": 1011.44,
+    "wind_speed": 2.79,
+    "wind_direction": 224,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.05
   },
   {
     "created_at": "2026-08-27 15:20:00+07:00",
@@ -1936,6 +3871,21 @@
   },
   {
     "created_at": "2026-08-27 15:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 22.6,
+    "pm10": 33.37,
+    "voc_index": 98,
+    "temperature": 33.66,
+    "humidity": 61.27,
+    "pressure": 1011.15,
+    "wind_speed": 3.2,
+    "wind_direction": 216,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.05
+  },
+  {
+    "created_at": "2026-08-27 15:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 18.69,
     "pm10": 30.91,
@@ -1948,6 +3898,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 15:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 21.94,
+    "pm10": 34.53,
+    "voc_index": 115,
+    "temperature": 34.44,
+    "humidity": 64.54,
+    "pressure": 1011.3,
+    "wind_speed": 3.78,
+    "wind_direction": 235,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.06
   },
   {
     "created_at": "2026-08-27 15:40:00+07:00",
@@ -1966,6 +3931,21 @@
   },
   {
     "created_at": "2026-08-27 15:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 23.02,
+    "pm10": 42.11,
+    "voc_index": 105,
+    "temperature": 34.12,
+    "humidity": 63.97,
+    "pressure": 1011.01,
+    "wind_speed": 2.69,
+    "wind_direction": 233,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.06
+  },
+  {
+    "created_at": "2026-08-27 15:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 21.92,
     "pm10": 34.61,
@@ -1978,6 +3958,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 16:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 25.43,
+    "pm10": 41.07,
+    "voc_index": 141,
+    "temperature": 33.71,
+    "humidity": 62.37,
+    "pressure": 1010.64,
+    "wind_speed": 2.69,
+    "wind_direction": 255,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.04
   },
   {
     "created_at": "2026-08-27 16:00:00+07:00",
@@ -1996,6 +3991,21 @@
   },
   {
     "created_at": "2026-08-27 16:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 30.68,
+    "pm10": 51.86,
+    "voc_index": 152,
+    "temperature": 33.47,
+    "humidity": 59.3,
+    "pressure": 1010.6,
+    "wind_speed": 1.96,
+    "wind_direction": 222,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.05
+  },
+  {
+    "created_at": "2026-08-27 16:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 29.23,
     "pm10": 45.4,
@@ -2008,6 +4018,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.02
+  },
+  {
+    "created_at": "2026-08-27 16:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 39.56,
+    "pm10": 69.73,
+    "voc_index": 161,
+    "temperature": 33.98,
+    "humidity": 62.44,
+    "pressure": 1011.03,
+    "wind_speed": 2.01,
+    "wind_direction": 250,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.05
   },
   {
     "created_at": "2026-08-27 16:20:00+07:00",
@@ -2026,6 +4051,21 @@
   },
   {
     "created_at": "2026-08-27 16:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 33.89,
+    "pm10": 58.54,
+    "voc_index": 171,
+    "temperature": 33.67,
+    "humidity": 64.28,
+    "pressure": 1010.64,
+    "wind_speed": 2.05,
+    "wind_direction": 219,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.05
+  },
+  {
+    "created_at": "2026-08-27 16:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 33.24,
     "pm10": 51.91,
@@ -2038,6 +4078,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.02
+  },
+  {
+    "created_at": "2026-08-27 16:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.18,
+    "pm10": 66.82,
+    "voc_index": 190,
+    "temperature": 32.43,
+    "humidity": 58.29,
+    "pressure": 1010.9,
+    "wind_speed": 1.22,
+    "wind_direction": 239,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.06
   },
   {
     "created_at": "2026-08-27 16:40:00+07:00",
@@ -2056,6 +4111,21 @@
   },
   {
     "created_at": "2026-08-27 16:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.09,
+    "pm10": 77.8,
+    "voc_index": 185,
+    "temperature": 33.6,
+    "humidity": 62.6,
+    "pressure": 1010.19,
+    "wind_speed": 1.39,
+    "wind_direction": 238,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.04
+  },
+  {
+    "created_at": "2026-08-27 16:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 45.46,
     "pm10": 72.11,
@@ -2068,6 +4138,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.01
+  },
+  {
+    "created_at": "2026-08-27 17:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.84,
+    "pm10": 78.05,
+    "voc_index": 218,
+    "temperature": 33.86,
+    "humidity": 67.67,
+    "pressure": 1010.69,
+    "wind_speed": 2.51,
+    "wind_direction": 244,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.06
   },
   {
     "created_at": "2026-08-27 17:00:00+07:00",
@@ -2086,6 +4171,21 @@
   },
   {
     "created_at": "2026-08-27 17:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.64,
+    "pm10": 71.18,
+    "voc_index": 192,
+    "temperature": 32.89,
+    "humidity": 60.0,
+    "pressure": 1010.35,
+    "wind_speed": 2.02,
+    "wind_direction": 254,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 17:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.43,
     "pm10": 69.96,
@@ -2098,6 +4198,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.01
+  },
+  {
+    "created_at": "2026-08-27 17:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.03,
+    "pm10": 78.58,
+    "voc_index": 225,
+    "temperature": 33.21,
+    "humidity": 59.88,
+    "pressure": 1010.52,
+    "wind_speed": 2.14,
+    "wind_direction": 232,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.05
   },
   {
     "created_at": "2026-08-27 17:20:00+07:00",
@@ -2116,6 +4231,21 @@
   },
   {
     "created_at": "2026-08-27 17:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 56.96,
+    "pm10": 81.36,
+    "voc_index": 224,
+    "temperature": 32.65,
+    "humidity": 65.46,
+    "pressure": 1010.38,
+    "wind_speed": 1.72,
+    "wind_direction": 239,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 17:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 48.81,
     "pm10": 77.76,
@@ -2128,6 +4258,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.01
+  },
+  {
+    "created_at": "2026-08-27 17:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 52.77,
+    "pm10": 80.44,
+    "voc_index": 203,
+    "temperature": 32.77,
+    "humidity": 63.69,
+    "pressure": 1010.5,
+    "wind_speed": 1.88,
+    "wind_direction": 205,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.04
   },
   {
     "created_at": "2026-08-27 17:40:00+07:00",
@@ -2146,6 +4291,21 @@
   },
   {
     "created_at": "2026-08-27 17:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.99,
+    "pm10": 70.8,
+    "voc_index": 217,
+    "temperature": 32.58,
+    "humidity": 67.41,
+    "pressure": 1010.61,
+    "wind_speed": 2.18,
+    "wind_direction": 249,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.05
+  },
+  {
+    "created_at": "2026-08-27 17:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.91,
     "pm10": 66.4,
@@ -2158,6 +4318,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.02
+  },
+  {
+    "created_at": "2026-08-27 18:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.63,
+    "pm10": 73.0,
+    "voc_index": 184,
+    "temperature": 32.48,
+    "humidity": 67.84,
+    "pressure": 1010.07,
+    "wind_speed": 2.34,
+    "wind_direction": 196,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.06
   },
   {
     "created_at": "2026-08-27 18:00:00+07:00",
@@ -2176,6 +4351,21 @@
   },
   {
     "created_at": "2026-08-27 18:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.94,
+    "pm10": 73.96,
+    "voc_index": 190,
+    "temperature": 31.7,
+    "humidity": 66.1,
+    "pressure": 1010.6,
+    "wind_speed": 2.04,
+    "wind_direction": 224,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.04
+  },
+  {
+    "created_at": "2026-08-27 18:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.85,
     "pm10": 69.28,
@@ -2188,6 +4378,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-27 18:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.23,
+    "pm10": 81.13,
+    "voc_index": 197,
+    "temperature": 32.21,
+    "humidity": 70.84,
+    "pressure": 1010.69,
+    "wind_speed": 1.87,
+    "wind_direction": 239,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.03
   },
   {
     "created_at": "2026-08-27 18:20:00+07:00",
@@ -2206,6 +4411,21 @@
   },
   {
     "created_at": "2026-08-27 18:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 43.9,
+    "pm10": 67.97,
+    "voc_index": 171,
+    "temperature": 31.71,
+    "humidity": 68.34,
+    "pressure": 1010.73,
+    "wind_speed": 1.51,
+    "wind_direction": 263,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.05
+  },
+  {
+    "created_at": "2026-08-27 18:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 38.49,
     "pm10": 61.48,
@@ -2218,6 +4438,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.01
+  },
+  {
+    "created_at": "2026-08-27 18:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 36.18,
+    "pm10": 61.64,
+    "voc_index": 152,
+    "temperature": 31.5,
+    "humidity": 65.77,
+    "pressure": 1010.16,
+    "wind_speed": 2.1,
+    "wind_direction": 219,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.04
   },
   {
     "created_at": "2026-08-27 18:40:00+07:00",
@@ -2236,6 +4471,21 @@
   },
   {
     "created_at": "2026-08-27 18:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 34.98,
+    "pm10": 54.06,
+    "voc_index": 142,
+    "temperature": 31.52,
+    "humidity": 68.77,
+    "pressure": 1010.69,
+    "wind_speed": 2.34,
+    "wind_direction": 266,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.04
+  },
+  {
+    "created_at": "2026-08-27 18:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 31.07,
     "pm10": 47.37,
@@ -2248,6 +4498,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.01
+  },
+  {
+    "created_at": "2026-08-27 19:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 30.21,
+    "pm10": 54.06,
+    "voc_index": 159,
+    "temperature": 31.34,
+    "humidity": 71.51,
+    "pressure": 1010.17,
+    "wind_speed": 2.02,
+    "wind_direction": 263,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.04
   },
   {
     "created_at": "2026-08-27 19:00:00+07:00",
@@ -2266,6 +4531,21 @@
   },
   {
     "created_at": "2026-08-27 19:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 32.12,
+    "pm10": 58.94,
+    "voc_index": 144,
+    "temperature": 31.38,
+    "humidity": 69.42,
+    "pressure": 1010.8,
+    "wind_speed": 1.48,
+    "wind_direction": 243,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.04
+  },
+  {
+    "created_at": "2026-08-27 19:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 29.83,
     "pm10": 48.3,
@@ -2277,6 +4557,21 @@
     "wind_direction": 238,
     "latitude": -0.058312,
     "longitude": 109.349821,
+    "battery_volt": 4.01
+  },
+  {
+    "created_at": "2026-08-27 19:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 24.56,
+    "pm10": 47.04,
+    "voc_index": 140,
+    "temperature": 31.03,
+    "humidity": 69.28,
+    "pressure": 1010.75,
+    "wind_speed": 2.14,
+    "wind_direction": 224,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
     "battery_volt": 4.01
   },
   {
@@ -2296,6 +4591,21 @@
   },
   {
     "created_at": "2026-08-27 19:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 33.15,
+    "pm10": 42.43,
+    "voc_index": 115,
+    "temperature": 31.72,
+    "humidity": 69.93,
+    "pressure": 1010.27,
+    "wind_speed": 2.02,
+    "wind_direction": 271,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 19:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 22.84,
     "pm10": 38.32,
@@ -2308,6 +4618,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-27 19:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 35.57,
+    "pm10": 51.96,
+    "voc_index": 129,
+    "temperature": 31.24,
+    "humidity": 71.64,
+    "pressure": 1010.64,
+    "wind_speed": 0.4,
+    "wind_direction": 47,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.03
   },
   {
     "created_at": "2026-08-27 19:40:00+07:00",
@@ -2326,6 +4651,21 @@
   },
   {
     "created_at": "2026-08-27 19:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 29.92,
+    "pm10": 46.72,
+    "voc_index": 99,
+    "temperature": 30.49,
+    "humidity": 73.09,
+    "pressure": 1010.62,
+    "wind_speed": 0.36,
+    "wind_direction": 91,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.02
+  },
+  {
+    "created_at": "2026-08-27 19:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 28.17,
     "pm10": 42.35,
@@ -2338,6 +4678,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-27 20:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 28.71,
+    "pm10": 49.89,
+    "voc_index": 111,
+    "temperature": 29.84,
+    "humidity": 77.12,
+    "pressure": 1010.67,
+    "wind_speed": 0.43,
+    "wind_direction": 212,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
   },
   {
     "created_at": "2026-08-27 20:00:00+07:00",
@@ -2356,6 +4711,21 @@
   },
   {
     "created_at": "2026-08-27 20:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 31.43,
+    "pm10": 49.64,
+    "voc_index": 110,
+    "temperature": 29.89,
+    "humidity": 73.91,
+    "pressure": 1011.16,
+    "wind_speed": 0.43,
+    "wind_direction": 119,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 20:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 26.31,
     "pm10": 44.33,
@@ -2368,6 +4738,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-27 20:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 30.57,
+    "pm10": 43.63,
+    "voc_index": 106,
+    "temperature": 29.79,
+    "humidity": 73.1,
+    "pressure": 1010.5,
+    "wind_speed": 0.28,
+    "wind_direction": 152,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.02
   },
   {
     "created_at": "2026-08-27 20:20:00+07:00",
@@ -2386,6 +4771,21 @@
   },
   {
     "created_at": "2026-08-27 20:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 23.89,
+    "pm10": 38.76,
+    "voc_index": 91,
+    "temperature": 29.8,
+    "humidity": 72.07,
+    "pressure": 1011.25,
+    "wind_speed": 0.66,
+    "wind_direction": 135,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.02
+  },
+  {
+    "created_at": "2026-08-27 20:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 22.26,
     "pm10": 34.83,
@@ -2398,6 +4798,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.99
+  },
+  {
+    "created_at": "2026-08-27 20:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 28.46,
+    "pm10": 46.55,
+    "voc_index": 80,
+    "temperature": 29.71,
+    "humidity": 73.38,
+    "pressure": 1011.19,
+    "wind_speed": 1.12,
+    "wind_direction": 74,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.02
   },
   {
     "created_at": "2026-08-27 20:40:00+07:00",
@@ -2416,6 +4831,21 @@
   },
   {
     "created_at": "2026-08-27 20:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 28.04,
+    "pm10": 45.76,
+    "voc_index": 99,
+    "temperature": 29.79,
+    "humidity": 80.05,
+    "pressure": 1011.11,
+    "wind_speed": 0.42,
+    "wind_direction": 72,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.02
+  },
+  {
+    "created_at": "2026-08-27 20:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 23.93,
     "pm10": 38.86,
@@ -2428,6 +4858,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-27 21:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 26.95,
+    "pm10": 38.22,
+    "voc_index": 94,
+    "temperature": 29.16,
+    "humidity": 81.41,
+    "pressure": 1011.51,
+    "wind_speed": 0.58,
+    "wind_direction": 157,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.02
   },
   {
     "created_at": "2026-08-27 21:00:00+07:00",
@@ -2446,6 +4891,21 @@
   },
   {
     "created_at": "2026-08-27 21:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 21.96,
+    "pm10": 39.97,
+    "voc_index": 92,
+    "temperature": 29.09,
+    "humidity": 80.25,
+    "pressure": 1011.48,
+    "wind_speed": 0.92,
+    "wind_direction": 120,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.04
+  },
+  {
+    "created_at": "2026-08-27 21:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 20.8,
     "pm10": 33.01,
@@ -2458,6 +4918,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.99
+  },
+  {
+    "created_at": "2026-08-27 21:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 25.92,
+    "pm10": 39.52,
+    "voc_index": 84,
+    "temperature": 27.62,
+    "humidity": 77.89,
+    "pressure": 1011.43,
+    "wind_speed": 0.72,
+    "wind_direction": 96,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.02
   },
   {
     "created_at": "2026-08-27 21:20:00+07:00",
@@ -2476,6 +4951,21 @@
   },
   {
     "created_at": "2026-08-27 21:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 29.19,
+    "pm10": 33.33,
+    "voc_index": 117,
+    "temperature": 27.77,
+    "humidity": 82.95,
+    "pressure": 1011.91,
+    "wind_speed": 0.4,
+    "wind_direction": 185,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.04
+  },
+  {
+    "created_at": "2026-08-27 21:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 22.95,
     "pm10": 33.63,
@@ -2488,6 +4978,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.99
+  },
+  {
+    "created_at": "2026-08-27 21:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 33.16,
+    "pm10": 42.75,
+    "voc_index": 120,
+    "temperature": 28.49,
+    "humidity": 78.69,
+    "pressure": 1012.02,
+    "wind_speed": 0,
+    "wind_direction": 14,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.03
   },
   {
     "created_at": "2026-08-27 21:40:00+07:00",
@@ -2506,6 +5011,21 @@
   },
   {
     "created_at": "2026-08-27 21:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 28.66,
+    "pm10": 40.25,
+    "voc_index": 100,
+    "temperature": 28.51,
+    "humidity": 85.5,
+    "pressure": 1012.07,
+    "wind_speed": 0.64,
+    "wind_direction": 122,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.03
+  },
+  {
+    "created_at": "2026-08-27 21:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 22.86,
     "pm10": 35.58,
@@ -2518,6 +5038,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-27 22:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 25.13,
+    "pm10": 35.94,
+    "voc_index": 87,
+    "temperature": 27.79,
+    "humidity": 82.45,
+    "pressure": 1011.89,
+    "wind_speed": 0.63,
+    "wind_direction": 135,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
   },
   {
     "created_at": "2026-08-27 22:00:00+07:00",
@@ -2536,6 +5071,21 @@
   },
   {
     "created_at": "2026-08-27 22:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.98,
+    "pm10": 68.48,
+    "voc_index": 160,
+    "temperature": 27.05,
+    "humidity": 85.47,
+    "pressure": 1012.18,
+    "wind_speed": 0.75,
+    "wind_direction": 76,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
+  },
+  {
+    "created_at": "2026-08-27 22:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.7,
     "pm10": 62.47,
@@ -2548,6 +5098,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-27 22:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.18,
+    "pm10": 81.28,
+    "voc_index": 173,
+    "temperature": 27.04,
+    "humidity": 87.0,
+    "pressure": 1012.04,
+    "wind_speed": 0.86,
+    "wind_direction": 198,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
   },
   {
     "created_at": "2026-08-27 22:20:00+07:00",
@@ -2566,6 +5131,21 @@
   },
   {
     "created_at": "2026-08-27 22:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.64,
+    "pm10": 85.04,
+    "voc_index": 170,
+    "temperature": 26.85,
+    "humidity": 86.21,
+    "pressure": 1012.23,
+    "wind_speed": 0.32,
+    "wind_direction": 263,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.02
+  },
+  {
+    "created_at": "2026-08-27 22:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 44.47,
     "pm10": 76.03,
@@ -2578,6 +5158,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-27 22:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.87,
+    "pm10": 74.01,
+    "voc_index": 167,
+    "temperature": 26.29,
+    "humidity": 86.4,
+    "pressure": 1012.47,
+    "wind_speed": 1.19,
+    "wind_direction": 166,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
   },
   {
     "created_at": "2026-08-27 22:40:00+07:00",
@@ -2596,6 +5191,21 @@
   },
   {
     "created_at": "2026-08-27 22:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.63,
+    "pm10": 70.3,
+    "voc_index": 173,
+    "temperature": 25.96,
+    "humidity": 88.03,
+    "pressure": 1012.38,
+    "wind_speed": 0.8,
+    "wind_direction": 77,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.02
+  },
+  {
+    "created_at": "2026-08-27 22:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.0,
     "pm10": 67.73,
@@ -2608,6 +5218,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.97
+  },
+  {
+    "created_at": "2026-08-27 23:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.01,
+    "pm10": 68.58,
+    "voc_index": 167,
+    "temperature": 25.63,
+    "humidity": 92.3,
+    "pressure": 1012.45,
+    "wind_speed": 0.4,
+    "wind_direction": 220,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
   },
   {
     "created_at": "2026-08-27 23:00:00+07:00",
@@ -2626,6 +5251,21 @@
   },
   {
     "created_at": "2026-08-27 23:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 55.23,
+    "pm10": 79.07,
+    "voc_index": 164,
+    "temperature": 26.45,
+    "humidity": 94.51,
+    "pressure": 1012.18,
+    "wind_speed": 0.54,
+    "wind_direction": 96,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
+  },
+  {
+    "created_at": "2026-08-27 23:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 46.02,
     "pm10": 71.17,
@@ -2638,6 +5278,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-27 23:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.64,
+    "pm10": 81.81,
+    "voc_index": 160,
+    "temperature": 26.35,
+    "humidity": 87.62,
+    "pressure": 1012.98,
+    "wind_speed": 0.71,
+    "wind_direction": 121,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
   },
   {
     "created_at": "2026-08-27 23:20:00+07:00",
@@ -2656,6 +5311,21 @@
   },
   {
     "created_at": "2026-08-27 23:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.11,
+    "pm10": 69.28,
+    "voc_index": 173,
+    "temperature": 25.6,
+    "humidity": 92.48,
+    "pressure": 1012.48,
+    "wind_speed": 0.88,
+    "wind_direction": 198,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-27 23:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.78,
     "pm10": 64.44,
@@ -2668,6 +5338,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.97
+  },
+  {
+    "created_at": "2026-08-27 23:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.55,
+    "pm10": 69.03,
+    "voc_index": 153,
+    "temperature": 25.43,
+    "humidity": 88.57,
+    "pressure": 1012.84,
+    "wind_speed": 0.86,
+    "wind_direction": 125,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
   },
   {
     "created_at": "2026-08-27 23:40:00+07:00",
@@ -2686,6 +5371,21 @@
   },
   {
     "created_at": "2026-08-27 23:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 44.37,
+    "pm10": 70.68,
+    "voc_index": 153,
+    "temperature": 24.46,
+    "humidity": 93.55,
+    "pressure": 1012.75,
+    "wind_speed": 0.71,
+    "wind_direction": 162,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
+  },
+  {
+    "created_at": "2026-08-27 23:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.29,
     "pm10": 67.34,
@@ -2698,6 +5398,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.97
+  },
+  {
+    "created_at": "2026-08-28 00:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.37,
+    "pm10": 73.9,
+    "voc_index": 176,
+    "temperature": 24.78,
+    "humidity": 93.62,
+    "pressure": 1012.45,
+    "wind_speed": 0.23,
+    "wind_direction": 135,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
   },
   {
     "created_at": "2026-08-28 00:00:00+07:00",
@@ -2716,6 +5431,21 @@
   },
   {
     "created_at": "2026-08-28 00:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 54.51,
+    "pm10": 77.4,
+    "voc_index": 193,
+    "temperature": 25.23,
+    "humidity": 90.02,
+    "pressure": 1012.76,
+    "wind_speed": 0.31,
+    "wind_direction": 103,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-28 00:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 46.11,
     "pm10": 72.41,
@@ -2728,6 +5458,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.96
+  },
+  {
+    "created_at": "2026-08-28 00:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.49,
+    "pm10": 77.78,
+    "voc_index": 180,
+    "temperature": 25.05,
+    "humidity": 95.17,
+    "pressure": 1012.89,
+    "wind_speed": 0.63,
+    "wind_direction": 169,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
   },
   {
     "created_at": "2026-08-28 00:20:00+07:00",
@@ -2746,6 +5491,21 @@
   },
   {
     "created_at": "2026-08-28 00:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 52.71,
+    "pm10": 72.6,
+    "voc_index": 170,
+    "temperature": 24.3,
+    "humidity": 94.76,
+    "pressure": 1012.95,
+    "wind_speed": 0.58,
+    "wind_direction": 105,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
+  },
+  {
+    "created_at": "2026-08-28 00:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.12,
     "pm10": 64.46,
@@ -2758,6 +5518,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.97
+  },
+  {
+    "created_at": "2026-08-28 00:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.45,
+    "pm10": 71.5,
+    "voc_index": 175,
+    "temperature": 24.08,
+    "humidity": 97.82,
+    "pressure": 1012.63,
+    "wind_speed": 0.51,
+    "wind_direction": 219,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.99
   },
   {
     "created_at": "2026-08-28 00:40:00+07:00",
@@ -2776,6 +5551,21 @@
   },
   {
     "created_at": "2026-08-28 00:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.99,
+    "pm10": 73.45,
+    "voc_index": 170,
+    "temperature": 23.41,
+    "humidity": 92.92,
+    "pressure": 1012.45,
+    "wind_speed": 0.99,
+    "wind_direction": 98,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-28 00:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.52,
     "pm10": 68.8,
@@ -2788,6 +5578,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.97
+  },
+  {
+    "created_at": "2026-08-28 01:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.92,
+    "pm10": 72.73,
+    "voc_index": 160,
+    "temperature": 24.42,
+    "humidity": 94.7,
+    "pressure": 1012.27,
+    "wind_speed": 0.26,
+    "wind_direction": 143,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.99
   },
   {
     "created_at": "2026-08-28 01:00:00+07:00",
@@ -2806,6 +5611,21 @@
   },
   {
     "created_at": "2026-08-28 01:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 57.51,
+    "pm10": 79.24,
+    "voc_index": 159,
+    "temperature": 24.89,
+    "humidity": 94.8,
+    "pressure": 1012.66,
+    "wind_speed": 0,
+    "wind_direction": 175,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-28 01:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 45.69,
     "pm10": 72.86,
@@ -2818,6 +5638,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.96
+  },
+  {
+    "created_at": "2026-08-28 01:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 50.35,
+    "pm10": 79.55,
+    "voc_index": 163,
+    "temperature": 23.89,
+    "humidity": 97.52,
+    "pressure": 1012.76,
+    "wind_speed": 0.43,
+    "wind_direction": 128,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
   },
   {
     "created_at": "2026-08-28 01:20:00+07:00",
@@ -2836,6 +5671,21 @@
   },
   {
     "created_at": "2026-08-28 01:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.71,
+    "pm10": 74.51,
+    "voc_index": 185,
+    "temperature": 24.11,
+    "humidity": 100,
+    "pressure": 1012.4,
+    "wind_speed": 0.28,
+    "wind_direction": 143,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-28 01:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.83,
     "pm10": 69.83,
@@ -2848,6 +5698,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 01:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.51,
+    "pm10": 73.47,
+    "voc_index": 166,
+    "temperature": 24.17,
+    "humidity": 94.77,
+    "pressure": 1012.67,
+    "wind_speed": 0.58,
+    "wind_direction": 65,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.01
   },
   {
     "created_at": "2026-08-28 01:40:00+07:00",
@@ -2866,6 +5731,21 @@
   },
   {
     "created_at": "2026-08-28 01:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 43.9,
+    "pm10": 70.68,
+    "voc_index": 161,
+    "temperature": 22.91,
+    "humidity": 96.77,
+    "pressure": 1012.14,
+    "wind_speed": 0.15,
+    "wind_direction": 141,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.99
+  },
+  {
+    "created_at": "2026-08-28 01:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.86,
     "pm10": 64.47,
@@ -2878,6 +5758,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.96
+  },
+  {
+    "created_at": "2026-08-28 02:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.98,
+    "pm10": 78.91,
+    "voc_index": 169,
+    "temperature": 23.64,
+    "humidity": 97.67,
+    "pressure": 1012.04,
+    "wind_speed": 0.5,
+    "wind_direction": 178,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.99
   },
   {
     "created_at": "2026-08-28 02:00:00+07:00",
@@ -2896,6 +5791,21 @@
   },
   {
     "created_at": "2026-08-28 02:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 52.11,
+    "pm10": 87.4,
+    "voc_index": 180,
+    "temperature": 24.01,
+    "humidity": 98.65,
+    "pressure": 1011.69,
+    "wind_speed": 0.46,
+    "wind_direction": 173,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-28 02:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 46.73,
     "pm10": 77.08,
@@ -2908,6 +5818,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.94
+  },
+  {
+    "created_at": "2026-08-28 02:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.7,
+    "pm10": 75.4,
+    "voc_index": 183,
+    "temperature": 23.67,
+    "humidity": 95.53,
+    "pressure": 1012.27,
+    "wind_speed": 0.7,
+    "wind_direction": 104,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
   },
   {
     "created_at": "2026-08-28 02:20:00+07:00",
@@ -2926,6 +5851,21 @@
   },
   {
     "created_at": "2026-08-28 02:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.63,
+    "pm10": 69.36,
+    "voc_index": 179,
+    "temperature": 23.81,
+    "humidity": 93.52,
+    "pressure": 1011.69,
+    "wind_speed": 0.37,
+    "wind_direction": 90,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-28 02:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 42.23,
     "pm10": 64.58,
@@ -2938,6 +5878,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.96
+  },
+  {
+    "created_at": "2026-08-28 02:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.73,
+    "pm10": 83.94,
+    "voc_index": 171,
+    "temperature": 24.17,
+    "humidity": 95.6,
+    "pressure": 1011.54,
+    "wind_speed": 0.51,
+    "wind_direction": 126,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
   },
   {
     "created_at": "2026-08-28 02:40:00+07:00",
@@ -2956,6 +5911,21 @@
   },
   {
     "created_at": "2026-08-28 02:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.94,
+    "pm10": 83.54,
+    "voc_index": 155,
+    "temperature": 23.91,
+    "humidity": 98.11,
+    "pressure": 1011.3,
+    "wind_speed": 0.57,
+    "wind_direction": 105,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 4.0
+  },
+  {
+    "created_at": "2026-08-28 02:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.89,
     "pm10": 71.03,
@@ -2968,6 +5938,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.94
+  },
+  {
+    "created_at": "2026-08-28 03:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.19,
+    "pm10": 68.42,
+    "voc_index": 177,
+    "temperature": 23.38,
+    "humidity": 95.87,
+    "pressure": 1011.43,
+    "wind_speed": 0.53,
+    "wind_direction": 208,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.99
   },
   {
     "created_at": "2026-08-28 03:00:00+07:00",
@@ -2986,6 +5971,21 @@
   },
   {
     "created_at": "2026-08-28 03:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 47.26,
+    "pm10": 67.51,
+    "voc_index": 162,
+    "temperature": 23.45,
+    "humidity": 95.87,
+    "pressure": 1011.43,
+    "wind_speed": 0.51,
+    "wind_direction": 157,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-28 03:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.81,
     "pm10": 68.4,
@@ -2998,6 +5998,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.94
+  },
+  {
+    "created_at": "2026-08-28 03:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.1,
+    "pm10": 83.66,
+    "voc_index": 178,
+    "temperature": 23.28,
+    "humidity": 96.79,
+    "pressure": 1011.05,
+    "wind_speed": 0.41,
+    "wind_direction": 234,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.99
   },
   {
     "created_at": "2026-08-28 03:20:00+07:00",
@@ -3016,6 +6031,21 @@
   },
   {
     "created_at": "2026-08-28 03:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.37,
+    "pm10": 63.96,
+    "voc_index": 180,
+    "temperature": 24.31,
+    "humidity": 95.27,
+    "pressure": 1011.41,
+    "wind_speed": 1.38,
+    "wind_direction": 167,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.99
+  },
+  {
+    "created_at": "2026-08-28 03:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.63,
     "pm10": 64.1,
@@ -3028,6 +6058,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 03:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.91,
+    "pm10": 79.26,
+    "voc_index": 154,
+    "temperature": 23.36,
+    "humidity": 96.13,
+    "pressure": 1010.62,
+    "wind_speed": 0.85,
+    "wind_direction": 165,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.99
   },
   {
     "created_at": "2026-08-28 03:40:00+07:00",
@@ -3046,6 +6091,21 @@
   },
   {
     "created_at": "2026-08-28 03:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 44.9,
+    "pm10": 82.23,
+    "voc_index": 152,
+    "temperature": 23.0,
+    "humidity": 98.55,
+    "pressure": 1011.6,
+    "wind_speed": 0.57,
+    "wind_direction": 62,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-28 03:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 40.62,
     "pm10": 65.45,
@@ -3058,6 +6118,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.94
+  },
+  {
+    "created_at": "2026-08-28 04:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 50.4,
+    "pm10": 77.49,
+    "voc_index": 201,
+    "temperature": 24.4,
+    "humidity": 95.58,
+    "pressure": 1011.15,
+    "wind_speed": 0.47,
+    "wind_direction": 121,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.96
   },
   {
     "created_at": "2026-08-28 04:00:00+07:00",
@@ -3076,6 +6151,21 @@
   },
   {
     "created_at": "2026-08-28 04:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.25,
+    "pm10": 68.76,
+    "voc_index": 167,
+    "temperature": 24.34,
+    "humidity": 97.85,
+    "pressure": 1010.47,
+    "wind_speed": 0.98,
+    "wind_direction": 85,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-28 04:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 41.55,
     "pm10": 64.43,
@@ -3088,6 +6178,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 04:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.59,
+    "pm10": 70.04,
+    "voc_index": 182,
+    "temperature": 23.65,
+    "humidity": 99.9,
+    "pressure": 1010.41,
+    "wind_speed": 0.73,
+    "wind_direction": 99,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.98
   },
   {
     "created_at": "2026-08-28 04:20:00+07:00",
@@ -3106,6 +6211,21 @@
   },
   {
     "created_at": "2026-08-28 04:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.42,
+    "pm10": 73.78,
+    "voc_index": 172,
+    "temperature": 24.12,
+    "humidity": 98.49,
+    "pressure": 1010.56,
+    "wind_speed": 0.68,
+    "wind_direction": 162,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-28 04:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 44.31,
     "pm10": 66.39,
@@ -3118,6 +6238,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 04:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 49.11,
+    "pm10": 85.94,
+    "voc_index": 182,
+    "temperature": 24.11,
+    "humidity": 95.64,
+    "pressure": 1010.32,
+    "wind_speed": 0.59,
+    "wind_direction": 78,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
   },
   {
     "created_at": "2026-08-28 04:40:00+07:00",
@@ -3136,6 +6271,21 @@
   },
   {
     "created_at": "2026-08-28 04:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 53.85,
+    "pm10": 83.41,
+    "voc_index": 166,
+    "temperature": 24.48,
+    "humidity": 97.38,
+    "pressure": 1010.62,
+    "wind_speed": 0.2,
+    "wind_direction": 186,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-28 04:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 46.75,
     "pm10": 72.17,
@@ -3148,6 +6298,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.94
+  },
+  {
+    "created_at": "2026-08-28 05:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 53.95,
+    "pm10": 86.87,
+    "voc_index": 183,
+    "temperature": 23.76,
+    "humidity": 93.56,
+    "pressure": 1010.3,
+    "wind_speed": 0,
+    "wind_direction": 198,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.98
   },
   {
     "created_at": "2026-08-28 05:00:00+07:00",
@@ -3166,6 +6331,21 @@
   },
   {
     "created_at": "2026-08-28 05:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.18,
+    "pm10": 84.28,
+    "voc_index": 195,
+    "temperature": 24.62,
+    "humidity": 92.61,
+    "pressure": 1010.2,
+    "wind_speed": 0.59,
+    "wind_direction": 58,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
+  },
+  {
+    "created_at": "2026-08-28 05:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 46.74,
     "pm10": 76.81,
@@ -3178,6 +6358,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.93
+  },
+  {
+    "created_at": "2026-08-28 05:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 53.13,
+    "pm10": 84.81,
+    "voc_index": 178,
+    "temperature": 23.93,
+    "humidity": 95.9,
+    "pressure": 1010.19,
+    "wind_speed": 0.45,
+    "wind_direction": 114,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.98
   },
   {
     "created_at": "2026-08-28 05:20:00+07:00",
@@ -3196,6 +6391,21 @@
   },
   {
     "created_at": "2026-08-28 05:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 35.67,
+    "pm10": 55.88,
+    "voc_index": 122,
+    "temperature": 24.32,
+    "humidity": 90.36,
+    "pressure": 1009.96,
+    "wind_speed": 0.3,
+    "wind_direction": 269,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
+  },
+  {
+    "created_at": "2026-08-28 05:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 28.9,
     "pm10": 47.16,
@@ -3208,6 +6418,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.93
+  },
+  {
+    "created_at": "2026-08-28 05:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 36.74,
+    "pm10": 54.21,
+    "voc_index": 104,
+    "temperature": 25.01,
+    "humidity": 93.71,
+    "pressure": 1010.41,
+    "wind_speed": 0.57,
+    "wind_direction": 102,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.96
   },
   {
     "created_at": "2026-08-28 05:40:00+07:00",
@@ -3226,6 +6451,21 @@
   },
   {
     "created_at": "2026-08-28 05:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 40.4,
+    "pm10": 60.92,
+    "voc_index": 133,
+    "temperature": 25.0,
+    "humidity": 91.18,
+    "pressure": 1009.79,
+    "wind_speed": 0.55,
+    "wind_direction": 58,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
+  },
+  {
+    "created_at": "2026-08-28 05:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 33.28,
     "pm10": 53.96,
@@ -3238,6 +6478,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.93
+  },
+  {
+    "created_at": "2026-08-28 06:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 36.43,
+    "pm10": 50.45,
+    "voc_index": 160,
+    "temperature": 24.6,
+    "humidity": 95.81,
+    "pressure": 1009.79,
+    "wind_speed": 0.75,
+    "wind_direction": 227,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
   },
   {
     "created_at": "2026-08-28 06:00:00+07:00",
@@ -3256,6 +6511,21 @@
   },
   {
     "created_at": "2026-08-28 06:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 40.21,
+    "pm10": 66.35,
+    "voc_index": 152,
+    "temperature": 25.44,
+    "humidity": 92.61,
+    "pressure": 1010.32,
+    "wind_speed": 1.08,
+    "wind_direction": 141,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.96
+  },
+  {
+    "created_at": "2026-08-28 06:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 37.55,
     "pm10": 61.81,
@@ -3268,6 +6538,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.92
+  },
+  {
+    "created_at": "2026-08-28 06:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 41.8,
+    "pm10": 63.25,
+    "voc_index": 171,
+    "temperature": 24.54,
+    "humidity": 85.99,
+    "pressure": 1010.1,
+    "wind_speed": 1.84,
+    "wind_direction": 150,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
   },
   {
     "created_at": "2026-08-28 06:20:00+07:00",
@@ -3286,6 +6571,21 @@
   },
   {
     "created_at": "2026-08-28 06:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 53.44,
+    "pm10": 75.13,
+    "voc_index": 184,
+    "temperature": 25.67,
+    "humidity": 90.13,
+    "pressure": 1010.1,
+    "wind_speed": 0.8,
+    "wind_direction": 222,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
+  },
+  {
+    "created_at": "2026-08-28 06:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.17,
     "pm10": 68.59,
@@ -3298,6 +6598,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.92
+  },
+  {
+    "created_at": "2026-08-28 06:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.68,
+    "pm10": 75.92,
+    "voc_index": 185,
+    "temperature": 25.68,
+    "humidity": 91.65,
+    "pressure": 1010.31,
+    "wind_speed": 1.89,
+    "wind_direction": 161,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.96
   },
   {
     "created_at": "2026-08-28 06:40:00+07:00",
@@ -3316,6 +6631,21 @@
   },
   {
     "created_at": "2026-08-28 06:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 60.39,
+    "pm10": 94.7,
+    "voc_index": 213,
+    "temperature": 25.86,
+    "humidity": 94.2,
+    "pressure": 1010.52,
+    "wind_speed": 0.63,
+    "wind_direction": 166,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 06:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 50.26,
     "pm10": 83.11,
@@ -3328,6 +6658,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.92
+  },
+  {
+    "created_at": "2026-08-28 07:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 56.37,
+    "pm10": 91.36,
+    "voc_index": 222,
+    "temperature": 26.11,
+    "humidity": 87.06,
+    "pressure": 1010.47,
+    "wind_speed": 1.77,
+    "wind_direction": 188,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
   },
   {
     "created_at": "2026-08-28 07:00:00+07:00",
@@ -3346,6 +6691,21 @@
   },
   {
     "created_at": "2026-08-28 07:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 57.5,
+    "pm10": 88.91,
+    "voc_index": 209,
+    "temperature": 25.21,
+    "humidity": 86.47,
+    "pressure": 1010.79,
+    "wind_speed": 1.03,
+    "wind_direction": 195,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.96
+  },
+  {
+    "created_at": "2026-08-28 07:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 54.29,
     "pm10": 83.58,
@@ -3358,6 +6718,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.93
+  },
+  {
+    "created_at": "2026-08-28 07:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 62.32,
+    "pm10": 97.59,
+    "voc_index": 217,
+    "temperature": 27.32,
+    "humidity": 84.53,
+    "pressure": 1010.67,
+    "wind_speed": 0.84,
+    "wind_direction": 186,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.96
   },
   {
     "created_at": "2026-08-28 07:20:00+07:00",
@@ -3376,6 +6751,21 @@
   },
   {
     "created_at": "2026-08-28 07:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 60.01,
+    "pm10": 91.99,
+    "voc_index": 214,
+    "temperature": 26.51,
+    "humidity": 84.33,
+    "pressure": 1010.5,
+    "wind_speed": 1.24,
+    "wind_direction": 172,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.98
+  },
+  {
+    "created_at": "2026-08-28 07:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 57.69,
     "pm10": 91.8,
@@ -3388,6 +6778,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 07:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 59.67,
+    "pm10": 97.77,
+    "voc_index": 221,
+    "temperature": 27.15,
+    "humidity": 84.51,
+    "pressure": 1011.02,
+    "wind_speed": 1.39,
+    "wind_direction": 154,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
   },
   {
     "created_at": "2026-08-28 07:40:00+07:00",
@@ -3406,6 +6811,21 @@
   },
   {
     "created_at": "2026-08-28 07:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 60.1,
+    "pm10": 86.34,
+    "voc_index": 212,
+    "temperature": 26.88,
+    "humidity": 84.21,
+    "pressure": 1010.51,
+    "wind_speed": 2.54,
+    "wind_direction": 227,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
+  },
+  {
+    "created_at": "2026-08-28 07:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 50.74,
     "pm10": 79.48,
@@ -3418,6 +6838,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 08:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 59.36,
+    "pm10": 92.02,
+    "voc_index": 227,
+    "temperature": 27.1,
+    "humidity": 83.61,
+    "pressure": 1011.29,
+    "wind_speed": 1.41,
+    "wind_direction": 229,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
   },
   {
     "created_at": "2026-08-28 08:00:00+07:00",
@@ -3436,6 +6871,21 @@
   },
   {
     "created_at": "2026-08-28 08:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 55.3,
+    "pm10": 90.2,
+    "voc_index": 211,
+    "temperature": 27.37,
+    "humidity": 85.19,
+    "pressure": 1010.78,
+    "wind_speed": 1.1,
+    "wind_direction": 228,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 08:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 50.43,
     "pm10": 85.3,
@@ -3448,6 +6898,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 08:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 46.64,
+    "pm10": 79.42,
+    "voc_index": 200,
+    "temperature": 27.76,
+    "humidity": 78.94,
+    "pressure": 1011.28,
+    "wind_speed": 1.7,
+    "wind_direction": 188,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
   },
   {
     "created_at": "2026-08-28 08:20:00+07:00",
@@ -3466,6 +6931,21 @@
   },
   {
     "created_at": "2026-08-28 08:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 54.1,
+    "pm10": 74.67,
+    "voc_index": 166,
+    "temperature": 28.39,
+    "humidity": 83.25,
+    "pressure": 1011.15,
+    "wind_speed": 1.53,
+    "wind_direction": 152,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 08:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 43.77,
     "pm10": 70.82,
@@ -3478,6 +6958,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 08:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 44.86,
+    "pm10": 73.19,
+    "voc_index": 175,
+    "temperature": 27.58,
+    "humidity": 78.52,
+    "pressure": 1011.24,
+    "wind_speed": 1.02,
+    "wind_direction": 235,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
   },
   {
     "created_at": "2026-08-28 08:40:00+07:00",
@@ -3496,6 +6991,21 @@
   },
   {
     "created_at": "2026-08-28 08:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 41.89,
+    "pm10": 52.22,
+    "voc_index": 160,
+    "temperature": 27.75,
+    "humidity": 79.05,
+    "pressure": 1011.45,
+    "wind_speed": 1.52,
+    "wind_direction": 192,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 08:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 34.37,
     "pm10": 54.0,
@@ -3508,6 +7018,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 09:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 34.78,
+    "pm10": 53.53,
+    "voc_index": 124,
+    "temperature": 29.05,
+    "humidity": 78.84,
+    "pressure": 1011.44,
+    "wind_speed": 1.18,
+    "wind_direction": 124,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.97
   },
   {
     "created_at": "2026-08-28 09:00:00+07:00",
@@ -3526,6 +7051,21 @@
   },
   {
     "created_at": "2026-08-28 09:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 36.05,
+    "pm10": 48.37,
+    "voc_index": 127,
+    "temperature": 28.23,
+    "humidity": 78.38,
+    "pressure": 1011.78,
+    "wind_speed": 1.32,
+    "wind_direction": 226,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.96
+  },
+  {
+    "created_at": "2026-08-28 09:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 29.79,
     "pm10": 45.53,
@@ -3538,6 +7078,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.9
+  },
+  {
+    "created_at": "2026-08-28 09:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 29.76,
+    "pm10": 55.18,
+    "voc_index": 148,
+    "temperature": 29.57,
+    "humidity": 76.05,
+    "pressure": 1011.57,
+    "wind_speed": 1.06,
+    "wind_direction": 194,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
   },
   {
     "created_at": "2026-08-28 09:20:00+07:00",
@@ -3556,6 +7111,21 @@
   },
   {
     "created_at": "2026-08-28 09:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 27.36,
+    "pm10": 42.22,
+    "voc_index": 128,
+    "temperature": 29.39,
+    "humidity": 73.79,
+    "pressure": 1011.77,
+    "wind_speed": 1.45,
+    "wind_direction": 165,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.96
+  },
+  {
+    "created_at": "2026-08-28 09:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 23.1,
     "pm10": 36.2,
@@ -3568,6 +7138,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.9
+  },
+  {
+    "created_at": "2026-08-28 09:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 28.16,
+    "pm10": 38.84,
+    "voc_index": 101,
+    "temperature": 29.19,
+    "humidity": 72.17,
+    "pressure": 1011.82,
+    "wind_speed": 1.8,
+    "wind_direction": 184,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
   },
   {
     "created_at": "2026-08-28 09:40:00+07:00",
@@ -3586,6 +7171,21 @@
   },
   {
     "created_at": "2026-08-28 09:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 26.9,
+    "pm10": 39.2,
+    "voc_index": 112,
+    "temperature": 30.39,
+    "humidity": 77.27,
+    "pressure": 1011.85,
+    "wind_speed": 1.7,
+    "wind_direction": 162,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.96
+  },
+  {
+    "created_at": "2026-08-28 09:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 21.62,
     "pm10": 34.36,
@@ -3598,6 +7198,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.9
+  },
+  {
+    "created_at": "2026-08-28 10:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 24.01,
+    "pm10": 34.05,
+    "voc_index": 109,
+    "temperature": 30.42,
+    "humidity": 77.93,
+    "pressure": 1011.75,
+    "wind_speed": 1.47,
+    "wind_direction": 191,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.96
   },
   {
     "created_at": "2026-08-28 10:00:00+07:00",
@@ -3616,6 +7231,21 @@
   },
   {
     "created_at": "2026-08-28 10:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 26.55,
+    "pm10": 43.18,
+    "voc_index": 100,
+    "temperature": 30.97,
+    "humidity": 73.02,
+    "pressure": 1011.97,
+    "wind_speed": 1.57,
+    "wind_direction": 168,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 10:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 21.0,
     "pm10": 35.19,
@@ -3628,6 +7258,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.9
+  },
+  {
+    "created_at": "2026-08-28 10:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 19.57,
+    "pm10": 27.96,
+    "voc_index": 107,
+    "temperature": 30.57,
+    "humidity": 71.46,
+    "pressure": 1012.44,
+    "wind_speed": 0.92,
+    "wind_direction": 218,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
   },
   {
     "created_at": "2026-08-28 10:20:00+07:00",
@@ -3646,6 +7291,21 @@
   },
   {
     "created_at": "2026-08-28 10:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 17.88,
+    "pm10": 26.06,
+    "voc_index": 116,
+    "temperature": 30.61,
+    "humidity": 69.83,
+    "pressure": 1012.35,
+    "wind_speed": 3.86,
+    "wind_direction": 219,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 10:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 12.21,
     "pm10": 16.43,
@@ -3658,6 +7318,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.89
+  },
+  {
+    "created_at": "2026-08-28 10:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.27,
+    "pm10": 27.04,
+    "voc_index": 101,
+    "temperature": 30.57,
+    "humidity": 71.19,
+    "pressure": 1012.18,
+    "wind_speed": 3.01,
+    "wind_direction": 270,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
   },
   {
     "created_at": "2026-08-28 10:40:00+07:00",
@@ -3676,6 +7351,21 @@
   },
   {
     "created_at": "2026-08-28 10:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.48,
+    "pm10": 25.16,
+    "voc_index": 87,
+    "temperature": 30.75,
+    "humidity": 68.47,
+    "pressure": 1012.39,
+    "wind_speed": 3.81,
+    "wind_direction": 205,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 10:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 11.8,
     "pm10": 18.49,
@@ -3688,6 +7378,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.9
+  },
+  {
+    "created_at": "2026-08-28 11:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 18.06,
+    "pm10": 27.09,
+    "voc_index": 83,
+    "temperature": 30.62,
+    "humidity": 71.18,
+    "pressure": 1012.38,
+    "wind_speed": 2.93,
+    "wind_direction": 243,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
   },
   {
     "created_at": "2026-08-28 11:00:00+07:00",
@@ -3706,6 +7411,21 @@
   },
   {
     "created_at": "2026-08-28 11:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 15.45,
+    "pm10": 18.75,
+    "voc_index": 73,
+    "temperature": 31.49,
+    "humidity": 71.77,
+    "pressure": 1012.53,
+    "wind_speed": 2.47,
+    "wind_direction": 226,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
+  },
+  {
+    "created_at": "2026-08-28 11:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 11.1,
     "pm10": 15.86,
@@ -3718,6 +7438,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.89
+  },
+  {
+    "created_at": "2026-08-28 11:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 15.98,
+    "pm10": 25.86,
+    "voc_index": 62,
+    "temperature": 31.77,
+    "humidity": 67.67,
+    "pressure": 1012.66,
+    "wind_speed": 4.07,
+    "wind_direction": 244,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.93
   },
   {
     "created_at": "2026-08-28 11:20:00+07:00",
@@ -3736,6 +7471,21 @@
   },
   {
     "created_at": "2026-08-28 11:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 8.6,
+    "pm10": 16.19,
+    "voc_index": 73,
+    "temperature": 32.01,
+    "humidity": 69.76,
+    "pressure": 1012.89,
+    "wind_speed": 4.2,
+    "wind_direction": 261,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.95
+  },
+  {
+    "created_at": "2026-08-28 11:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 9.5,
     "pm10": 15.0,
@@ -3748,6 +7498,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.89
+  },
+  {
+    "created_at": "2026-08-28 11:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 9.73,
+    "pm10": 22.41,
+    "voc_index": 69,
+    "temperature": 32.42,
+    "humidity": 67.49,
+    "pressure": 1012.89,
+    "wind_speed": 3.22,
+    "wind_direction": 227,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
   },
   {
     "created_at": "2026-08-28 11:40:00+07:00",
@@ -3766,6 +7531,21 @@
   },
   {
     "created_at": "2026-08-28 11:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 12.97,
+    "pm10": 21.54,
+    "voc_index": 73,
+    "temperature": 31.53,
+    "humidity": 65.01,
+    "pressure": 1012.56,
+    "wind_speed": 4.29,
+    "wind_direction": 264,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
+  },
+  {
+    "created_at": "2026-08-28 11:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 9.5,
     "pm10": 15.55,
@@ -3778,6 +7558,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.89
+  },
+  {
+    "created_at": "2026-08-28 12:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.64,
+    "pm10": 18.88,
+    "voc_index": 68,
+    "temperature": 33.11,
+    "humidity": 66.74,
+    "pressure": 1012.73,
+    "wind_speed": 2.99,
+    "wind_direction": 214,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
   },
   {
     "created_at": "2026-08-28 12:00:00+07:00",
@@ -3796,6 +7591,21 @@
   },
   {
     "created_at": "2026-08-28 12:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 16.67,
+    "pm10": 13.6,
+    "voc_index": 77,
+    "temperature": 32.63,
+    "humidity": 67.36,
+    "pressure": 1012.75,
+    "wind_speed": 2.67,
+    "wind_direction": 242,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
+  },
+  {
+    "created_at": "2026-08-28 12:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 11.05,
     "pm10": 15.0,
@@ -3808,6 +7618,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.88
+  },
+  {
+    "created_at": "2026-08-28 12:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 12.54,
+    "pm10": 20.27,
+    "voc_index": 60,
+    "temperature": 31.91,
+    "humidity": 68.07,
+    "pressure": 1012.6,
+    "wind_speed": 2.16,
+    "wind_direction": 234,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
   },
   {
     "created_at": "2026-08-28 12:20:00+07:00",
@@ -3826,6 +7651,21 @@
   },
   {
     "created_at": "2026-08-28 12:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 17.43,
+    "pm10": 23.38,
+    "voc_index": 53,
+    "temperature": 32.25,
+    "humidity": 65.88,
+    "pressure": 1012.44,
+    "wind_speed": 2.82,
+    "wind_direction": 220,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.93
+  },
+  {
+    "created_at": "2026-08-28 12:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 11.75,
     "pm10": 17.6,
@@ -3838,6 +7678,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.88
+  },
+  {
+    "created_at": "2026-08-28 12:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 13.13,
+    "pm10": 16.91,
+    "voc_index": 85,
+    "temperature": 32.67,
+    "humidity": 61.88,
+    "pressure": 1012.85,
+    "wind_speed": 2.57,
+    "wind_direction": 215,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.93
   },
   {
     "created_at": "2026-08-28 12:40:00+07:00",
@@ -3856,6 +7711,21 @@
   },
   {
     "created_at": "2026-08-28 12:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 12.3,
+    "pm10": 14.78,
+    "voc_index": 82,
+    "temperature": 33.08,
+    "humidity": 61.98,
+    "pressure": 1012.59,
+    "wind_speed": 2.59,
+    "wind_direction": 229,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.92
+  },
+  {
+    "created_at": "2026-08-28 12:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 10.83,
     "pm10": 16.23,
@@ -3868,6 +7738,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.89
+  },
+  {
+    "created_at": "2026-08-28 13:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 13.28,
+    "pm10": 19.87,
+    "voc_index": 83,
+    "temperature": 32.79,
+    "humidity": 60.56,
+    "pressure": 1012.84,
+    "wind_speed": 2.75,
+    "wind_direction": 243,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.92
   },
   {
     "created_at": "2026-08-28 13:00:00+07:00",
@@ -3886,6 +7771,21 @@
   },
   {
     "created_at": "2026-08-28 13:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 13.16,
+    "pm10": 13.95,
+    "voc_index": 76,
+    "temperature": 33.04,
+    "humidity": 59.49,
+    "pressure": 1012.29,
+    "wind_speed": 3.65,
+    "wind_direction": 236,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.93
+  },
+  {
+    "created_at": "2026-08-28 13:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 10.6,
     "pm10": 15.0,
@@ -3898,6 +7798,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.88
+  },
+  {
+    "created_at": "2026-08-28 13:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 11.81,
+    "pm10": 22.15,
+    "voc_index": 81,
+    "temperature": 33.33,
+    "humidity": 58.6,
+    "pressure": 1012.5,
+    "wind_speed": 2.94,
+    "wind_direction": 252,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
   },
   {
     "created_at": "2026-08-28 13:20:00+07:00",
@@ -3916,6 +7831,21 @@
   },
   {
     "created_at": "2026-08-28 13:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 13.66,
+    "pm10": 16.4,
+    "voc_index": 64,
+    "temperature": 33.45,
+    "humidity": 62.29,
+    "pressure": 1012.02,
+    "wind_speed": 3.39,
+    "wind_direction": 238,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.92
+  },
+  {
+    "created_at": "2026-08-28 13:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 9.86,
     "pm10": 15.54,
@@ -3928,6 +7858,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.88
+  },
+  {
+    "created_at": "2026-08-28 13:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.54,
+    "pm10": 23.88,
+    "voc_index": 71,
+    "temperature": 33.63,
+    "humidity": 60.55,
+    "pressure": 1011.96,
+    "wind_speed": 3.39,
+    "wind_direction": 213,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.92
   },
   {
     "created_at": "2026-08-28 13:40:00+07:00",
@@ -3946,6 +7891,21 @@
   },
   {
     "created_at": "2026-08-28 13:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.27,
+    "pm10": 10.84,
+    "voc_index": 54,
+    "temperature": 33.77,
+    "humidity": 62.62,
+    "pressure": 1012.39,
+    "wind_speed": 4.05,
+    "wind_direction": 218,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.92
+  },
+  {
+    "created_at": "2026-08-28 13:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 10.7,
     "pm10": 15.72,
@@ -3958,6 +7918,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.87
+  },
+  {
+    "created_at": "2026-08-28 14:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 10.88,
+    "pm10": 16.57,
+    "voc_index": 64,
+    "temperature": 33.07,
+    "humidity": 58.65,
+    "pressure": 1012.17,
+    "wind_speed": 3.22,
+    "wind_direction": 196,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.93
   },
   {
     "created_at": "2026-08-28 14:00:00+07:00",
@@ -3976,6 +7951,21 @@
   },
   {
     "created_at": "2026-08-28 14:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.89,
+    "pm10": 23.68,
+    "voc_index": 69,
+    "temperature": 33.37,
+    "humidity": 61.93,
+    "pressure": 1011.99,
+    "wind_speed": 3.13,
+    "wind_direction": 200,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.93
+  },
+  {
+    "created_at": "2026-08-28 14:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 11.94,
     "pm10": 18.84,
@@ -3988,6 +7978,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.87
+  },
+  {
+    "created_at": "2026-08-28 14:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 9.49,
+    "pm10": 15.39,
+    "voc_index": 66,
+    "temperature": 33.83,
+    "humidity": 60.45,
+    "pressure": 1011.86,
+    "wind_speed": 3.81,
+    "wind_direction": 220,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.94
   },
   {
     "created_at": "2026-08-28 14:20:00+07:00",
@@ -4006,6 +8011,21 @@
   },
   {
     "created_at": "2026-08-28 14:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 15.61,
+    "pm10": 22.9,
+    "voc_index": 76,
+    "temperature": 34.32,
+    "humidity": 62.3,
+    "pressure": 1011.67,
+    "wind_speed": 3.97,
+    "wind_direction": 216,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 14:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 10.4,
     "pm10": 18.06,
@@ -4018,6 +8038,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.87
+  },
+  {
+    "created_at": "2026-08-28 14:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 15.12,
+    "pm10": 24.22,
+    "voc_index": 79,
+    "temperature": 34.56,
+    "humidity": 57.77,
+    "pressure": 1011.28,
+    "wind_speed": 4.08,
+    "wind_direction": 229,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.92
   },
   {
     "created_at": "2026-08-28 14:40:00+07:00",
@@ -4036,6 +8071,21 @@
   },
   {
     "created_at": "2026-08-28 14:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.68,
+    "pm10": 21.57,
+    "voc_index": 90,
+    "temperature": 34.42,
+    "humidity": 60.98,
+    "pressure": 1011.43,
+    "wind_speed": 3.13,
+    "wind_direction": 288,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.92
+  },
+  {
+    "created_at": "2026-08-28 14:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 12.02,
     "pm10": 19.66,
@@ -4048,6 +8098,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.86
+  },
+  {
+    "created_at": "2026-08-28 15:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 16.46,
+    "pm10": 28.22,
+    "voc_index": 83,
+    "temperature": 33.17,
+    "humidity": 61.63,
+    "pressure": 1011.48,
+    "wind_speed": 2.73,
+    "wind_direction": 230,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.9
   },
   {
     "created_at": "2026-08-28 15:00:00+07:00",
@@ -4066,6 +8131,21 @@
   },
   {
     "created_at": "2026-08-28 15:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 14.66,
+    "pm10": 23.75,
+    "voc_index": 105,
+    "temperature": 34.52,
+    "humidity": 63.43,
+    "pressure": 1011.42,
+    "wind_speed": 3.59,
+    "wind_direction": 228,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.93
+  },
+  {
+    "created_at": "2026-08-28 15:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 13.67,
     "pm10": 20.94,
@@ -4078,6 +8158,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.87
+  },
+  {
+    "created_at": "2026-08-28 15:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 23.05,
+    "pm10": 39.63,
+    "voc_index": 97,
+    "temperature": 33.35,
+    "humidity": 58.83,
+    "pressure": 1011.18,
+    "wind_speed": 3.15,
+    "wind_direction": 230,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.91
   },
   {
     "created_at": "2026-08-28 15:20:00+07:00",
@@ -4096,6 +8191,21 @@
   },
   {
     "created_at": "2026-08-28 15:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 18.51,
+    "pm10": 30.85,
+    "voc_index": 92,
+    "temperature": 33.25,
+    "humidity": 69.42,
+    "pressure": 1010.96,
+    "wind_speed": 3.38,
+    "wind_direction": 232,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 15:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 15.66,
     "pm10": 24.41,
@@ -4108,6 +8218,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.86
+  },
+  {
+    "created_at": "2026-08-28 15:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 25.51,
+    "pm10": 30.36,
+    "voc_index": 118,
+    "temperature": 34.42,
+    "humidity": 58.88,
+    "pressure": 1011.02,
+    "wind_speed": 3.65,
+    "wind_direction": 232,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.92
   },
   {
     "created_at": "2026-08-28 15:40:00+07:00",
@@ -4126,6 +8251,21 @@
   },
   {
     "created_at": "2026-08-28 15:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 20.45,
+    "pm10": 33.2,
+    "voc_index": 138,
+    "temperature": 33.92,
+    "humidity": 62.42,
+    "pressure": 1011.18,
+    "wind_speed": 4.4,
+    "wind_direction": 266,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.89
+  },
+  {
+    "created_at": "2026-08-28 15:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 16.47,
     "pm10": 28.58,
@@ -4138,6 +8278,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.85
+  },
+  {
+    "created_at": "2026-08-28 16:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 28.62,
+    "pm10": 52.25,
+    "voc_index": 155,
+    "temperature": 32.96,
+    "humidity": 59.28,
+    "pressure": 1010.84,
+    "wind_speed": 2.78,
+    "wind_direction": 261,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.91
   },
   {
     "created_at": "2026-08-28 16:00:00+07:00",
@@ -4156,6 +8311,21 @@
   },
   {
     "created_at": "2026-08-28 16:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 33.71,
+    "pm10": 59.13,
+    "voc_index": 146,
+    "temperature": 33.71,
+    "humidity": 61.35,
+    "pressure": 1010.49,
+    "wind_speed": 0.8,
+    "wind_direction": 245,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.9
+  },
+  {
+    "created_at": "2026-08-28 16:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 32.49,
     "pm10": 52.28,
@@ -4168,6 +8338,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.85
+  },
+  {
+    "created_at": "2026-08-28 16:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 38.14,
+    "pm10": 61.4,
+    "voc_index": 149,
+    "temperature": 34.41,
+    "humidity": 57.22,
+    "pressure": 1010.65,
+    "wind_speed": 1.66,
+    "wind_direction": 253,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.91
   },
   {
     "created_at": "2026-08-28 16:20:00+07:00",
@@ -4186,6 +8371,21 @@
   },
   {
     "created_at": "2026-08-28 16:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 43.96,
+    "pm10": 71.12,
+    "voc_index": 176,
+    "temperature": 34.08,
+    "humidity": 61.15,
+    "pressure": 1010.7,
+    "wind_speed": 1.36,
+    "wind_direction": 205,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 16:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 39.11,
     "pm10": 61.79,
@@ -4198,6 +8398,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.85
+  },
+  {
+    "created_at": "2026-08-28 16:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 45.14,
+    "pm10": 73.35,
+    "voc_index": 175,
+    "temperature": 33.32,
+    "humidity": 59.42,
+    "pressure": 1010.33,
+    "wind_speed": 1.19,
+    "wind_direction": 229,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.92
   },
   {
     "created_at": "2026-08-28 16:40:00+07:00",
@@ -4216,6 +8431,21 @@
   },
   {
     "created_at": "2026-08-28 16:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.38,
+    "pm10": 69.29,
+    "voc_index": 199,
+    "temperature": 32.69,
+    "humidity": 60.61,
+    "pressure": 1010.4,
+    "wind_speed": 2.44,
+    "wind_direction": 206,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 16:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 39.42,
     "pm10": 65.07,
@@ -4228,6 +8458,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.85
+  },
+  {
+    "created_at": "2026-08-28 17:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.08,
+    "pm10": 73.53,
+    "voc_index": 218,
+    "temperature": 33.94,
+    "humidity": 61.56,
+    "pressure": 1010.44,
+    "wind_speed": 2.48,
+    "wind_direction": 244,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.93
   },
   {
     "created_at": "2026-08-28 17:00:00+07:00",
@@ -4246,6 +8491,21 @@
   },
   {
     "created_at": "2026-08-28 17:10:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 53.49,
+    "pm10": 76.29,
+    "voc_index": 209,
+    "temperature": 33.48,
+    "humidity": 62.78,
+    "pressure": 1010.4,
+    "wind_speed": 1.34,
+    "wind_direction": 229,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 17:10:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 48.65,
     "pm10": 70.53,
@@ -4258,6 +8518,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.85
+  },
+  {
+    "created_at": "2026-08-28 17:20:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 53.43,
+    "pm10": 86.96,
+    "voc_index": 202,
+    "temperature": 33.1,
+    "humidity": 65.21,
+    "pressure": 1010.79,
+    "wind_speed": 1.61,
+    "wind_direction": 270,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.9
   },
   {
     "created_at": "2026-08-28 17:20:00+07:00",
@@ -4276,6 +8551,21 @@
   },
   {
     "created_at": "2026-08-28 17:30:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 54.84,
+    "pm10": 88.2,
+    "voc_index": 226,
+    "temperature": 33.55,
+    "humidity": 62.95,
+    "pressure": 1010.35,
+    "wind_speed": 0.72,
+    "wind_direction": 246,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.92
+  },
+  {
+    "created_at": "2026-08-28 17:30:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 48.79,
     "pm10": 79.85,
@@ -4288,6 +8578,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.84
+  },
+  {
+    "created_at": "2026-08-28 17:40:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 57.18,
+    "pm10": 92.29,
+    "voc_index": 211,
+    "temperature": 32.32,
+    "humidity": 62.37,
+    "pressure": 1010.64,
+    "wind_speed": 1.49,
+    "wind_direction": 257,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.9
   },
   {
     "created_at": "2026-08-28 17:40:00+07:00",
@@ -4306,6 +8611,21 @@
   },
   {
     "created_at": "2026-08-28 17:50:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 51.59,
+    "pm10": 85.9,
+    "voc_index": 205,
+    "temperature": 32.79,
+    "humidity": 66.7,
+    "pressure": 1010.38,
+    "wind_speed": 1.43,
+    "wind_direction": 255,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.91
+  },
+  {
+    "created_at": "2026-08-28 17:50:00+07:00",
     "device_id": "STASIUN-02-UNTAN",
     "pm2_5": 46.98,
     "pm10": 76.65,
@@ -4318,6 +8638,21 @@
     "latitude": -0.058312,
     "longitude": 109.349821,
     "battery_volt": 3.84
+  },
+  {
+    "created_at": "2026-08-28 18:00:00+07:00",
+    "device_id": "AQMS-01-SAYBA",
+    "pm2_5": 48.94,
+    "pm10": 78.78,
+    "voc_index": 204,
+    "temperature": 31.42,
+    "humidity": 65.78,
+    "pressure": 1010.17,
+    "wind_speed": 2.45,
+    "wind_direction": 229,
+    "latitude": -0.057662,
+    "longitude": 109.350271,
+    "battery_volt": 3.86
   },
   {
     "created_at": "2026-08-28 18:00:00+07:00",

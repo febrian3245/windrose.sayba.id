@@ -41,14 +41,45 @@ export interface SensorRecord {
 
 export type Pollutant = "pm25" | "pm10" | "voc";
 
-// Koordinat Stasiun 02 Lab Geofisika FMIPA UNTAN (dipakai bila kolom kosong).
-export const STATION = {
-  id: "STASIUN-02-UNTAN",
-  name: "Stasiun 02 Lab Geofisika FMIPA UNTAN",
-  area: "Pontianak, Kalimantan Barat",
-  latitude: -0.058312,
-  longitude: 109.349821,
+// Identitas device, bukan sekadar koordinat fallback: AQMS-01-SAYBA = alat IoT
+// utama (objek penelitian), STASIUN-02-UNTAN = Lab Geofisika FMIPA UNTAN
+// (objek pembanding, data referensi independen).
+export const MAIN_DEVICE_ID = "AQMS-01-SAYBA";
+export const COMPARE_DEVICE_ID = "STASIUN-02-UNTAN";
+
+export interface StationInfo {
+  id: string;
+  name: string;
+  shortName: string;
+  area: string;
+  role: "utama" | "pembanding";
+  latitude: number;
+  longitude: number;
+}
+
+export const STATIONS: Record<string, StationInfo> = {
+  [MAIN_DEVICE_ID]: {
+    id: MAIN_DEVICE_ID,
+    name: "AQMS 4G LTE Pontianak",
+    shortName: "AQMS-01",
+    area: "Sekitar Lab Geofisika FMIPA UNTAN, Pontianak Timur",
+    role: "utama",
+    latitude: -0.057662,
+    longitude: 109.350271,
+  },
+  [COMPARE_DEVICE_ID]: {
+    id: COMPARE_DEVICE_ID,
+    name: "Stasiun 02 Lab Geofisika FMIPA UNTAN",
+    shortName: "Stasiun 02",
+    area: "Pontianak, Kalimantan Barat",
+    role: "pembanding",
+    latitude: -0.058312,
+    longitude: 109.349821,
+  },
 };
+
+// Dipertahankan sebagai alias kompatibilitas: device utama = objek penelitian.
+export const STATION = STATIONS[MAIN_DEVICE_ID];
 
 // NUMERIC dari PostgREST bisa terkirim sebagai string; dipaksa ke number.
 function num(v: number | string | null | undefined, fallback = 0): number {

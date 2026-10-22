@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import EChart from "./EChart";
 import { Panel, Segmented, Stat } from "./ui";
 import { useSensorData } from "@/hooks/useSensorData";
@@ -25,8 +26,19 @@ import {
   toCsv,
   windowRecords,
 } from "@/lib/stats";
-import { STATION, type Pollutant } from "@/lib/types";
+import { STATIONS, MAIN_DEVICE_ID, COMPARE_DEVICE_ID, type Pollutant } from "@/lib/types";
 import { buildPollutionRose, buildWindRose, CALM_LIMIT, SECTORS_16, sectorIndex, SPEED_CLASSES } from "@/lib/wind";
+import ComparePanel from "./ComparePanel";
+
+// Leaflet mengakses `window` saat modul dimuat; dimuat hanya di klien.
+const MapPanelClient = dynamic(() => import("./MapPanel"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center rounded-md border border-line bg-surface text-sm text-muted" style={{ height: 420 }}>
+      Memuat peta…
+    </div>
+  ),
+});
 
 type WindowKey = "24" | "48" | "168";
 
@@ -51,10 +63,17 @@ export default function Dashboard() {
   const [roseKey, setRoseKey] = useState<Pollutant>("pm25");
   const [seriesKey, setSeriesKey] = useState<Pollutant>("pm25");
 
+  // Dasbor berfokus pada device utama (AQMS-01-SAYBA); STASIUN-02-UNTAN disisihkan
+  // sebagai objek pembanding (peta + panel pembanding), tidak ikut ISPU/Wind Rose/tren.
+  const mainRecords = useMemo(() => records.filter((r) => r.deviceId === MAIN_DEVICE_ID), [records]);
+  const compareRecords = useMemo(() => records.filter((r) => r.deviceId === COMPARE_DEVICE_ID), [records]);
+
   const hours = Number(win);
-  const scoped = useMemo(() => windowRecords(records, hours), [records, hours]);
-  const last24 = useMemo(() => windowRecords(records, 24), [records]);
-  const latest = records.length ? records[records.length - 1] : null;
+  const scoped = useMemo(() => windowRecords(mainRecords, hours), [mainRecords, hours]);
+  const compareScoped = useMemo(() => windowRecords(compareRecords, hours), [compareRecords, hours]);
+  const last24 = useMemo(() => windowRecords(mainRecords, 24), [mainRecords]);
+  const latest = mainRecords.length ? mainRecords[mainRecords.length - 1] : null;
+  const latestCompare = compareRecords.length ? compareRecords[compareRecords.length - 1] : null;
 
   const wind = useMemo(() => buildWindRose(scoped), [scoped]);
   const pRose = useMemo(() => buildPollutionRose(scoped, roseKey), [scoped, roseKey]);
@@ -103,7 +122,7 @@ export default function Dashboard() {
       <Shell mode={mode} live={live} latestTs={null}>
         <StatePanel
           title="Belum ada data pengukuran"
-          body="Tabel sensor_udara_log masih kosong. Jalankan SUPABASE_SCHEMA_DAN_DUMMY_DATA.sql di SQL Editor Supabase, atau nyalakan stasiun agar data pertama masuk."
+          body={`Tabel sensor_udara_log belum memiliki data untuk ${STATIONS[MAIN_DEVICE_ID].name} (${MAIN_DEVICE_ID}). Jalankan migrasi Supabase, atau nyalakan alat agar data pertama masuk.`}
         />
       </Shell>
     );
@@ -119,7 +138,7 @@ export default function Dashboard() {
     const blob = new Blob([toCsv(scoped)], { type: "text/csv;charset=utf-8" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = `sensor_udara_${STATION.id}_${win}jam.csv`;
+    a.download = `sensor_udara_${MAIN_DEVICE_ID}_${win}jam.csv`;
     a.click();
     URL.revokeObjectURL(a.href);
   };
@@ -227,6 +246,30 @@ export default function Dashboard() {
         <Segmented label="Rentang waktu analisis" value={win} options={WINDOW_OPTIONS} onChange={setWin} />
       </div>
 
+      <Panel
+        id="peta"
+        title="Lokasi alat dan titik pembanding"
+        question={`${STATIONS[MAIN_DEVICE_ID].name} (objek penelitian) dan ${STATIONS[COMPARE_DEVICE_ID].name} (objek pembanding), peta satelit Esri.`}
+      >
+        <MapPanelClient
+          latestByDevice={{ [MAIN_DEVICE_ID]: latest ?? undefined, [COMPARE_DEVICE_ID]: latestCompare ?? undefined }}
+        />
+        <dl className="mt-4 grid grid-cols-2 gap-3 border-t border-line pt-4 sm:grid-cols-4">
+          <Stat
+            label={STATIONS[MAIN_DEVICE_ID].shortName}
+            value={fmt(latest.pm25)}
+            unit="µg/m³ PM2.5"
+            note={<span className="text-muted">alat IoT utama</span>}
+          />
+          <Stat
+            label={STATIONS[COMPARE_DEVICE_ID].shortName}
+            value={latestCompare ? fmt(latestCompare.pm25) : "–"}
+            unit={latestCompare ? "µg/m³ PM2.5" : undefined}
+            note={<span className="text-muted">objek pembanding</span>}
+          />
+        </dl>
+      </Panel>
+
       <section id="spasial" aria-label="Analisis spasial sebaran polutan" className="grid gap-4 xl:grid-cols-2">
         {/* Dua panel rose memakai struktur identik: header, baris kontrol/legenda, grafik, 3 statistik. */}
         <Panel
@@ -319,7 +362,7 @@ export default function Dashboard() {
           <EChart option={diurnalOpt} height={280} ariaLabel={`Profil harian ${POLLUTANT_META[seriesKey].label}`} />
         </Panel>
 
-        <Panel id="perangkat" title="Kondisi perangkat" question={`${STATION.id} · ESP32 + modem 4G LTE A7670E`}>
+        <Panel id="perangkat" title="Kondisi perangkat" question={`${MAIN_DEVICE_ID} · ESP32 + modem 4G LTE A7670E`}>
           <dl className="grid grid-cols-2 gap-x-4 gap-y-5">
             <Stat
               label="Tegangan baterai"
@@ -329,7 +372,7 @@ export default function Dashboard() {
             />
             <Stat label="Data terakhir" value={formatDateTime(latest.ts).split(",")[1]?.trim() ?? ""} note={<span className="text-muted">{formatDateTime(latest.ts).split(",")[0]}</span>} />
             <Stat label="Kelengkapan data" value={fmt(completeness, 0)} unit="%" note={<span className="text-muted">{scoped.length} / {expected} data</span>} />
-            <Stat label="Koordinat" value={`${fmt(latest.latitude, 4)}, ${fmt(latest.longitude, 4)}`} note={<span className="text-muted">{STATION.area}</span>} />
+            <Stat label="Koordinat" value={`${fmt(latest.latitude, 4)}, ${fmt(latest.longitude, 4)}`} note={<span className="text-muted">{STATIONS[MAIN_DEVICE_ID].area}</span>} />
           </dl>
           <div className="mt-5">
             <div className="flex justify-between text-sm text-muted">
@@ -352,6 +395,22 @@ export default function Dashboard() {
           </dl>
         </Panel>
       </div>
+
+      {/* 3b. Pembanding terhadap objek pembanding (Stasiun 02 FMIPA UNTAN) */}
+      <Panel
+        id="pembanding"
+        title={`${STATIONS[MAIN_DEVICE_ID].shortName} vs ${STATIONS[COMPARE_DEVICE_ID].shortName}`}
+        question={`Seberapa dekat ${STATIONS[MAIN_DEVICE_ID].name} (alat IoT utama) dengan ${STATIONS[COMPARE_DEVICE_ID].name} (objek pembanding), untuk parameter ${POLLUTANT_META[seriesKey].label}.`}
+        actions={<Segmented label="Parameter pembanding" value={seriesKey} options={POLLUTANT_OPTIONS} onChange={setSeriesKey} />}
+      >
+        <ComparePanel
+          mainRecords={scoped}
+          compareRecords={compareScoped}
+          mainLabel={STATIONS[MAIN_DEVICE_ID].shortName}
+          compareLabel={STATIONS[COMPARE_DEVICE_ID].shortName}
+          pollutant={seriesKey}
+        />
+      </Panel>
 
       {/* 4. Data mentah untuk lampiran skripsi */}
       <Panel
@@ -571,8 +630,8 @@ function Shell({
       <header ref={headerRef} className="sticky top-0 z-20 border-b border-line bg-panel">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 sm:py-3">
           <div className="min-w-0">
-            <p className="truncate text-base font-semibold text-brand">Pemantau Kualitas Udara</p>
-            <p className="hidden truncate text-sm text-muted sm:block">{STATION.name}</p>
+            <p className="truncate text-base font-semibold text-brand">AQMS 4G LTE Pontianak</p>
+            <p className="hidden truncate text-sm text-muted sm:block">Dasbor pemantau kualitas udara, pembanding {STATIONS[COMPARE_DEVICE_ID].shortName}</p>
           </div>
           <div className="flex shrink-0 items-center gap-x-4 text-sm">
             <span
@@ -591,8 +650,10 @@ function Shell({
             {[
               ["#status-title", "Status"],
               ["#spasial", "Spasial"],
+              ["#peta", "Peta"],
               ["#tren", "Tren"],
               ["#perangkat", "Perangkat"],
+              ["#pembanding", "Pembanding"],
               ["#data", "Data"],
               ["#metode", "Metode"],
             ].map(([href, label]) => (
@@ -609,7 +670,7 @@ function Shell({
       <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-4 px-4 py-5 sm:px-6 sm:py-6">
         <div className="mb-1">
           <h1 className="text-xl font-semibold leading-snug sm:text-2xl">
-            Sebaran PM2.5, PM10, dan VOC di Pontianak berbasis IoT 4G LTE dan pemodelan Wind Rose
+            AQMS 4G LTE Pontianak: pemantau PM2.5, PM10, VOC dan sebaran polutan dengan pemodelan Wind Rose
           </h1>
           {mode === "demo" ? (
             <p className="mt-1 max-w-3xl text-sm text-muted">

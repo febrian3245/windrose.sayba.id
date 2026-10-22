@@ -1,0 +1,40 @@
+# Catatan metodologi: data dummy pembanding AQMS-01-SAYBA
+
+Lampiran skripsi: bagaimana 289 data dummy **AQMS-01-SAYBA** (alat IoT utama,
+objek penelitian) dibuat dari 289 data dummy **STASIUN-02-UNTAN** (objek
+pembanding) yang sudah ada sejak migrasi awal.
+
+AQMS-01-SAYBA diposisikan ±88 m dari Stasiun 02 (mikroklimat sama), sehingga
+data dummy dibuat **berkorelasi** dengan Stasiun 02, ditambah bias dan noise
+yang meniru karakteristik sensor low-cost (PMS5003 + BME688 generik)
+dibanding instrumen Stasiun 02:
+
+| Parameter | Rumus (nilai Stasiun 02 → AQMS-01) | Interpretasi |
+|---|---|---|
+| PM2.5 | `×1,09 + N(0, 2,1) + 1,5` | bias overestimate ±9%, khas sensor optik low-cost |
+| PM10 | `×1,07 + N(0, 3,4) + 2,0` | idem |
+| VOC | `+ N(0, 9)` | noise indeks relatif |
+| Suhu | `+ N(0, 0,35) + 0,2` | sedikit lebih panas, posisi dekat dinding |
+| Kelembapan | `+ N(0, 2,2) − 1,0` | |
+| Tekanan | `+ N(0, 0,15)` | |
+| Kecepatan angin | `×0,93 + N(0, 0,25)` | anemometer murah, under-read |
+| Arah angin | `+ N(0, 12°)` | turbulensi lokal sekitar bangunan |
+| Baterai | turun linier 4,18 V → 3,90 V | siklus baterai independen dari Stasiun 02 |
+
+Semua nilai dibatasi ke rentang `CHECK` constraint tabel `sensor_udara_log`
+sebelum disimpan. Seed random: **42** (deterministik, dapat direproduksi).
+
+Tujuan: dasbor dapat menampilkan **panel pembanding** (selisih rata-rata,
+RMSE, korelasi) antara alat IoT utama dan Stasiun 02 FMIPA UNTAN sebelum data
+asli dari lapangan tersedia.
+
+## Setelah data stasiun asli masuk
+
+Hapus baris dummy kedua device:
+
+```sql
+delete from public.sensor_udara_log where sumber = 'dummy';
+```
+
+Panel pembanding akan tetap berjalan selama kedua device (`AQMS-01-SAYBA` dan
+`STASIUN-02-UNTAN`) terus mengirim data hasil ukur sungguhan.

@@ -41,12 +41,13 @@ for (const vp of viewports) {
   const charts = await page.$$eval('[role="img"] svg', (els) => els.map((e) => e.getBoundingClientRect().width));
   report(charts.length === 4 && charts.every((w) => w > 200), `4 grafik ter-render, lebar ${charts.map(Math.round).join(", ")}`);
 
-  // Elemen yang keluar dari parent panel (terpotong)
+  // Elemen yang keluar dari parent panel (terpotong) — kecuali sengaja dipotong oleh
+  // kontainer overflow-hidden (contoh: ubin peta Leaflet, memang lebih besar dari viewport peta).
   const clipped = await page.evaluate(() => {
     const out = [];
-    document.querySelectorAll("section *").forEach((el) => {
+    document.querySelectorAll("section *, main > div.rounded-lg *").forEach((el) => {
       const r = el.getBoundingClientRect();
-      if (r.width && r.right > window.innerWidth + 1 && !el.closest(".overflow-x-auto")) out.push(el.tagName + "." + el.className.toString().slice(0, 40));
+      if (r.width && r.right > window.innerWidth + 1 && !el.closest(".overflow-x-auto") && !el.closest(".overflow-hidden")) out.push(el.tagName + "." + el.className.toString().slice(0, 40));
     });
     return out.slice(0, 5);
   });
