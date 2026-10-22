@@ -125,7 +125,7 @@ export default function Dashboard() {
   };
 
   return (
-    <Shell mode={mode} live={live} latestTs={latest.ts}>
+    <Shell mode={mode} live={live} latestTs={latest.ts} dummy={latest.isDummy}>
       {/* 1. Status kualitas udara: keputusan utama pembaca halaman ini */}
       <section aria-labelledby="status-title" className="grid gap-4 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
         <div className="rounded-lg border border-line bg-panel">
@@ -537,11 +537,14 @@ function Shell({
   mode,
   live,
   latestTs,
+  dummy = false,
 }: {
   children: React.ReactNode;
   mode: "supabase" | "demo";
   live: string;
   latestTs: number | null;
+  // true bila data Supabase yang tampil masih data uji (kolom sumber = 'dummy').
+  dummy?: boolean;
 }) {
   const headerRef = useRef<HTMLElement>(null);
   // Tinggi header sticky diukur langsung agar lompatan menu tidak menutupi judul panel
@@ -611,6 +614,10 @@ function Shell({
           {mode === "demo" ? (
             <p className="mt-1 max-w-3xl text-sm text-muted">
               Angka di halaman ini berasal dari data dummy simulasi, bukan hasil pengukuran. Isi <code className="font-mono text-[0.85em] text-ink">.env.local</code> (lihat README) untuk menampilkan data stasiun dari Supabase.
+            </p>
+          ) : dummy ? (
+            <p className="mt-1 max-w-3xl text-sm text-muted">
+              Data di Supabase saat ini masih data dummy simulasi (kolom <code className="font-mono text-[0.85em] text-ink">sumber = &apos;dummy&apos;</code>), bukan hasil pengukuran. Tampilan berganti otomatis ke data stasiun begitu pengiriman pertama masuk.
             </p>
           ) : null}
         </div>

@@ -27,22 +27,58 @@ npm run dev          # http://localhost:3000
 
 Tanpa `.env.local`, dasbor berjalan dalam **mode demo** memakai `src/data/dummy-sensor.json` (289 data simulasi 48 jam). Label "Mode demo" tampil di header agar angka simulasi tidak tertukar dengan hasil ukur.
 
-## Menghubungkan ke Supabase
+## Basis data Supabase
 
-1. Buat project di Supabase.
-2. Buka **SQL Editor**, jalankan `../SUPABASE_SCHEMA_DAN_DUMMY_DATA.sql`. Skrip ini membuat tabel `sensor_udara_log`, indeks waktu, kebijakan RLS, mengaktifkan Realtime, dan mengisi data dummy.
-3. Salin `.env.example` menjadi `.env.local`, isi dari **Project Settings > API**:
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=...
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=...
-   ```
-4. Jalankan ulang `npm run dev`. Header berubah menjadi "Supabase · Realtime aktif". Setiap `INSERT` baru dari stasiun langsung muncul tanpa muat ulang halaman.
+Skema ada di `supabase/migrations/` dan sudah diterapkan ke project Supabase.
 
-Jangan commit `.env.local` (sudah ada di `.gitignore`).
+| Objek | Akses dari key publik (browser/ESP32) |
+|---|---|
+| `public.sensor_udara_log` | **SELECT saja.** INSERT/UPDATE/DELETE langsung ditolak (`42501`). |
+| `public.kirim_data_sensor()` | Endpoint kirim data stasiun. Wajib `device_id` + kunci perangkat yang benar. |
+| `private.perangkat` | Tidak terekspos API. Menyimpan kunci perangkat sebagai hash bcrypt. |
+
+Aturan data di tingkat basis data:
+- Batas fisik sensor (`CHECK`): PM 0–1000 µg/m³, VOC 0–500, RH 0–100 %, tekanan 800–1100 hPa, arah angin 0–359°, baterai 0–5 V.
+- Satu data per perangkat per detik (`UNIQUE (device_id, created_at)`). Kiriman ulang setelah sinyal 4G putus tidak membuat duplikat.
+- Arah 360° dari wind vane disimpan sebagai 0° (Utara).
+- Waktu pengukuran lebih dari 10 menit di depan jam server ditolak, karena tanda jam perangkat salah.
+- Kolom `sumber` membedakan `stasiun` (hasil ukur) dan `dummy` (data uji). Selama hanya ada data dummy, dasbor memberi label "data dummy simulasi". Begitu data stasiun pertama masuk, data dummy otomatis tidak ikut dihitung.
+
+Menghapus data dummy sebelum pengambilan data penelitian (SQL Editor):
+
+```sql
+delete from public.sensor_udara_log where sumber = 'dummy';
+```
+
+### Kirim data dari ESP32
+
+```
+POST https://<project>.supabase.co/rest/v1/rpc/kirim_data_sensor
+apikey: <publishable key>
+Content-Type: application/json
+
+{"p_device_id":"STASIUN-02-UNTAN","p_kunci":"<kunci perangkat>",
+ "p_pm2_5":21.4,"p_pm10":33.8,"p_voc_index":110,"p_temperature":30.2,
+ "p_humidity":72.5,"p_pressure":1010.4,"p_wind_speed":1.6,
+ "p_wind_direction":225,"p_battery_volt":4.02,
+ "p_created_at":"2026-10-22T10:00:00+07:00"}
+```
+
+`p_created_at` opsional (tanpa itu dipakai waktu server). Contoh kode Arduino ada di `firmware/kirim_supabase_contoh.ino`. Kunci perangkat disimpan di `firmware/secrets.h` (tidak di-commit).
 
 ## Deploy ke Vercel
 
-Import folder ini ke Vercel, isi dua variabel lingkungan di atas pada **Settings > Environment Variables**, lalu deploy.
+1. Vercel, lalu **Add New > Project**, lalu import repo ini. Framework terdeteksi Next.js.
+2. **Settings > Environment Variables** (Production, Preview, Development):
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=https://<project>.supabase.co
+   NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
+   ```
+   Keduanya publik dan aman di browser. **Jangan** isi secret key atau service_role key.
+3. Deploy. Bila variabel diubah belakangan, lakukan **Redeploy**, karena nilai `NEXT_PUBLIC_*` disisipkan saat build.
+4. Domain: **Settings > Domains**, tambahkan `windrose.sayba.id`, lalu buat record DNS `CNAME windrose → cname.vercel-dns.com` di pengelola DNS `sayba.id`.
+
+Header keamanan (CSP, `X-Frame-Options`, `nosniff`, `Referrer-Policy`) diatur di `next.config.ts`. CSP hanya mengizinkan koneksi ke URL Supabase yang ada di env.
 
 ## Struktur
 
@@ -63,6 +99,9 @@ scripts/
   verify-logic.ts         uji rumus ISPU, sektor, wind rose
   qa.mjs                  uji tampilan 360/768/1440 px dan interaksi
   qa-supabase-error.mjs   uji tampilan saat Supabase gagal
+  qa-supabase-live.mjs    uji Supabase asli: REST, Realtime, header keamanan
+supabase/migrations/      skema, RLS, fungsi kirim data
+firmware/                 contoh kirim data ESP32 + templat secrets.h
 ```
 
 ## Pengujian
@@ -73,6 +112,8 @@ npm run lint
 npm run test:logic
 npm run build && npm start -- -p 3210   # terminal lain:
 npm run test:ui
+# Supabase asli (butuh .env.local + KUNCI_PERANGKAT di env):
+node scripts/qa-supabase-live.mjs
 ```
 
 `test:ui` memakai Google Chrome terpasang (`C:/Program Files/Google/Chrome/Application/chrome.exe`).

@@ -26,6 +26,13 @@ function sortAsc(list: SensorRecord[]): SensorRecord[] {
   return [...list].sort((a, b) => a.ts - b.ts);
 }
 
+// Data dummy (sumber = 'dummy') hanya ditampilkan selama belum ada hasil ukur.
+// Begitu stasiun mengirim data pertama, data simulasi disisihkan agar tidak ikut
+// dihitung dalam rata-rata 24 jam, ISPU, Wind Rose, maupun unduhan CSV.
+function preferMeasured(list: SensorRecord[]): SensorRecord[] {
+  return list.some((r) => !r.isDummy) ? list.filter((r) => !r.isDummy) : list;
+}
+
 function loadDemo(): SensorRecord[] {
   return sortAsc((dummyRows as SensorRow[]).map(normalizeRow));
 }
@@ -62,7 +69,7 @@ export function useSensorData(): SensorDataState {
           setStatus("error");
           return;
         }
-        setRecords(sortAsc((data as SensorRow[]).map(normalizeRow)));
+        setRecords(preferMeasured(sortAsc((data as SensorRow[]).map(normalizeRow))));
         setError(null);
         setStatus("ready");
         setLastFetched(Date.now());
@@ -76,6 +83,7 @@ export function useSensorData(): SensorDataState {
   useEffect(() => {
     const supabase = getSupabase();
     if (!supabase) return;
+    let wasOffline = false;
     const channel = supabase
       .channel("sensor-udara-realtime")
       .on(
@@ -85,15 +93,30 @@ export function useSensorData(): SensorDataState {
           const rec = normalizeRow(payload.new as SensorRow);
           setRecords((prev) => {
             if (prev.some((p) => p.ts === rec.ts && p.deviceId === rec.deviceId)) return prev;
-            const next = sortAsc([...prev, rec]);
+            const next = preferMeasured(sortAsc([...prev, rec]));
             return next.length > MAX_ROWS ? next.slice(next.length - MAX_ROWS) : next;
           });
           setLastFetched(Date.now());
         },
       )
+      // Status SUBSCRIBED datang SEBELUM server selesai memasang langganan Postgres.
+      // Data yang masuk di jeda itu (atau saat koneksi putus) tidak dikirim ulang oleh
+      // Realtime, jadi riwayat diambil ulang begitu langganan Postgres benar-benar siap.
+      .on("system", {}, (msg: { extension?: string; status?: string }) => {
+        if (msg?.extension === "postgres_changes" && msg?.status === "ok") {
+          setLive("live");
+          setNonce((n) => n + 1);
+        }
+      })
       .subscribe((s) => {
-        if (s === "SUBSCRIBED") setLive("live");
-        else if (s === "CHANNEL_ERROR" || s === "TIMED_OUT" || s === "CLOSED") setLive("offline");
+        if (s === "SUBSCRIBED") {
+          setLive("live");
+          if (wasOffline) setNonce((n) => n + 1);
+          wasOffline = false;
+        } else if (s === "CHANNEL_ERROR" || s === "TIMED_OUT" || s === "CLOSED") {
+          setLive("offline");
+          wasOffline = true;
+        }
       });
     return () => {
       supabase.removeChannel(channel);

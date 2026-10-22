@@ -35,6 +35,9 @@ yarn-error.log*
 .env*
 !.env.example
 
+# kunci perangkat ESP32
+firmware/secrets.h
+
 # vercel
 .vercel
 

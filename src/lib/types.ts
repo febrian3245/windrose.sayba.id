@@ -15,6 +15,8 @@ export interface SensorRow {
   latitude: number | string | null;
   longitude: number | string | null;
   battery_volt: number | string;
+  // "stasiun" = hasil ukur, "dummy" = data uji. Kosong pada file dummy lokal.
+  sumber?: "stasiun" | "dummy" | null;
 }
 
 // Bentuk yang dipakai di UI: semua angka sudah bertipe number,
@@ -34,6 +36,7 @@ export interface SensorRecord {
   latitude: number;
   longitude: number;
   batteryVolt: number;
+  isDummy: boolean;
 }
 
 export type Pollutant = "pm25" | "pm10" | "voc";
@@ -72,5 +75,6 @@ export function normalizeRow(row: SensorRow): SensorRecord {
     latitude: num(row.latitude, STATION.latitude),
     longitude: num(row.longitude, STATION.longitude),
     batteryVolt: num(row.battery_volt),
+    isDummy: row.sumber === "dummy",
   };
 }
