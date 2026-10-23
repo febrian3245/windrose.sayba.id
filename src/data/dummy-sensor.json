@@ -1,7 +1,7 @@
 [
   {
     "created_at": "2026-08-26 18:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.82,
     "pm10": 53.44,
     "voc_index": 167,
@@ -31,7 +31,7 @@
   },
   {
     "created_at": "2026-08-26 18:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.52,
     "pm10": 53.76,
     "voc_index": 174,
@@ -46,7 +46,7 @@
   },
   {
     "created_at": "2026-08-26 18:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 33.36,
     "pm10": 57.04,
     "voc_index": 165,
@@ -61,7 +61,7 @@
   },
   {
     "created_at": "2026-08-26 18:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.66,
     "pm10": 53.04,
     "voc_index": 174,
@@ -76,7 +76,7 @@
   },
   {
     "created_at": "2026-08-26 18:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.31,
     "pm10": 53.09,
     "voc_index": 161,
@@ -91,7 +91,7 @@
   },
   {
     "created_at": "2026-08-26 18:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.17,
     "pm10": 49.41,
     "voc_index": 162,
@@ -106,7 +106,7 @@
   },
   {
     "created_at": "2026-08-26 19:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.86,
     "pm10": 46.63,
     "voc_index": 145,
@@ -136,7 +136,7 @@
   },
   {
     "created_at": "2026-08-26 19:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.02,
     "pm10": 47.09,
     "voc_index": 160,
@@ -151,7 +151,7 @@
   },
   {
     "created_at": "2026-08-26 19:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.11,
     "pm10": 43.89,
     "voc_index": 165,
@@ -166,7 +166,7 @@
   },
   {
     "created_at": "2026-08-26 19:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.72,
     "pm10": 39.0,
     "voc_index": 152,
@@ -181,7 +181,7 @@
   },
   {
     "created_at": "2026-08-26 19:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.41,
     "pm10": 43.76,
     "voc_index": 149,
@@ -196,7 +196,7 @@
   },
   {
     "created_at": "2026-08-26 19:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.11,
     "pm10": 42.43,
     "voc_index": 158,
@@ -211,7 +211,7 @@
   },
   {
     "created_at": "2026-08-26 20:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.37,
     "pm10": 41.16,
     "voc_index": 161,
@@ -241,7 +241,7 @@
   },
   {
     "created_at": "2026-08-26 20:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.49,
     "pm10": 42.1,
     "voc_index": 167,
@@ -256,7 +256,7 @@
   },
   {
     "created_at": "2026-08-26 20:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.6,
     "pm10": 42.01,
     "voc_index": 175,
@@ -271,7 +271,7 @@
   },
   {
     "created_at": "2026-08-26 20:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.16,
     "pm10": 43.01,
     "voc_index": 183,
@@ -286,7 +286,7 @@
   },
   {
     "created_at": "2026-08-26 20:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.54,
     "pm10": 36.63,
     "voc_index": 177,
@@ -301,7 +301,7 @@
   },
   {
     "created_at": "2026-08-26 20:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.61,
     "pm10": 44.0,
     "voc_index": 169,
@@ -316,7 +316,7 @@
   },
   {
     "created_at": "2026-08-26 21:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.47,
     "pm10": 42.2,
     "voc_index": 160,
@@ -346,7 +346,7 @@
   },
   {
     "created_at": "2026-08-26 21:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.41,
     "pm10": 41.4,
     "voc_index": 166,
@@ -361,7 +361,7 @@
   },
   {
     "created_at": "2026-08-26 21:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.78,
     "pm10": 39.77,
     "voc_index": 164,
@@ -376,7 +376,7 @@
   },
   {
     "created_at": "2026-08-26 21:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.68,
     "pm10": 41.33,
     "voc_index": 168,
@@ -391,7 +391,7 @@
   },
   {
     "created_at": "2026-08-26 21:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.97,
     "pm10": 45.66,
     "voc_index": 166,
@@ -406,7 +406,7 @@
   },
   {
     "created_at": "2026-08-26 21:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.52,
     "pm10": 42.92,
     "voc_index": 164,
@@ -421,7 +421,7 @@
   },
   {
     "created_at": "2026-08-26 22:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.37,
     "pm10": 55.84,
     "voc_index": 145,
@@ -451,7 +451,7 @@
   },
   {
     "created_at": "2026-08-26 22:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.99,
     "pm10": 49.85,
     "voc_index": 144,
@@ -466,7 +466,7 @@
   },
   {
     "created_at": "2026-08-26 22:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.42,
     "pm10": 51.79,
     "voc_index": 148,
@@ -481,7 +481,7 @@
   },
   {
     "created_at": "2026-08-26 22:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.1,
     "pm10": 49.88,
     "voc_index": 159,
@@ -496,7 +496,7 @@
   },
   {
     "created_at": "2026-08-26 22:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.43,
     "pm10": 48.41,
     "voc_index": 143,
@@ -511,7 +511,7 @@
   },
   {
     "created_at": "2026-08-26 22:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 22.11,
     "pm10": 45.93,
     "voc_index": 145,
@@ -526,7 +526,7 @@
   },
   {
     "created_at": "2026-08-26 23:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 19.68,
     "pm10": 42.26,
     "voc_index": 133,
@@ -556,7 +556,7 @@
   },
   {
     "created_at": "2026-08-26 23:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 17.17,
     "pm10": 40.98,
     "voc_index": 133,
@@ -571,7 +571,7 @@
   },
   {
     "created_at": "2026-08-26 23:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 18.08,
     "pm10": 43.4,
     "voc_index": 127,
@@ -586,7 +586,7 @@
   },
   {
     "created_at": "2026-08-26 23:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 21.25,
     "pm10": 33.34,
     "voc_index": 104,
@@ -601,7 +601,7 @@
   },
   {
     "created_at": "2026-08-26 23:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.85,
     "pm10": 30.81,
     "voc_index": 130,
@@ -616,7 +616,7 @@
   },
   {
     "created_at": "2026-08-26 23:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 20.08,
     "pm10": 28.79,
     "voc_index": 120,
@@ -631,7 +631,7 @@
   },
   {
     "created_at": "2026-08-27 00:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 19.73,
     "pm10": 28.47,
     "voc_index": 140,
@@ -661,7 +661,7 @@
   },
   {
     "created_at": "2026-08-27 00:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 18.59,
     "pm10": 26.01,
     "voc_index": 153,
@@ -676,7 +676,7 @@
   },
   {
     "created_at": "2026-08-27 00:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 21.88,
     "pm10": 34.87,
     "voc_index": 136,
@@ -691,7 +691,7 @@
   },
   {
     "created_at": "2026-08-27 00:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 18.9,
     "pm10": 32.63,
     "voc_index": 144,
@@ -706,7 +706,7 @@
   },
   {
     "created_at": "2026-08-27 00:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.12,
     "pm10": 26.27,
     "voc_index": 148,
@@ -721,7 +721,7 @@
   },
   {
     "created_at": "2026-08-27 00:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.22,
     "pm10": 27.03,
     "voc_index": 162,
@@ -736,7 +736,7 @@
   },
   {
     "created_at": "2026-08-27 01:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.71,
     "pm10": 32.65,
     "voc_index": 145,
@@ -766,7 +766,7 @@
   },
   {
     "created_at": "2026-08-27 01:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.01,
     "pm10": 39.11,
     "voc_index": 158,
@@ -781,7 +781,7 @@
   },
   {
     "created_at": "2026-08-27 01:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.35,
     "pm10": 36.67,
     "voc_index": 166,
@@ -796,7 +796,7 @@
   },
   {
     "created_at": "2026-08-27 01:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.13,
     "pm10": 30.73,
     "voc_index": 155,
@@ -811,7 +811,7 @@
   },
   {
     "created_at": "2026-08-27 01:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.27,
     "pm10": 29.05,
     "voc_index": 143,
@@ -826,7 +826,7 @@
   },
   {
     "created_at": "2026-08-27 01:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.02,
     "pm10": 35.09,
     "voc_index": 145,
@@ -841,7 +841,7 @@
   },
   {
     "created_at": "2026-08-27 02:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.12,
     "pm10": 41.43,
     "voc_index": 147,
@@ -871,7 +871,7 @@
   },
   {
     "created_at": "2026-08-27 02:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.5,
     "pm10": 40.97,
     "voc_index": 155,
@@ -886,7 +886,7 @@
   },
   {
     "created_at": "2026-08-27 02:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.33,
     "pm10": 42.16,
     "voc_index": 156,
@@ -901,7 +901,7 @@
   },
   {
     "created_at": "2026-08-27 02:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.02,
     "pm10": 41.88,
     "voc_index": 153,
@@ -916,7 +916,7 @@
   },
   {
     "created_at": "2026-08-27 02:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 33.38,
     "pm10": 44.63,
     "voc_index": 158,
@@ -931,7 +931,7 @@
   },
   {
     "created_at": "2026-08-27 02:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.79,
     "pm10": 46.82,
     "voc_index": 172,
@@ -946,7 +946,7 @@
   },
   {
     "created_at": "2026-08-27 03:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.8,
     "pm10": 52.45,
     "voc_index": 159,
@@ -976,7 +976,7 @@
   },
   {
     "created_at": "2026-08-27 03:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 33.22,
     "pm10": 46.74,
     "voc_index": 146,
@@ -991,7 +991,7 @@
   },
   {
     "created_at": "2026-08-27 03:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.3,
     "pm10": 43.87,
     "voc_index": 156,
@@ -1006,7 +1006,7 @@
   },
   {
     "created_at": "2026-08-27 03:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.98,
     "pm10": 45.63,
     "voc_index": 143,
@@ -1021,7 +1021,7 @@
   },
   {
     "created_at": "2026-08-27 03:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.06,
     "pm10": 48.1,
     "voc_index": 166,
@@ -1036,7 +1036,7 @@
   },
   {
     "created_at": "2026-08-27 03:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 34.28,
     "pm10": 48.62,
     "voc_index": 156,
@@ -1051,7 +1051,7 @@
   },
   {
     "created_at": "2026-08-27 04:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.39,
     "pm10": 48.87,
     "voc_index": 153,
@@ -1081,7 +1081,7 @@
   },
   {
     "created_at": "2026-08-27 04:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.25,
     "pm10": 46.05,
     "voc_index": 153,
@@ -1096,7 +1096,7 @@
   },
   {
     "created_at": "2026-08-27 04:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 34.19,
     "pm10": 44.21,
     "voc_index": 165,
@@ -1111,7 +1111,7 @@
   },
   {
     "created_at": "2026-08-27 04:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.57,
     "pm10": 50.8,
     "voc_index": 165,
@@ -1126,7 +1126,7 @@
   },
   {
     "created_at": "2026-08-27 04:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 37.39,
     "pm10": 38.64,
     "voc_index": 165,
@@ -1141,7 +1141,7 @@
   },
   {
     "created_at": "2026-08-27 04:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 40.27,
     "pm10": 50.39,
     "voc_index": 170,
@@ -1156,7 +1156,7 @@
   },
   {
     "created_at": "2026-08-27 05:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 39.94,
     "pm10": 47.57,
     "voc_index": 166,
@@ -1186,7 +1186,7 @@
   },
   {
     "created_at": "2026-08-27 05:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 44.18,
     "pm10": 57.58,
     "voc_index": 159,
@@ -1201,7 +1201,7 @@
   },
   {
     "created_at": "2026-08-27 05:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 41.41,
     "pm10": 59.51,
     "voc_index": 172,
@@ -1216,7 +1216,7 @@
   },
   {
     "created_at": "2026-08-27 05:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 40.19,
     "pm10": 65.96,
     "voc_index": 170,
@@ -1231,7 +1231,7 @@
   },
   {
     "created_at": "2026-08-27 05:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 38.26,
     "pm10": 63.84,
     "voc_index": 172,
@@ -1246,7 +1246,7 @@
   },
   {
     "created_at": "2026-08-27 05:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 37.76,
     "pm10": 55.38,
     "voc_index": 152,
@@ -1261,7 +1261,7 @@
   },
   {
     "created_at": "2026-08-27 06:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 33.26,
     "pm10": 57.98,
     "voc_index": 174,
@@ -1291,7 +1291,7 @@
   },
   {
     "created_at": "2026-08-27 06:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.28,
     "pm10": 54.65,
     "voc_index": 150,
@@ -1306,7 +1306,7 @@
   },
   {
     "created_at": "2026-08-27 06:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 34.6,
     "pm10": 61.55,
     "voc_index": 154,
@@ -1321,7 +1321,7 @@
   },
   {
     "created_at": "2026-08-27 06:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.78,
     "pm10": 58.79,
     "voc_index": 140,
@@ -1336,7 +1336,7 @@
   },
   {
     "created_at": "2026-08-27 06:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 34.04,
     "pm10": 61.25,
     "voc_index": 144,
@@ -1351,7 +1351,7 @@
   },
   {
     "created_at": "2026-08-27 06:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.88,
     "pm10": 55.21,
     "voc_index": 144,
@@ -1366,7 +1366,7 @@
   },
   {
     "created_at": "2026-08-27 07:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.94,
     "pm10": 52.77,
     "voc_index": 134,
@@ -1396,7 +1396,7 @@
   },
   {
     "created_at": "2026-08-27 07:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.22,
     "pm10": 54.75,
     "voc_index": 148,
@@ -1411,7 +1411,7 @@
   },
   {
     "created_at": "2026-08-27 07:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.97,
     "pm10": 52.94,
     "voc_index": 133,
@@ -1426,7 +1426,7 @@
   },
   {
     "created_at": "2026-08-27 07:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.31,
     "pm10": 51.76,
     "voc_index": 149,
@@ -1441,7 +1441,7 @@
   },
   {
     "created_at": "2026-08-27 07:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.92,
     "pm10": 52.93,
     "voc_index": 159,
@@ -1456,7 +1456,7 @@
   },
   {
     "created_at": "2026-08-27 07:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.6,
     "pm10": 48.48,
     "voc_index": 158,
@@ -1471,7 +1471,7 @@
   },
   {
     "created_at": "2026-08-27 08:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 33.9,
     "pm10": 47.45,
     "voc_index": 134,
@@ -1501,7 +1501,7 @@
   },
   {
     "created_at": "2026-08-27 08:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.85,
     "pm10": 45.45,
     "voc_index": 149,
@@ -1516,7 +1516,7 @@
   },
   {
     "created_at": "2026-08-27 08:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.41,
     "pm10": 49.6,
     "voc_index": 148,
@@ -1531,7 +1531,7 @@
   },
   {
     "created_at": "2026-08-27 08:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.12,
     "pm10": 36.2,
     "voc_index": 151,
@@ -1546,7 +1546,7 @@
   },
   {
     "created_at": "2026-08-27 08:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.25,
     "pm10": 47.0,
     "voc_index": 140,
@@ -1561,7 +1561,7 @@
   },
   {
     "created_at": "2026-08-27 08:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.03,
     "pm10": 43.0,
     "voc_index": 143,
@@ -1576,7 +1576,7 @@
   },
   {
     "created_at": "2026-08-27 09:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.38,
     "pm10": 51.54,
     "voc_index": 142,
@@ -1606,7 +1606,7 @@
   },
   {
     "created_at": "2026-08-27 09:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.72,
     "pm10": 47.48,
     "voc_index": 131,
@@ -1621,7 +1621,7 @@
   },
   {
     "created_at": "2026-08-27 09:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.76,
     "pm10": 49.95,
     "voc_index": 139,
@@ -1636,7 +1636,7 @@
   },
   {
     "created_at": "2026-08-27 09:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.58,
     "pm10": 58.43,
     "voc_index": 140,
@@ -1651,7 +1651,7 @@
   },
   {
     "created_at": "2026-08-27 09:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.58,
     "pm10": 52.14,
     "voc_index": 152,
@@ -1666,7 +1666,7 @@
   },
   {
     "created_at": "2026-08-27 09:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.0,
     "pm10": 52.78,
     "voc_index": 139,
@@ -1681,7 +1681,7 @@
   },
   {
     "created_at": "2026-08-27 10:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.58,
     "pm10": 52.43,
     "voc_index": 146,
@@ -1711,7 +1711,7 @@
   },
   {
     "created_at": "2026-08-27 10:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.35,
     "pm10": 55.68,
     "voc_index": 158,
@@ -1726,7 +1726,7 @@
   },
   {
     "created_at": "2026-08-27 10:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.5,
     "pm10": 60.13,
     "voc_index": 155,
@@ -1741,7 +1741,7 @@
   },
   {
     "created_at": "2026-08-27 10:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.18,
     "pm10": 57.3,
     "voc_index": 150,
@@ -1756,7 +1756,7 @@
   },
   {
     "created_at": "2026-08-27 10:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.77,
     "pm10": 59.0,
     "voc_index": 123,
@@ -1771,7 +1771,7 @@
   },
   {
     "created_at": "2026-08-27 10:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.13,
     "pm10": 49.95,
     "voc_index": 115,
@@ -1786,7 +1786,7 @@
   },
   {
     "created_at": "2026-08-27 11:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.43,
     "pm10": 47.11,
     "voc_index": 128,
@@ -1816,7 +1816,7 @@
   },
   {
     "created_at": "2026-08-27 11:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.95,
     "pm10": 50.21,
     "voc_index": 134,
@@ -1831,7 +1831,7 @@
   },
   {
     "created_at": "2026-08-27 11:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.17,
     "pm10": 43.87,
     "voc_index": 136,
@@ -1846,7 +1846,7 @@
   },
   {
     "created_at": "2026-08-27 11:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.99,
     "pm10": 47.62,
     "voc_index": 130,
@@ -1861,7 +1861,7 @@
   },
   {
     "created_at": "2026-08-27 11:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 20.56,
     "pm10": 42.52,
     "voc_index": 143,
@@ -1876,7 +1876,7 @@
   },
   {
     "created_at": "2026-08-27 11:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 21.04,
     "pm10": 40.35,
     "voc_index": 153,
@@ -1891,7 +1891,7 @@
   },
   {
     "created_at": "2026-08-27 12:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.29,
     "pm10": 42.11,
     "voc_index": 139,
@@ -1921,7 +1921,7 @@
   },
   {
     "created_at": "2026-08-27 12:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.24,
     "pm10": 36.61,
     "voc_index": 149,
@@ -1936,7 +1936,7 @@
   },
   {
     "created_at": "2026-08-27 12:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.52,
     "pm10": 44.92,
     "voc_index": 167,
@@ -1951,7 +1951,7 @@
   },
   {
     "created_at": "2026-08-27 12:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.65,
     "pm10": 45.12,
     "voc_index": 155,
@@ -1966,7 +1966,7 @@
   },
   {
     "created_at": "2026-08-27 12:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.68,
     "pm10": 45.71,
     "voc_index": 143,
@@ -1981,7 +1981,7 @@
   },
   {
     "created_at": "2026-08-27 12:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 22.68,
     "pm10": 43.98,
     "voc_index": 156,
@@ -1996,7 +1996,7 @@
   },
   {
     "created_at": "2026-08-27 13:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.25,
     "pm10": 51.24,
     "voc_index": 141,
@@ -2026,7 +2026,7 @@
   },
   {
     "created_at": "2026-08-27 13:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.41,
     "pm10": 49.86,
     "voc_index": 126,
@@ -2041,7 +2041,7 @@
   },
   {
     "created_at": "2026-08-27 13:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.1,
     "pm10": 43.69,
     "voc_index": 142,
@@ -2056,7 +2056,7 @@
   },
   {
     "created_at": "2026-08-27 13:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.9,
     "pm10": 42.67,
     "voc_index": 146,
@@ -2071,7 +2071,7 @@
   },
   {
     "created_at": "2026-08-27 13:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.79,
     "pm10": 40.59,
     "voc_index": 151,
@@ -2086,7 +2086,7 @@
   },
   {
     "created_at": "2026-08-27 13:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 37.39,
     "pm10": 42.37,
     "voc_index": 149,
@@ -2101,7 +2101,7 @@
   },
   {
     "created_at": "2026-08-27 14:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.89,
     "pm10": 42.39,
     "voc_index": 165,
@@ -2131,7 +2131,7 @@
   },
   {
     "created_at": "2026-08-27 14:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.96,
     "pm10": 38.83,
     "voc_index": 167,
@@ -2146,7 +2146,7 @@
   },
   {
     "created_at": "2026-08-27 14:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.63,
     "pm10": 46.45,
     "voc_index": 173,
@@ -2161,7 +2161,7 @@
   },
   {
     "created_at": "2026-08-27 14:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.18,
     "pm10": 43.71,
     "voc_index": 175,
@@ -2176,7 +2176,7 @@
   },
   {
     "created_at": "2026-08-27 14:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 37.23,
     "pm10": 48.39,
     "voc_index": 190,
@@ -2191,7 +2191,7 @@
   },
   {
     "created_at": "2026-08-27 14:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.91,
     "pm10": 53.81,
     "voc_index": 168,
@@ -2206,7 +2206,7 @@
   },
   {
     "created_at": "2026-08-27 15:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 40.31,
     "pm10": 45.8,
     "voc_index": 159,
@@ -2236,7 +2236,7 @@
   },
   {
     "created_at": "2026-08-27 15:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 42.27,
     "pm10": 54.58,
     "voc_index": 160,
@@ -2251,7 +2251,7 @@
   },
   {
     "created_at": "2026-08-27 15:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 44.0,
     "pm10": 59.48,
     "voc_index": 185,
@@ -2266,7 +2266,7 @@
   },
   {
     "created_at": "2026-08-27 15:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 39.63,
     "pm10": 60.06,
     "voc_index": 183,
@@ -2281,7 +2281,7 @@
   },
   {
     "created_at": "2026-08-27 15:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 42.8,
     "pm10": 58.74,
     "voc_index": 190,
@@ -2296,7 +2296,7 @@
   },
   {
     "created_at": "2026-08-27 15:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 40.41,
     "pm10": 56.25,
     "voc_index": 187,
@@ -2311,7 +2311,7 @@
   },
   {
     "created_at": "2026-08-27 16:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 37.95,
     "pm10": 57.27,
     "voc_index": 187,
@@ -2341,7 +2341,7 @@
   },
   {
     "created_at": "2026-08-27 16:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 39.15,
     "pm10": 57.18,
     "voc_index": 179,
@@ -2356,7 +2356,7 @@
   },
   {
     "created_at": "2026-08-27 16:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 38.29,
     "pm10": 58.9,
     "voc_index": 169,
@@ -2371,7 +2371,7 @@
   },
   {
     "created_at": "2026-08-27 16:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 34.66,
     "pm10": 57.42,
     "voc_index": 176,
@@ -2386,7 +2386,7 @@
   },
   {
     "created_at": "2026-08-27 16:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.87,
     "pm10": 55.34,
     "voc_index": 163,
@@ -2401,7 +2401,7 @@
   },
   {
     "created_at": "2026-08-27 16:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 33.46,
     "pm10": 55.35,
     "voc_index": 171,
@@ -2416,7 +2416,7 @@
   },
   {
     "created_at": "2026-08-27 17:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.8,
     "pm10": 48.13,
     "voc_index": 159,
@@ -2446,7 +2446,7 @@
   },
   {
     "created_at": "2026-08-27 17:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.29,
     "pm10": 42.15,
     "voc_index": 153,
@@ -2461,7 +2461,7 @@
   },
   {
     "created_at": "2026-08-27 17:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.55,
     "pm10": 40.45,
     "voc_index": 174,
@@ -2476,7 +2476,7 @@
   },
   {
     "created_at": "2026-08-27 17:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.38,
     "pm10": 40.69,
     "voc_index": 167,
@@ -2491,7 +2491,7 @@
   },
   {
     "created_at": "2026-08-27 17:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.75,
     "pm10": 44.74,
     "voc_index": 156,
@@ -2506,7 +2506,7 @@
   },
   {
     "created_at": "2026-08-27 17:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.09,
     "pm10": 46.05,
     "voc_index": 162,
@@ -2521,7 +2521,7 @@
   },
   {
     "created_at": "2026-08-27 18:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.49,
     "pm10": 43.55,
     "voc_index": 158,
@@ -2551,7 +2551,7 @@
   },
   {
     "created_at": "2026-08-27 18:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.53,
     "pm10": 44.23,
     "voc_index": 143,
@@ -2566,7 +2566,7 @@
   },
   {
     "created_at": "2026-08-27 18:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.08,
     "pm10": 42.42,
     "voc_index": 157,
@@ -2581,7 +2581,7 @@
   },
   {
     "created_at": "2026-08-27 18:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.73,
     "pm10": 50.09,
     "voc_index": 157,
@@ -2596,7 +2596,7 @@
   },
   {
     "created_at": "2026-08-27 18:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.34,
     "pm10": 49.43,
     "voc_index": 167,
@@ -2611,7 +2611,7 @@
   },
   {
     "created_at": "2026-08-27 18:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.79,
     "pm10": 44.62,
     "voc_index": 158,
@@ -2626,7 +2626,7 @@
   },
   {
     "created_at": "2026-08-27 19:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.75,
     "pm10": 39.5,
     "voc_index": 152,
@@ -2656,7 +2656,7 @@
   },
   {
     "created_at": "2026-08-27 19:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.23,
     "pm10": 46.12,
     "voc_index": 161,
@@ -2671,7 +2671,7 @@
   },
   {
     "created_at": "2026-08-27 19:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.97,
     "pm10": 45.45,
     "voc_index": 158,
@@ -2686,7 +2686,7 @@
   },
   {
     "created_at": "2026-08-27 19:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.17,
     "pm10": 36.89,
     "voc_index": 159,
@@ -2701,7 +2701,7 @@
   },
   {
     "created_at": "2026-08-27 19:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 22.71,
     "pm10": 35.72,
     "voc_index": 152,
@@ -2716,7 +2716,7 @@
   },
   {
     "created_at": "2026-08-27 19:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.07,
     "pm10": 29.53,
     "voc_index": 148,
@@ -2731,7 +2731,7 @@
   },
   {
     "created_at": "2026-08-27 20:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.01,
     "pm10": 32.99,
     "voc_index": 156,
@@ -2761,7 +2761,7 @@
   },
   {
     "created_at": "2026-08-27 20:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.82,
     "pm10": 36.38,
     "voc_index": 136,
@@ -2776,7 +2776,7 @@
   },
   {
     "created_at": "2026-08-27 20:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 21.88,
     "pm10": 36.5,
     "voc_index": 149,
@@ -2791,7 +2791,7 @@
   },
   {
     "created_at": "2026-08-27 20:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.29,
     "pm10": 38.59,
     "voc_index": 141,
@@ -2806,7 +2806,7 @@
   },
   {
     "created_at": "2026-08-27 20:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.81,
     "pm10": 38.82,
     "voc_index": 133,
@@ -2821,7 +2821,7 @@
   },
   {
     "created_at": "2026-08-27 20:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.52,
     "pm10": 42.8,
     "voc_index": 150,
@@ -2836,7 +2836,7 @@
   },
   {
     "created_at": "2026-08-27 21:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.39,
     "pm10": 38.9,
     "voc_index": 127,
@@ -2866,7 +2866,7 @@
   },
   {
     "created_at": "2026-08-27 21:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.64,
     "pm10": 38.32,
     "voc_index": 126,
@@ -2881,7 +2881,7 @@
   },
   {
     "created_at": "2026-08-27 21:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.49,
     "pm10": 34.56,
     "voc_index": 140,
@@ -2896,7 +2896,7 @@
   },
   {
     "created_at": "2026-08-27 21:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.27,
     "pm10": 30.57,
     "voc_index": 140,
@@ -2911,7 +2911,7 @@
   },
   {
     "created_at": "2026-08-27 21:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.36,
     "pm10": 25.79,
     "voc_index": 141,
@@ -2926,7 +2926,7 @@
   },
   {
     "created_at": "2026-08-27 21:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.13,
     "pm10": 34.92,
     "voc_index": 157,
@@ -2941,7 +2941,7 @@
   },
   {
     "created_at": "2026-08-27 22:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.32,
     "pm10": 32.96,
     "voc_index": 171,
@@ -2971,7 +2971,7 @@
   },
   {
     "created_at": "2026-08-27 22:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.73,
     "pm10": 34.7,
     "voc_index": 158,
@@ -2986,7 +2986,7 @@
   },
   {
     "created_at": "2026-08-27 22:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.78,
     "pm10": 40.69,
     "voc_index": 169,
@@ -3001,7 +3001,7 @@
   },
   {
     "created_at": "2026-08-27 22:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.74,
     "pm10": 43.07,
     "voc_index": 158,
@@ -3016,7 +3016,7 @@
   },
   {
     "created_at": "2026-08-27 22:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.42,
     "pm10": 48.64,
     "voc_index": 156,
@@ -3031,7 +3031,7 @@
   },
   {
     "created_at": "2026-08-27 22:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.4,
     "pm10": 48.06,
     "voc_index": 161,
@@ -3046,7 +3046,7 @@
   },
   {
     "created_at": "2026-08-27 23:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.41,
     "pm10": 47.84,
     "voc_index": 169,
@@ -3076,7 +3076,7 @@
   },
   {
     "created_at": "2026-08-27 23:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.43,
     "pm10": 47.23,
     "voc_index": 144,
@@ -3091,7 +3091,7 @@
   },
   {
     "created_at": "2026-08-27 23:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.31,
     "pm10": 48.08,
     "voc_index": 167,
@@ -3106,7 +3106,7 @@
   },
   {
     "created_at": "2026-08-27 23:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.44,
     "pm10": 48.8,
     "voc_index": 158,
@@ -3121,7 +3121,7 @@
   },
   {
     "created_at": "2026-08-27 23:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.38,
     "pm10": 51.27,
     "voc_index": 132,
@@ -3136,7 +3136,7 @@
   },
   {
     "created_at": "2026-08-27 23:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.64,
     "pm10": 40.13,
     "voc_index": 136,
@@ -3151,7 +3151,7 @@
   },
   {
     "created_at": "2026-08-28 00:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.39,
     "pm10": 46.67,
     "voc_index": 132,
@@ -3181,7 +3181,7 @@
   },
   {
     "created_at": "2026-08-28 00:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.23,
     "pm10": 43.18,
     "voc_index": 152,
@@ -3196,7 +3196,7 @@
   },
   {
     "created_at": "2026-08-28 00:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 22.89,
     "pm10": 44.88,
     "voc_index": 145,
@@ -3211,7 +3211,7 @@
   },
   {
     "created_at": "2026-08-28 00:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.59,
     "pm10": 46.05,
     "voc_index": 154,
@@ -3226,7 +3226,7 @@
   },
   {
     "created_at": "2026-08-28 00:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 18.83,
     "pm10": 40.65,
     "voc_index": 148,
@@ -3241,7 +3241,7 @@
   },
   {
     "created_at": "2026-08-28 00:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 16.7,
     "pm10": 40.26,
     "voc_index": 146,
@@ -3256,7 +3256,7 @@
   },
   {
     "created_at": "2026-08-28 01:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 18.93,
     "pm10": 40.99,
     "voc_index": 157,
@@ -3286,7 +3286,7 @@
   },
   {
     "created_at": "2026-08-28 01:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 22.9,
     "pm10": 39.07,
     "voc_index": 145,
@@ -3301,7 +3301,7 @@
   },
   {
     "created_at": "2026-08-28 01:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.76,
     "pm10": 33.5,
     "voc_index": 158,
@@ -3316,7 +3316,7 @@
   },
   {
     "created_at": "2026-08-28 01:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.12,
     "pm10": 31.67,
     "voc_index": 142,
@@ -3331,7 +3331,7 @@
   },
   {
     "created_at": "2026-08-28 01:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 19.54,
     "pm10": 32.67,
     "voc_index": 152,
@@ -3346,7 +3346,7 @@
   },
   {
     "created_at": "2026-08-28 01:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 12.81,
     "pm10": 34.19,
     "voc_index": 146,
@@ -3361,7 +3361,7 @@
   },
   {
     "created_at": "2026-08-28 02:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 20.42,
     "pm10": 36.53,
     "voc_index": 151,
@@ -3391,7 +3391,7 @@
   },
   {
     "created_at": "2026-08-28 02:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 17.84,
     "pm10": 27.94,
     "voc_index": 172,
@@ -3406,7 +3406,7 @@
   },
   {
     "created_at": "2026-08-28 02:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 22.4,
     "pm10": 28.75,
     "voc_index": 164,
@@ -3421,7 +3421,7 @@
   },
   {
     "created_at": "2026-08-28 02:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.13,
     "pm10": 31.11,
     "voc_index": 176,
@@ -3436,7 +3436,7 @@
   },
   {
     "created_at": "2026-08-28 02:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.89,
     "pm10": 32.49,
     "voc_index": 191,
@@ -3451,7 +3451,7 @@
   },
   {
     "created_at": "2026-08-28 02:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.42,
     "pm10": 34.05,
     "voc_index": 191,
@@ -3466,7 +3466,7 @@
   },
   {
     "created_at": "2026-08-28 03:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 34.04,
     "pm10": 34.44,
     "voc_index": 185,
@@ -3496,7 +3496,7 @@
   },
   {
     "created_at": "2026-08-28 03:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 37.78,
     "pm10": 40.29,
     "voc_index": 180,
@@ -3511,7 +3511,7 @@
   },
   {
     "created_at": "2026-08-28 03:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 34.76,
     "pm10": 45.65,
     "voc_index": 186,
@@ -3526,7 +3526,7 @@
   },
   {
     "created_at": "2026-08-28 03:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.83,
     "pm10": 43.22,
     "voc_index": 183,
@@ -3541,7 +3541,7 @@
   },
   {
     "created_at": "2026-08-28 03:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.53,
     "pm10": 41.57,
     "voc_index": 163,
@@ -3556,7 +3556,7 @@
   },
   {
     "created_at": "2026-08-28 03:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.35,
     "pm10": 43.31,
     "voc_index": 169,
@@ -3571,7 +3571,7 @@
   },
   {
     "created_at": "2026-08-28 04:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.02,
     "pm10": 44.29,
     "voc_index": 179,
@@ -3601,7 +3601,7 @@
   },
   {
     "created_at": "2026-08-28 04:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 33.41,
     "pm10": 50.89,
     "voc_index": 183,
@@ -3616,7 +3616,7 @@
   },
   {
     "created_at": "2026-08-28 04:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 38.82,
     "pm10": 47.91,
     "voc_index": 175,
@@ -3631,7 +3631,7 @@
   },
   {
     "created_at": "2026-08-28 04:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.43,
     "pm10": 55.13,
     "voc_index": 188,
@@ -3646,7 +3646,7 @@
   },
   {
     "created_at": "2026-08-28 04:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.72,
     "pm10": 51.3,
     "voc_index": 154,
@@ -3661,7 +3661,7 @@
   },
   {
     "created_at": "2026-08-28 04:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.22,
     "pm10": 46.81,
     "voc_index": 179,
@@ -3676,7 +3676,7 @@
   },
   {
     "created_at": "2026-08-28 05:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.48,
     "pm10": 44.61,
     "voc_index": 178,
@@ -3706,7 +3706,7 @@
   },
   {
     "created_at": "2026-08-28 05:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.32,
     "pm10": 42.36,
     "voc_index": 173,
@@ -3721,7 +3721,7 @@
   },
   {
     "created_at": "2026-08-28 05:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 33.18,
     "pm10": 49.99,
     "voc_index": 160,
@@ -3736,7 +3736,7 @@
   },
   {
     "created_at": "2026-08-28 05:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.52,
     "pm10": 54.21,
     "voc_index": 174,
@@ -3751,7 +3751,7 @@
   },
   {
     "created_at": "2026-08-28 05:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.07,
     "pm10": 61.28,
     "voc_index": 176,
@@ -3766,7 +3766,7 @@
   },
   {
     "created_at": "2026-08-28 05:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.96,
     "pm10": 54.14,
     "voc_index": 154,
@@ -3781,7 +3781,7 @@
   },
   {
     "created_at": "2026-08-28 06:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.06,
     "pm10": 57.5,
     "voc_index": 148,
@@ -3811,7 +3811,7 @@
   },
   {
     "created_at": "2026-08-28 06:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.04,
     "pm10": 53.13,
     "voc_index": 147,
@@ -3826,7 +3826,7 @@
   },
   {
     "created_at": "2026-08-28 06:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 35.18,
     "pm10": 52.85,
     "voc_index": 149,
@@ -3841,7 +3841,7 @@
   },
   {
     "created_at": "2026-08-28 06:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.21,
     "pm10": 52.32,
     "voc_index": 161,
@@ -3856,7 +3856,7 @@
   },
   {
     "created_at": "2026-08-28 06:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.07,
     "pm10": 48.87,
     "voc_index": 150,
@@ -3871,7 +3871,7 @@
   },
   {
     "created_at": "2026-08-28 06:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.92,
     "pm10": 52.62,
     "voc_index": 155,
@@ -3886,7 +3886,7 @@
   },
   {
     "created_at": "2026-08-28 07:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.41,
     "pm10": 50.33,
     "voc_index": 157,
@@ -3916,7 +3916,7 @@
   },
   {
     "created_at": "2026-08-28 07:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 30.25,
     "pm10": 50.52,
     "voc_index": 165,
@@ -3931,7 +3931,7 @@
   },
   {
     "created_at": "2026-08-28 07:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 20.15,
     "pm10": 48.71,
     "voc_index": 149,
@@ -3946,7 +3946,7 @@
   },
   {
     "created_at": "2026-08-28 07:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 20.75,
     "pm10": 42.94,
     "voc_index": 154,
@@ -3961,7 +3961,7 @@
   },
   {
     "created_at": "2026-08-28 07:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 16.97,
     "pm10": 41.46,
     "voc_index": 148,
@@ -3976,7 +3976,7 @@
   },
   {
     "created_at": "2026-08-28 07:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 18.32,
     "pm10": 47.41,
     "voc_index": 143,
@@ -3991,7 +3991,7 @@
   },
   {
     "created_at": "2026-08-28 08:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 19.24,
     "pm10": 41.57,
     "voc_index": 148,
@@ -4021,7 +4021,7 @@
   },
   {
     "created_at": "2026-08-28 08:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.43,
     "pm10": 37.29,
     "voc_index": 177,
@@ -4036,7 +4036,7 @@
   },
   {
     "created_at": "2026-08-28 08:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 21.76,
     "pm10": 47.31,
     "voc_index": 160,
@@ -4051,7 +4051,7 @@
   },
   {
     "created_at": "2026-08-28 08:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 25.72,
     "pm10": 47.82,
     "voc_index": 155,
@@ -4066,7 +4066,7 @@
   },
   {
     "created_at": "2026-08-28 08:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.51,
     "pm10": 44.68,
     "voc_index": 157,
@@ -4081,7 +4081,7 @@
   },
   {
     "created_at": "2026-08-28 08:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.46,
     "pm10": 44.05,
     "voc_index": 157,
@@ -4096,7 +4096,7 @@
   },
   {
     "created_at": "2026-08-28 09:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.97,
     "pm10": 45.39,
     "voc_index": 166,
@@ -4126,7 +4126,7 @@
   },
   {
     "created_at": "2026-08-28 09:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.31,
     "pm10": 39.77,
     "voc_index": 169,
@@ -4141,7 +4141,7 @@
   },
   {
     "created_at": "2026-08-28 09:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.63,
     "pm10": 42.26,
     "voc_index": 172,
@@ -4156,7 +4156,7 @@
   },
   {
     "created_at": "2026-08-28 09:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 21.24,
     "pm10": 41.43,
     "voc_index": 172,
@@ -4171,7 +4171,7 @@
   },
   {
     "created_at": "2026-08-28 09:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 15.35,
     "pm10": 41.74,
     "voc_index": 171,
@@ -4186,7 +4186,7 @@
   },
   {
     "created_at": "2026-08-28 09:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 19.37,
     "pm10": 44.71,
     "voc_index": 172,
@@ -4201,7 +4201,7 @@
   },
   {
     "created_at": "2026-08-28 10:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 20.93,
     "pm10": 33.0,
     "voc_index": 155,
@@ -4231,7 +4231,7 @@
   },
   {
     "created_at": "2026-08-28 10:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 18.52,
     "pm10": 37.95,
     "voc_index": 169,
@@ -4246,7 +4246,7 @@
   },
   {
     "created_at": "2026-08-28 10:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 21.54,
     "pm10": 35.73,
     "voc_index": 163,
@@ -4261,7 +4261,7 @@
   },
   {
     "created_at": "2026-08-28 10:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 17.89,
     "pm10": 34.06,
     "voc_index": 165,
@@ -4276,7 +4276,7 @@
   },
   {
     "created_at": "2026-08-28 10:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 16.95,
     "pm10": 32.09,
     "voc_index": 151,
@@ -4291,7 +4291,7 @@
   },
   {
     "created_at": "2026-08-28 10:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 19.09,
     "pm10": 30.88,
     "voc_index": 161,
@@ -4306,7 +4306,7 @@
   },
   {
     "created_at": "2026-08-28 11:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 18.74,
     "pm10": 30.19,
     "voc_index": 159,
@@ -4336,7 +4336,7 @@
   },
   {
     "created_at": "2026-08-28 11:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 22.54,
     "pm10": 27.68,
     "voc_index": 161,
@@ -4351,7 +4351,7 @@
   },
   {
     "created_at": "2026-08-28 11:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 23.42,
     "pm10": 25.28,
     "voc_index": 158,
@@ -4366,7 +4366,7 @@
   },
   {
     "created_at": "2026-08-28 11:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.68,
     "pm10": 33.6,
     "voc_index": 156,
@@ -4381,7 +4381,7 @@
   },
   {
     "created_at": "2026-08-28 11:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.82,
     "pm10": 40.69,
     "voc_index": 152,
@@ -4396,7 +4396,7 @@
   },
   {
     "created_at": "2026-08-28 11:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 24.18,
     "pm10": 40.81,
     "voc_index": 162,
@@ -4411,7 +4411,7 @@
   },
   {
     "created_at": "2026-08-28 12:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 22.53,
     "pm10": 34.0,
     "voc_index": 133,
@@ -4441,7 +4441,7 @@
   },
   {
     "created_at": "2026-08-28 12:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.1,
     "pm10": 28.64,
     "voc_index": 124,
@@ -4456,7 +4456,7 @@
   },
   {
     "created_at": "2026-08-28 12:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 20.89,
     "pm10": 27.88,
     "voc_index": 127,
@@ -4471,7 +4471,7 @@
   },
   {
     "created_at": "2026-08-28 12:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 17.08,
     "pm10": 23.55,
     "voc_index": 134,
@@ -4486,7 +4486,7 @@
   },
   {
     "created_at": "2026-08-28 12:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 17.95,
     "pm10": 30.57,
     "voc_index": 158,
@@ -4501,7 +4501,7 @@
   },
   {
     "created_at": "2026-08-28 12:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 15.72,
     "pm10": 35.21,
     "voc_index": 147,
@@ -4516,7 +4516,7 @@
   },
   {
     "created_at": "2026-08-28 13:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 19.14,
     "pm10": 37.59,
     "voc_index": 137,
@@ -4546,7 +4546,7 @@
   },
   {
     "created_at": "2026-08-28 13:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 26.36,
     "pm10": 31.92,
     "voc_index": 151,
@@ -4561,7 +4561,7 @@
   },
   {
     "created_at": "2026-08-28 13:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 27.1,
     "pm10": 30.82,
     "voc_index": 146,
@@ -4576,7 +4576,7 @@
   },
   {
     "created_at": "2026-08-28 13:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 29.89,
     "pm10": 32.19,
     "voc_index": 164,
@@ -4591,7 +4591,7 @@
   },
   {
     "created_at": "2026-08-28 13:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.56,
     "pm10": 38.05,
     "voc_index": 152,
@@ -4606,7 +4606,7 @@
   },
   {
     "created_at": "2026-08-28 13:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.32,
     "pm10": 37.22,
     "voc_index": 152,
@@ -4621,7 +4621,7 @@
   },
   {
     "created_at": "2026-08-28 14:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 39.46,
     "pm10": 46.8,
     "voc_index": 135,
@@ -4651,7 +4651,7 @@
   },
   {
     "created_at": "2026-08-28 14:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 45.46,
     "pm10": 44.19,
     "voc_index": 148,
@@ -4666,7 +4666,7 @@
   },
   {
     "created_at": "2026-08-28 14:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 44.72,
     "pm10": 42.79,
     "voc_index": 173,
@@ -4681,7 +4681,7 @@
   },
   {
     "created_at": "2026-08-28 14:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 42.73,
     "pm10": 39.83,
     "voc_index": 165,
@@ -4696,7 +4696,7 @@
   },
   {
     "created_at": "2026-08-28 14:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 41.81,
     "pm10": 43.27,
     "voc_index": 162,
@@ -4711,7 +4711,7 @@
   },
   {
     "created_at": "2026-08-28 14:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 44.43,
     "pm10": 42.06,
     "voc_index": 153,
@@ -4726,7 +4726,7 @@
   },
   {
     "created_at": "2026-08-28 15:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 44.17,
     "pm10": 50.58,
     "voc_index": 176,
@@ -4756,7 +4756,7 @@
   },
   {
     "created_at": "2026-08-28 15:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 46.53,
     "pm10": 52.91,
     "voc_index": 176,
@@ -4771,7 +4771,7 @@
   },
   {
     "created_at": "2026-08-28 15:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 44.16,
     "pm10": 53.59,
     "voc_index": 179,
@@ -4786,7 +4786,7 @@
   },
   {
     "created_at": "2026-08-28 15:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 37.78,
     "pm10": 61.14,
     "voc_index": 183,
@@ -4801,7 +4801,7 @@
   },
   {
     "created_at": "2026-08-28 15:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 38.59,
     "pm10": 59.79,
     "voc_index": 171,
@@ -4816,7 +4816,7 @@
   },
   {
     "created_at": "2026-08-28 15:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 39.41,
     "pm10": 58.77,
     "voc_index": 145,
@@ -4831,7 +4831,7 @@
   },
   {
     "created_at": "2026-08-28 16:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 38.25,
     "pm10": 57.75,
     "voc_index": 172,
@@ -4861,7 +4861,7 @@
   },
   {
     "created_at": "2026-08-28 16:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 33.0,
     "pm10": 50.03,
     "voc_index": 152,
@@ -4876,7 +4876,7 @@
   },
   {
     "created_at": "2026-08-28 16:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 33.72,
     "pm10": 55.39,
     "voc_index": 172,
@@ -4891,7 +4891,7 @@
   },
   {
     "created_at": "2026-08-28 16:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.97,
     "pm10": 52.8,
     "voc_index": 159,
@@ -4906,7 +4906,7 @@
   },
   {
     "created_at": "2026-08-28 16:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 40.54,
     "pm10": 48.13,
     "voc_index": 165,
@@ -4921,7 +4921,7 @@
   },
   {
     "created_at": "2026-08-28 16:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 41.25,
     "pm10": 56.91,
     "voc_index": 154,
@@ -4936,7 +4936,7 @@
   },
   {
     "created_at": "2026-08-28 17:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 36.0,
     "pm10": 52.84,
     "voc_index": 158,
@@ -4966,7 +4966,7 @@
   },
   {
     "created_at": "2026-08-28 17:10:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.81,
     "pm10": 49.72,
     "voc_index": 162,
@@ -4981,7 +4981,7 @@
   },
   {
     "created_at": "2026-08-28 17:20:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.76,
     "pm10": 56.13,
     "voc_index": 178,
@@ -4996,7 +4996,7 @@
   },
   {
     "created_at": "2026-08-28 17:30:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 34.16,
     "pm10": 59.43,
     "voc_index": 172,
@@ -5011,7 +5011,7 @@
   },
   {
     "created_at": "2026-08-28 17:40:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 28.84,
     "pm10": 54.73,
     "voc_index": 192,
@@ -5026,7 +5026,7 @@
   },
   {
     "created_at": "2026-08-28 17:50:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 32.27,
     "pm10": 45.33,
     "voc_index": 168,
@@ -5041,7 +5041,7 @@
   },
   {
     "created_at": "2026-08-28 18:00:00+07:00",
-    "device_id": "AQMS-01-SAYBA",
+    "device_id": "WROSE-01",
     "pm2_5": 31.05,
     "pm10": 46.11,
     "voc_index": 185,

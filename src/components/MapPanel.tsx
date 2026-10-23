@@ -34,7 +34,7 @@ const BRAND = "#0f5249";
 const ALERT = "#9a4a0b";
 const WIND_COLOR = "#1d6fd6";
 
-// Overlay arah angin: panah besar ditempatkan DI ATAS lokasi AQMS-01 (bukan panel
+// Overlay arah angin: panah besar ditempatkan DI ATAS lokasi WROSE-01 (bukan panel
 // terpisah) supaya arah datang angin langsung terlihat dalam konteks peta satelit.
 // `deg` memakai konvensi meteorologi (0°=Utara, arah DATANGNYA angin); panah digambar
 // menunjuk ke arah datangnya angin tsb., diputar via CSS transform (transisi mulus).
@@ -42,7 +42,7 @@ function windArrowIcon(deg: number, speed: number, color: string): L.DivIcon {
   const calm = speed < CALM_LIMIT;
   const circleD = 80;
   // Lebar kanvas ikon dibuat cukup besar agar lingkaran bisa digeser jauh dari titik
-  // anchor (lokasi AQMS-01 di pojok kiri-atas kanvas) tanpa terpotong.
+  // anchor (lokasi WROSE-01 di pojok kiri-atas kanvas) tanpa terpotong.
   const canvas = 150;
   // Pusat lingkaran diposisikan absolut, BUKAN flex-center di tengah kanvas: jaraknya
   // dari titik anchor (0,0) harus melebihi radius lingkaran (40px) + separuh lebar pin
@@ -66,7 +66,7 @@ function windArrowIcon(deg: number, speed: number, color: string): L.DivIcon {
         <line x1="6" y1="6" x2="${cx - circleD / 2 + 6}" y2="${cy}" stroke="${color}" stroke-width="2" stroke-dasharray="4,4" opacity="0.85"/>
       </svg>
     </div>`,
-    // Anchor di (4,4): dekat titik lokasi AQMS-01 (sedikit offset dari 0,0 supaya garis
+    // Anchor di (4,4): dekat titik lokasi WROSE-01 (sedikit offset dari 0,0 supaya garis
     // penghubung ke lingkaran terlihat utuh), bukan di tengah kanvas.
     iconSize: [canvas, canvas],
     iconAnchor: [4, 4],
@@ -91,7 +91,7 @@ export default function MapPanel({ latestByDevice }: { latestByDevice: Record<st
           bukan panel terpisah — sesuai permintaan "digabung jadi satu layer". */}
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
         <p className="text-sm text-muted">
-          Panah biru menunjukkan <strong className="text-ink">arah datangnya angin</strong> di lokasi AQMS-01 saat
+          Panah biru menunjukkan <strong className="text-ink">arah datangnya angin</strong> di lokasi WROSE-01 saat
           ini{main ? <> — dari {sector?.name} ({fmt(main.windDirection, 0)}°), {fmt(main.windSpeed)} m/s</> : null}.
         </p>
         <label className="inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-2 rounded-md border border-line bg-surface px-3 text-sm font-medium text-ink select-none">
@@ -119,7 +119,7 @@ export default function MapPanel({ latestByDevice }: { latestByDevice: Record<st
       <div className="overflow-hidden rounded-md border border-line" style={{ height: 420 }}>
         <MapContainer center={center} zoom={17} scrollWheelZoom={false} style={{ height: "100%", width: "100%" }}>
           <TileLayer url={ESRI_IMAGERY_URL} attribution={ESRI_ATTRIBUTION} maxZoom={19} />
-          <Marker position={[mainStation.latitude, mainStation.longitude]} icon={markerIcon(BRAND, "AQMS-01")}>
+          <Marker position={[mainStation.latitude, mainStation.longitude]} icon={markerIcon(BRAND, "WROSE-01")}>
             <Popup>
               <StationPopup title={mainStation.name} subtitle="Alat IoT utama · objek penelitian" record={main} />
             </Popup>
@@ -131,7 +131,7 @@ export default function MapPanel({ latestByDevice }: { latestByDevice: Record<st
           </Marker>
           {showWind && main ? (
             // Marker non-interaktif (tanpa popup): HANYA overlay visual arah angin,
-            // diletakkan tepat di titik AQMS-01, zIndex lebih tinggi dari marker lokasi.
+            // diletakkan tepat di titik WROSE-01, zIndex lebih tinggi dari marker lokasi.
             <Marker
               position={[mainStation.latitude, mainStation.longitude]}
               icon={windArrowIcon(main.windDirection, main.windSpeed, WIND_COLOR)}
@@ -143,7 +143,7 @@ export default function MapPanel({ latestByDevice }: { latestByDevice: Record<st
       </div>
 
       <p className="mt-2 text-xs text-muted">
-        Sumber data arah angin: anemometer AQMS-01-SAYBA, konvensi meteorologi (0° = angin datang dari Utara).
+        Sumber data arah angin: anemometer WROSE-01, konvensi meteorologi (0° = angin datang dari Utara).
         Lingkaran pudar di sekitar panah menandakan jangkauan visual saja, bukan radius pengukuran sesungguhnya.
       </p>
     </div>

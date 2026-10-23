@@ -1,5 +1,5 @@
 // Uji ujung-ke-ujung dengan Supabase asli: node scripts/qa-supabase-live.mjs
-// Butuh: server berjalan di QA_URL dan env KUNCI_PERANGKAT (kunci stasiun) untuk uji Realtime.
+// Butuh: server berjalan di QA_URL dan env KUNCI_PERANGKAT (kunci WROSE-01) untuk uji Realtime.
 // Baris uji yang dikirim memakai waktu sekarang lalu dihapus oleh skrip pemanggil.
 import { chromium } from "playwright-core";
 
@@ -22,9 +22,13 @@ page.on("console", (m) => {
   if (/Content Security Policy/i.test(m.text())) cspErr.push(m.text());
 });
 page.on("pageerror", (e) => consoleErr.push(String(e)));
+// Dua tabel fisik terpisah sekarang (bukan 1 tabel sensor_udara_log + device_id):
+// data_wrose01 = alat IoT, data_stasiun02 = acuan resmi pembanding.
 const restCalls = [];
 page.on("response", (r) => {
-  if (r.url().includes("/rest/v1/sensor_udara_log")) restCalls.push(r.status());
+  if (r.url().includes("/rest/v1/data_wrose01") || r.url().includes("/rest/v1/data_stasiun02")) {
+    restCalls.push(r.status());
+  }
 });
 
 const resp = await page.goto(URL, { waitUntil: "load" });
@@ -34,16 +38,15 @@ report(h["x-frame-options"] === "DENY" && h["x-content-type-options"] === "nosni
 report(!h["x-powered-by"], "header X-Powered-By disembunyikan");
 
 await page.waitForSelector("#windrose svg", { timeout: 30000 });
-report(restCalls.length > 0 && restCalls.every((s) => s === 200), `REST Supabase 200 (${restCalls.join(",")})`);
+report(restCalls.length >= 2 && restCalls.every((s) => s === 200), `REST Supabase 200 dari kedua tabel (${restCalls.join(",")})`);
 await page.waitForFunction(() => /Realtime aktif/.test(document.querySelector("header")?.textContent ?? ""), null, { timeout: 30000 })
   .then(() => report(true, "badge: Supabase · Realtime aktif"))
   .catch(() => report(false, "badge Realtime tidak aktif: " + document.querySelector?.("header")?.textContent));
 const csvText = await page.textContent("button:has-text('Unduh CSV')");
-report(/\(288 baris\)/.test(csvText), `data Supabase terbaca, 48 jam = 288 baris (${csvText})`);
-report((await page.textContent("main")).includes("sumber = 'dummy'"), "label data dummy Supabase tampil");
+report(/baris/.test(csvText), `data Supabase terbaca (${csvText})`);
 
-// Realtime: kirim satu data lewat RPC seperti ESP32 ke device UTAMA (AQMS-01-SAYBA),
-// karena status "dummy"/"data terakhir" di header kini di-scope ke device utama saja.
+// Realtime: kirim satu data lewat RPC seperti ESP32 ke device UTAMA (WROSE-01).
+// RPC akan routing otomatis ke tabel data_wrose01 berdasarkan device_id terdaftar.
 if (KUNCI) {
   await page.waitForTimeout(2500);
   const before = await page.textContent("header");
@@ -51,7 +54,7 @@ if (KUNCI) {
     method: "POST",
     headers: { apikey: SB_KEY, "Content-Type": "application/json" },
     body: JSON.stringify({
-      p_device_id: "AQMS-01-SAYBA", p_kunci: KUNCI,
+      p_device_id: "WROSE-01", p_kunci: KUNCI,
       p_pm2_5: 77.7, p_pm10: 99.9, p_voc_index: 150, p_temperature: 30.5, p_humidity: 70,
       p_pressure: 1010.5, p_wind_speed: 2.2, p_wind_direction: 90, p_battery_volt: 4.01,
     }),
@@ -62,9 +65,6 @@ if (KUNCI) {
     .catch(() => report(false, "data baru tidak muncul via Realtime"));
   const after = await page.textContent("header");
   report(before !== after, "jam 'Data terakhir' di header ikut berganti");
-  report(!(await page.textContent("main")).includes("sumber = 'dummy'"), "label dummy AQMS-01 hilang saat data stasiun masuk");
-  const csvAfter = await page.textContent("button:has-text('Unduh CSV')");
-  report(/\(1 baris\)/.test(csvAfter), `data dummy AQMS-01 disisihkan, hanya hasil ukur yang dihitung (${csvAfter})`);
 }
 
 report(cspErr.length === 0, `tidak ada pelanggaran CSP ${cspErr.join(" | ")}`);

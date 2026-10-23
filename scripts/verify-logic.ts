@@ -32,19 +32,19 @@ check("348,74° -> UBL", sectorIndex(348.74) === 15);
 check("225° -> BD", sectorIndex(225) === 10);
 check("-90° -> B", sectorIndex(-90) === 12);
 
-// Data dummy: file berisi 2 device — AQMS-01-SAYBA (utama, kirim tiap 10 menit, 289
+// Data dummy: file berisi 2 device — WROSE-01 (utama, kirim tiap 10 menit, 289
 // baris/48 jam) dan STASIUN-02-UNTAN (pembanding, dibaca tiap 1 jam sesuai siklus
 // sampling asli alat itu, 49 baris/48 jam). Uji logika inti difokuskan pada device
 // utama (objek penelitian); mekanisme pemisahan per device diuji terpisah di bawah.
-const all = (data as SensorRow[]).map(normalizeRow).sort((a, b) => a.ts - b.ts);
-check("338 baris terbaca (289 AQMS-01 + 49 Stasiun02)", all.length === 338, `(${all.length})`);
+const all = (data as SensorRow[]).map((row) => normalizeRow(row, row.device_id ?? "WROSE-01")).sort((a, b) => a.ts - b.ts);
+check("338 baris terbaca (289 WROSE-01 + 49 Stasiun02)", all.length === 338, `(${all.length})`);
 
-const recs = all.filter((r) => r.deviceId === "AQMS-01-SAYBA");
+const recs = all.filter((r) => r.deviceId === "WROSE-01");
 const compareRecs = all.filter((r) => r.deviceId === "STASIUN-02-UNTAN");
 check("289 baris device utama", recs.length === 289);
 check("49 baris device pembanding (per jam)", compareRecs.length === 49);
 check("Semua timestamp valid", recs.every((r) => Number.isFinite(r.ts)));
-check("Urutan naik & interval 10 menit (AQMS-01)", recs.every((r, i) => i === 0 || r.ts - recs[i - 1].ts === 600_000));
+check("Urutan naik & interval 10 menit (WROSE-01)", recs.every((r, i) => i === 0 || r.ts - recs[i - 1].ts === 600_000));
 check("Urutan naik & interval 1 jam (Stasiun02)", compareRecs.every((r, i) => i === 0 || r.ts - compareRecs[i - 1].ts === 3_600_000));
 
 const w24 = windowRecords(recs, 24);
@@ -65,7 +65,7 @@ const pm10m = w24.reduce((a, r) => a + r.pm10, 0) / w24.length;
 const isp = computeIspu(pm25m, pm10m);
 console.log(`      24 jam: PM2.5 ${pm25m.toFixed(3)}  PM10 ${pm10m.toFixed(3)}  ISPU ${isp.value} ${isp.style.category} (kritis ${isp.critical})`);
 
-// Pembanding AQMS-01-SAYBA vs STASIUN-02-UNTAN
+// Pembanding WROSE-01 vs STASIUN-02-UNTAN
 const { pairByNearestTime, compareStats } = await import("../src/lib/compare.ts");
 const pairs = pairByNearestTime(recs, compareRecs, "pm25");
 check("Pasangan pembanding ditemukan untuk setiap jam Stasiun02", pairs.length === 49, `(${pairs.length})`);

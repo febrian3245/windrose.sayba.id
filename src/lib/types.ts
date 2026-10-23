@@ -1,9 +1,15 @@
-// Model data satu baris tabel public.sensor_udara_log (Supabase).
-// Kolom identik dengan SUPABASE_SCHEMA_DAN_DUMMY_DATA.sql.
+// Model data satu baris tabel public.data_wrose01 atau public.data_stasiun02 (Supabase),
+// atau baris file dummy lokal (mode demo tanpa Supabase).
+// Kedua tabel Supabase kini terpisah secara fisik (bukan lagi 1 tabel + kolom device_id):
+// data_wrose01 = alat IoT yang diuji, data_stasiun02 = acuan resmi pembanding.
+// Kolom device_id TIDAK ADA lagi pada tabel Supabase; identitas device diketahui dari
+// tabel asal baris (disuntikkan via parameter deviceId saat normalizeRow dipanggil).
+// File dummy lokal (mode demo) masih menyimpan device_id per baris karena 1 file
+// JSON berisi data gabungan kedua device untuk kesederhanaan mode offline.
 export interface SensorRow {
   id?: string;
   created_at: string;
-  device_id: string;
+  device_id?: string;
   pm2_5: number | string;
   pm10: number | string;
   voc_index: number | string;
@@ -15,8 +21,6 @@ export interface SensorRow {
   latitude: number | string | null;
   longitude: number | string | null;
   battery_volt: number | string;
-  // "stasiun" = hasil ukur, "dummy" = data uji. Kosong pada file dummy lokal.
-  sumber?: "stasiun" | "dummy" | null;
 }
 
 // Bentuk yang dipakai di UI: semua angka sudah bertipe number,
@@ -36,15 +40,16 @@ export interface SensorRecord {
   latitude: number;
   longitude: number;
   batteryVolt: number;
-  isDummy: boolean;
 }
 
 export type Pollutant = "pm25" | "pm10" | "voc";
 
-// Identitas device, bukan sekadar koordinat fallback: AQMS-01-SAYBA = alat IoT
-// utama (objek penelitian), STASIUN-02-UNTAN = Lab Geofisika FMIPA UNTAN
-// (objek pembanding, data referensi independen).
-export const MAIN_DEVICE_ID = "AQMS-01-SAYBA";
+// Identitas device, bukan sekadar koordinat fallback: WROSE-01 = alat IoT
+// utama (objek penelitian, diuji), STASIUN-02-UNTAN = Lab Geofisika FMIPA UNTAN
+// (objek pembanding, data acuan resmi independen). Metode: colocation testing
+// (lihat BAB 3.4.2 skripsi) — kedua device disimpan di 2 tabel fisik terpisah
+// (data_wrose01, data_stasiun02), bukan 1 tabel dengan kolom pembeda.
+export const MAIN_DEVICE_ID = "WROSE-01";
 export const COMPARE_DEVICE_ID = "STASIUN-02-UNTAN";
 
 export interface StationInfo {
@@ -60,8 +65,8 @@ export interface StationInfo {
 export const STATIONS: Record<string, StationInfo> = {
   [MAIN_DEVICE_ID]: {
     id: MAIN_DEVICE_ID,
-    name: "AQMS 4G LTE Pontianak",
-    shortName: "AQMS-01",
+    name: "WROSE 4G LTE Pontianak",
+    shortName: "WROSE-01",
     area: "Sekitar Lab Geofisika FMIPA UNTAN, Pontianak Timur",
     role: "utama",
     latitude: -0.057662,
@@ -88,13 +93,14 @@ function num(v: number | string | null | undefined, fallback = 0): number {
   return Number.isFinite(n) ? n : fallback;
 }
 
-export function normalizeRow(row: SensorRow): SensorRecord {
+export function normalizeRow(row: SensorRow, deviceId: string): SensorRecord {
   // Format "2026-08-26 18:00:00+07:00" diubah ke ISO agar parsing konsisten di semua browser.
   const iso = row.created_at.includes("T") ? row.created_at : row.created_at.replace(" ", "T");
+  const fallbackStation = STATIONS[deviceId] ?? STATION;
   return {
     ts: new Date(iso).getTime(),
     createdAt: iso,
-    deviceId: row.device_id,
+    deviceId,
     pm25: num(row.pm2_5),
     pm10: num(row.pm10),
     voc: num(row.voc_index),
@@ -103,9 +109,8 @@ export function normalizeRow(row: SensorRow): SensorRecord {
     pressure: num(row.pressure),
     windSpeed: num(row.wind_speed),
     windDirection: ((num(row.wind_direction) % 360) + 360) % 360,
-    latitude: num(row.latitude, STATION.latitude),
-    longitude: num(row.longitude, STATION.longitude),
+    latitude: num(row.latitude, fallbackStation.latitude),
+    longitude: num(row.longitude, fallbackStation.longitude),
     batteryVolt: num(row.battery_volt),
-    isDummy: row.sumber === "dummy",
   };
 }

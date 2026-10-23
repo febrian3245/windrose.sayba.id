@@ -1,7 +1,7 @@
-// Pembanding dua rangkaian data: alat IoT utama (AQMS-01-SAYBA, kirim tiap 10 menit)
+// Pembanding dua rangkaian data: alat IoT utama (WROSE-01, kirim tiap 10 menit)
 // vs objek pembanding (STASIUN-02-UNTAN, dibaca tiap 1 jam — sesuai siklus sampling
 // asli alat itu). Dipasangkan per jam: untuk setiap data Stasiun 02, dicari data
-// AQMS-01 pada waktu terdekat (toleransi ±35 menit, cukup untuk setengah interval
+// WROSE-01 pada waktu terdekat (toleransi ±35 menit, cukup untuk setengah interval
 // 1 jam ditambah ruang toleransi keterlambatan kirim).
 import type { Pollutant, SensorRecord } from "./types";
 
@@ -14,7 +14,7 @@ export interface PairedPoint {
 }
 
 // Iterasi berbasis daftar yang LEBIH JARANG (biasanya `compare`/Stasiun 02, 1 jam),
-// mencari titik `main` (biasanya AQMS-01, 10 menit) berwaktu terdekat untuk tiap titik.
+// mencari titik `main` (biasanya WROSE-01, 10 menit) berwaktu terdekat untuk tiap titik.
 // Kedua daftar diasumsikan terurut naik (ts ascending).
 export function pairByNearestTime(main: SensorRecord[], compare: SensorRecord[], key: Pollutant): PairedPoint[] {
   if (!main.length || !compare.length) return [];

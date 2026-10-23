@@ -28,4 +28,5 @@ export function getSupabase(): SupabaseClient | null {
   return client;
 }
 
-export const SENSOR_TABLE = "sensor_udara_log";
+export const SENSOR_TABLE = "data_wrose01";
+export const COMPARE_TABLE = "data_stasiun02";

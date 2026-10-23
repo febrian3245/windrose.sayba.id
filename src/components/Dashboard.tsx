@@ -63,7 +63,7 @@ export default function Dashboard() {
   const [roseKey, setRoseKey] = useState<Pollutant>("pm25");
   const [seriesKey, setSeriesKey] = useState<Pollutant>("pm25");
 
-  // Dasbor berfokus pada device utama (AQMS-01-SAYBA); STASIUN-02-UNTAN disisihkan
+  // Dasbor berfokus pada device utama (WROSE-01); STASIUN-02-UNTAN disisihkan
   // sebagai objek pembanding (peta + panel pembanding), tidak ikut ISPU/Wind Rose/tren.
   const mainRecords = useMemo(() => records.filter((r) => r.deviceId === MAIN_DEVICE_ID), [records]);
   const compareRecords = useMemo(() => records.filter((r) => r.deviceId === COMPARE_DEVICE_ID), [records]);
@@ -96,7 +96,7 @@ export default function Dashboard() {
   if (status === "loading" && !records.length) {
     return (
       <Shell mode={mode} live={live} latestTs={null}>
-        <StatePanel title="Memuat data dari Supabase" body="Mengambil riwayat pengukuran tabel sensor_udara_log." />
+        <StatePanel title="Memuat data dari Supabase" body="Mengambil riwayat pengukuran dari tabel data_wrose01 dan data_stasiun02." />
       </Shell>
     );
   }
@@ -106,7 +106,7 @@ export default function Dashboard() {
       <Shell mode={mode} live={live} latestTs={null}>
         <StatePanel
           title="Gagal mengambil data dari Supabase"
-          body={`Pesan server: ${error ?? "tidak diketahui"}. Periksa NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, dan kebijakan RLS SELECT pada tabel sensor_udara_log.`}
+          body={`Pesan server: ${error ?? "tidak diketahui"}. Periksa NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, dan kebijakan RLS SELECT pada tabel data_wrose01 dan data_stasiun02.`}
           action={
             <button type="button" onClick={reload} className="min-h-10 rounded-md bg-brand px-4 text-sm font-semibold text-white">
               Coba lagi
@@ -122,7 +122,7 @@ export default function Dashboard() {
       <Shell mode={mode} live={live} latestTs={null}>
         <StatePanel
           title="Belum ada data pengukuran"
-          body={`Tabel sensor_udara_log belum memiliki data untuk ${STATIONS[MAIN_DEVICE_ID].name} (${MAIN_DEVICE_ID}). Jalankan migrasi Supabase, atau nyalakan alat agar data pertama masuk.`}
+          body={`Tabel data_wrose01 belum memiliki data untuk ${STATIONS[MAIN_DEVICE_ID].name} (${MAIN_DEVICE_ID}). Jalankan migrasi Supabase, atau nyalakan alat agar data pertama masuk.`}
         />
       </Shell>
     );
@@ -144,7 +144,7 @@ export default function Dashboard() {
   };
 
   return (
-    <Shell mode={mode} live={live} latestTs={latest.ts} dummy={latest.isDummy}>
+    <Shell mode={mode} live={live} latestTs={latest.ts}>
       {/* 1. Status kualitas udara: keputusan utama pembaca halaman ini */}
       <section aria-labelledby="status-title" className="grid gap-4 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
         <div className="rounded-lg border border-line bg-panel">
@@ -596,14 +596,11 @@ function Shell({
   mode,
   live,
   latestTs,
-  dummy = false,
 }: {
   children: React.ReactNode;
   mode: "supabase" | "demo";
   live: string;
   latestTs: number | null;
-  // true bila data Supabase yang tampil masih data uji (kolom sumber = 'dummy').
-  dummy?: boolean;
 }) {
   const headerRef = useRef<HTMLElement>(null);
   // Tinggi header sticky diukur langsung agar lompatan menu tidak menutupi judul panel
@@ -630,7 +627,7 @@ function Shell({
       <header ref={headerRef} className="sticky top-0 z-20 border-b border-line bg-panel">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 sm:py-3">
           <div className="min-w-0">
-            <p className="truncate text-base font-semibold text-brand">AQMS 4G LTE Pontianak</p>
+            <p className="truncate text-base font-semibold text-brand">WROSE 4G LTE Pontianak</p>
             <p className="hidden truncate text-sm text-muted sm:block">Dasbor pemantau kualitas udara, pembanding {STATIONS[COMPARE_DEVICE_ID].shortName}</p>
           </div>
           <div className="flex shrink-0 items-center gap-x-4 text-sm">
@@ -676,15 +673,11 @@ function Shell({
       <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-4 px-4 py-5 sm:px-6 sm:py-6">
         <div className="mb-1">
           <h1 className="text-xl font-semibold leading-snug sm:text-2xl">
-            AQMS 4G LTE Pontianak: pemantau PM2.5, PM10, VOC dan sebaran polutan dengan pemodelan Wind Rose
+            WROSE 4G LTE Pontianak: pemantau PM2.5, PM10, VOC dan sebaran polutan dengan pemodelan Wind Rose
           </h1>
           {mode === "demo" ? (
             <p className="mt-1 max-w-3xl text-sm text-muted">
               Angka di halaman ini berasal dari data dummy simulasi, bukan hasil pengukuran. Isi <code className="font-mono text-[0.85em] text-ink">.env.local</code> (lihat README) untuk menampilkan data stasiun dari Supabase.
-            </p>
-          ) : dummy ? (
-            <p className="mt-1 max-w-3xl text-sm text-muted">
-              Data di Supabase saat ini masih data dummy simulasi (kolom <code className="font-mono text-[0.85em] text-ink">sumber = &apos;dummy&apos;</code>), bukan hasil pengukuran. Tampilan berganti otomatis ke data stasiun begitu pengiriman pertama masuk.
             </p>
           ) : null}
         </div>
