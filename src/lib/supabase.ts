@@ -22,7 +22,10 @@ export function getSupabase(): SupabaseClient | null {
   if (!isSupabaseConfigured()) return null;
   if (!client) {
     client = createClient(url as string, publicKey as string, {
-      auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
+      // Sesi DIPERTAHANKAN agar admin tetap login setelah refresh halaman.
+      // Token disimpan di localStorage oleh supabase-js; hak tulis tetap
+      // dijaga di sisi server (RPC kelola_* memeriksa role admin).
+      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false },
     });
   }
   return client;

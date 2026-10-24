@@ -29,6 +29,7 @@ import {
 import { STATIONS, MAIN_DEVICE_ID, COMPARE_DEVICE_ID, type Pollutant } from "@/lib/types";
 import { buildPollutionRose, buildWindRose, CALM_LIMIT, SECTORS_16, sectorIndex, SPEED_CLASSES } from "@/lib/wind";
 import ComparePanel from "./ComparePanel";
+import AdminPanel from "./AdminPanel";
 
 // Leaflet mengakses `window` saat modul dimuat; dimuat hanya di klien.
 const MapPanelClient = dynamic(() => import("./MapPanel"), {
@@ -76,8 +77,12 @@ export default function Dashboard() {
   const latestCompare = compareRecords.length ? compareRecords[compareRecords.length - 1] : null;
 
   const wind = useMemo(() => buildWindRose(scoped), [scoped]);
+  // Wind Rose pembanding: dihitung dari rangkaian data Stasiun 02 secara TERPISAH,
+  // supaya pola arah angin kedua alat dapat dibandingkan berdampingan.
+  const windCompare = useMemo(() => buildWindRose(compareScoped), [compareScoped]);
   const pRose = useMemo(() => buildPollutionRose(scoped, roseKey), [scoped, roseKey]);
   const windOpt = useMemo(() => windRoseOption(wind), [wind]);
+  const windCompareOpt = useMemo(() => windRoseOption(windCompare), [windCompare]);
   const pRoseOpt = useMemo(() => pollutionRoseOption(pRose, roseKey), [pRose, roseKey]);
   const seriesOpt = useMemo(() => timeSeriesOption(scoped, seriesKey), [scoped, seriesKey]);
   const diurnal = useMemo(() => diurnalProfile(scoped, seriesKey), [scoped, seriesKey]);
@@ -129,16 +134,22 @@ export default function Dashboard() {
   }
 
   const dominant = SECTORS_16[wind.dominantSector];
+  const dominantCompare = SECTORS_16[windCompare.dominantSector];
   const source = pRose.maxSector >= 0 ? SECTORS_16[pRose.maxSector] : null;
   const roseMeta = POLLUTANT_META[roseKey];
   const battPct = batteryPercent(latest.batteryVolt);
   const latestSector = SECTORS_16[sectorIndex(latest.windDirection)];
 
-  const downloadCsv = () => {
-    const blob = new Blob([toCsv(scoped)], { type: "text/csv;charset=utf-8" });
+  // CSV diunduh per sumber: satu berkas = satu alat, supaya lampiran skripsi
+  // tidak pernah berisi dua rangkaian data yang tercampur dalam satu tabel.
+  const downloadCsv = (sumber: "utama" | "pembanding") => {
+    const utama = sumber === "utama";
+    const baris = utama ? scoped : compareScoped;
+    const deviceId = utama ? MAIN_DEVICE_ID : COMPARE_DEVICE_ID;
+    const blob = new Blob([toCsv(baris)], { type: "text/csv;charset=utf-8" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = `sensor_udara_${MAIN_DEVICE_ID}_${win}jam.csv`;
+    a.download = `sensor_udara_${deviceId}_${win}jam.csv`;
     a.click();
     URL.revokeObjectURL(a.href);
   };
@@ -275,7 +286,7 @@ export default function Dashboard() {
         <Panel
           id="windrose"
           title="Wind Rose: dari mana angin bertiup?"
-          question="Frekuensi arah datang angin per 16 sektor kompas dan kelas kecepatan."
+          question={`Frekuensi arah datang angin per 16 sektor kompas dan kelas kecepatan, dihitung terpisah untuk ${STATIONS[MAIN_DEVICE_ID].shortName} (alat yang diuji) dan ${STATIONS[COMPARE_DEVICE_ID].shortName} (acuan resmi).`}
         >
           <div className="flex min-h-12 flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-muted">
             {SPEED_CLASSES.map((c, i) => (
@@ -285,15 +296,64 @@ export default function Dashboard() {
               </span>
             ))}
           </div>
-          <EChart option={windOpt} square height={440} ariaLabel={`Wind rose ${hours} jam. Arah dominan dari ${dominant.name}.`} />
-          <dl className="grid grid-cols-3 gap-3 border-t border-line pt-4">
-            <Stat label="Dominan" value={dominant.code} note={<span className="text-muted">{dominant.name}, {fmt(wind.sectorTotalPercent[wind.dominantSector])}%</span>} />
-            <Stat label="Rata-rata" value={fmt(wind.meanSpeed)} unit="m/s" note={<span className="text-muted">kecepatan angin</span>} />
+          {/* Dua rose berdampingan: masing-masing dari tabel datanya sendiri,
+              tidak pernah digabung menjadi satu rangkaian. Dua kolom baru dari
+              lebar xl agar tiap rose tetap cukup besar untuk dibaca. */}
+          <div className="grid gap-6 xl:grid-cols-2">
+            <div>
+              <h3 className="text-sm font-semibold">
+                {STATIONS[MAIN_DEVICE_ID].shortName}
+                <span className="ml-1.5 font-normal text-muted">· alat IoT yang diuji · {scoped.length} data</span>
+              </h3>
+              <EChart option={windOpt} square height={360} ariaLabel={`Wind rose ${STATIONS[MAIN_DEVICE_ID].shortName} ${hours} jam. Arah dominan dari ${dominant.name}.`} />
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold">
+                {STATIONS[COMPARE_DEVICE_ID].shortName}
+                <span className="ml-1.5 font-normal text-muted">· acuan resmi · {compareScoped.length} data</span>
+              </h3>
+              {compareScoped.length ? (
+                <EChart option={windCompareOpt} square height={360} ariaLabel={`Wind rose ${STATIONS[COMPARE_DEVICE_ID].shortName} ${hours} jam. Arah dominan dari ${dominantCompare.name}.`} />
+              ) : (
+                <p className="mt-3 rounded-md border border-line bg-surface px-4 py-3 text-sm text-muted">
+                  Belum ada data {STATIONS[COMPARE_DEVICE_ID].shortName} pada rentang ini.
+                </p>
+              )}
+            </div>
+          </div>
+          {/* Statistik ringkas kedua sumber, disusun berpasangan agar langsung terbandingkan. */}
+          <dl className="grid grid-cols-2 gap-3 border-t border-line pt-4 sm:grid-cols-3">
+            <Stat
+              label="Dominan"
+              value={dominant.code}
+              note={
+                <span className="text-muted">
+                  {STATIONS[MAIN_DEVICE_ID].shortName} {fmt(wind.sectorTotalPercent[wind.dominantSector])}% ·{" "}
+                  {STATIONS[COMPARE_DEVICE_ID].shortName}{" "}
+                  {compareScoped.length ? `${dominantCompare.code} ${fmt(windCompare.sectorTotalPercent[windCompare.dominantSector])}%` : "–"}
+                </span>
+              }
+            />
+            <Stat
+              label="Rata-rata"
+              value={fmt(wind.meanSpeed)}
+              unit="m/s"
+              note={
+                <span className="text-muted">
+                  {STATIONS[COMPARE_DEVICE_ID].shortName}: {compareScoped.length ? `${fmt(windCompare.meanSpeed)} m/s` : "–"}
+                </span>
+              }
+            />
             <Stat
               label="Tenang"
               value={fmt(wind.calmPercent)}
               unit="%"
-              note={<span className="text-muted">{wind.calmCount} data &lt;&nbsp;{fmt(CALM_LIMIT)}&nbsp;m/s</span>}
+              note={
+                <span className="text-muted">
+                  {wind.calmCount} data &lt;&nbsp;{fmt(CALM_LIMIT)}&nbsp;m/s ·{" "}
+                  {STATIONS[COMPARE_DEVICE_ID].shortName}: {compareScoped.length ? `${fmt(windCompare.calmPercent)}%` : "–"}
+                </span>
+              }
             />
           </dl>
         </Panel>
@@ -412,18 +472,58 @@ export default function Dashboard() {
         />
       </Panel>
 
-      {/* 4. Data mentah untuk lampiran skripsi */}
+      {/* 4. Data mentah untuk lampiran skripsi: dua tabel terpisah, satu per sumber,
+             agar asal setiap angka tidak ambigu saat dikutip di skripsi. */}
       <Panel
         id="data"
         title="Data pengukuran"
-        question="Dua puluh data terbaru. Unduh CSV untuk seluruh rentang analisis (olah lanjut di Excel atau lampiran skripsi)."
+        question={`Dua puluh data terbaru dari masing-masing sumber, ditampilkan terpisah: ${STATIONS[MAIN_DEVICE_ID].shortName} (alat yang diuji) dan ${STATIONS[COMPARE_DEVICE_ID].shortName} (acuan resmi). Unduh CSV untuk seluruh rentang analisis.`}
         actions={
-          <button type="button" onClick={downloadCsv} className="min-h-10 rounded-md border border-brand px-4 text-sm font-semibold text-brand hover:bg-brand-soft">
-            Unduh CSV ({scoped.length} baris)
-          </button>
+          <span className="inline-flex flex-wrap gap-2">
+            <button type="button" onClick={() => downloadCsv("utama")} className="min-h-10 rounded-md border border-brand px-4 text-sm font-semibold text-brand hover:bg-brand-soft">
+              CSV {STATIONS[MAIN_DEVICE_ID].shortName} ({scoped.length})
+            </button>
+            <button type="button" onClick={() => downloadCsv("pembanding")} className="min-h-10 rounded-md border border-brand px-4 text-sm font-semibold text-brand hover:bg-brand-soft">
+              CSV {STATIONS[COMPARE_DEVICE_ID].shortName} ({compareScoped.length})
+            </button>
+          </span>
         }
       >
-        <DataTable rows={scoped.slice(-20).reverse()} />
+        {/* Ditumpuk vertikal, bukan dua kolom: setiap tabel punya lebar minimum
+            560px, sehingga dua kolom memaksa scroll horizontal di layar sempit.
+            min-w-0 wajib: grid item default min-width:auto, sehingga tabel lebar
+            akan melebarkan grid dan membuat pembungkus overflow-x-auto tak berguna. */}
+        <div className="grid min-w-0 gap-6">
+          <div className="min-w-0">
+            <h3 className="text-sm font-semibold">
+              {STATIONS[MAIN_DEVICE_ID].shortName}
+              <span className="ml-1.5 font-normal text-muted">· alat IoT yang diuji · tiap {SEND_INTERVAL_MIN} menit</span>
+            </h3>
+            <DataTable rows={scoped.slice(-20).reverse()} />
+          </div>
+          <div className="min-w-0">
+            <h3 className="text-sm font-semibold">
+              {STATIONS[COMPARE_DEVICE_ID].shortName}
+              <span className="ml-1.5 font-normal text-muted">· acuan resmi pembanding · tiap 1 jam</span>
+            </h3>
+            {compareScoped.length ? (
+              <DataTable rows={compareScoped.slice(-20).reverse()} />
+            ) : (
+              <p className="mt-2 rounded-md border border-line bg-surface px-4 py-3 text-sm text-muted">
+                Belum ada data {STATIONS[COMPARE_DEVICE_ID].shortName} pada rentang ini.
+              </p>
+            )}
+          </div>
+        </div>
+      </Panel>
+
+      {/* 5. Kelola data: hanya admin yang dapat menulis; pengunjung lain hanya membaca. */}
+      <Panel
+        id="kelola"
+        title="Kelola data pengukuran"
+        question="Masuk sebagai admin untuk menambah, mengubah, atau menghapus data pada kedua sumber. Data alat IoT normalnya terkirim otomatis; jalur manual ini untuk data acuan Stasiun 02 dan koreksi bila ada kekeliruan."
+      >
+        <AdminPanel records={records} onBerubah={reload} />
       </Panel>
 
       <Method />
@@ -658,6 +758,7 @@ function Shell({
               ["#perangkat", "Perangkat"],
               ["#pembanding", "Pembanding"],
               ["#data", "Data"],
+              ["#kelola", "Kelola"],
               ["#metode", "Metode"],
             ].map(([href, label]) => (
               <li key={href}>

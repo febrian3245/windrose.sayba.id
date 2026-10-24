@@ -38,8 +38,9 @@ for (const vp of viewports) {
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
   report(overflow <= 0, `tanpa scroll horizontal (selisih ${overflow}px)`);
 
+  // Lima grafik: wind rose WROSE-01, wind rose Stasiun 02, pollution rose, tren, profil harian.
   const charts = await page.$$eval('[role="img"] svg', (els) => els.map((e) => e.getBoundingClientRect().width));
-  report(charts.length === 4 && charts.every((w) => w > 200), `4 grafik ter-render, lebar ${charts.map(Math.round).join(", ")}`);
+  report(charts.length === 5 && charts.every((w) => w > 200), `5 grafik ter-render, lebar ${charts.map(Math.round).join(", ")}`);
 
   // Elemen yang keluar dari parent panel (terpotong) — kecuali sengaja dipotong oleh
   // kontainer overflow-hidden (contoh: ubin peta Leaflet, memang lebih besar dari viewport peta).
@@ -53,15 +54,19 @@ for (const vp of viewports) {
   });
   report(clipped.length === 0, `tidak ada elemen melewati layar ${clipped.join(" | ")}`);
 
-  // Simetri dua panel rose saat berdampingan (desktop): posisi & ukuran grafik identik.
+  // Simetri dua wind rose yang berdampingan (xl+): alat utama vs pembanding harus
+  // sama ukuran dan sejajar, supaya perbandingan visual tidak menyesatkan.
   if (vp.width >= 1280) {
     const sym = await page.evaluate(() => {
-      const box = (sel) => document.querySelector(sel).getBoundingClientRect();
-      const a = box('#windrose [role="img"]'), b = box('#pollutionrose [role="img"]');
-      const pa = box("#windrose"), pb = box("#pollutionrose");
-      return { dy: Math.abs(a.top - b.top), dh: Math.abs(a.height - b.height), dw: Math.abs(a.width - b.width), dpanel: Math.abs(pa.height - pb.height) };
+      const roses = document.querySelectorAll('#windrose [role="img"]');
+      if (roses.length < 2) return null;
+      const a = roses[0].getBoundingClientRect(), b = roses[1].getBoundingClientRect();
+      return { dy: Math.abs(a.top - b.top), dh: Math.abs(a.height - b.height), dw: Math.abs(a.width - b.width) };
     });
-    report(sym.dy <= 1 && sym.dh <= 1 && sym.dw <= 1, `grafik rose sejajar (selisih top ${sym.dy}, tinggi ${sym.dh}, lebar ${sym.dw})`);
+    report(
+      sym !== null && sym.dy <= 1 && sym.dh <= 1 && sym.dw <= 1,
+      sym ? `dua wind rose sejajar (selisih top ${sym.dy}, tinggi ${sym.dh}, lebar ${sym.dw})` : "dua wind rose tidak ditemukan",
+    );
   }
 
   // Grafik rose persegi: tinggi <= lebar (tidak ada ruang kosong vertikal di mobile)
@@ -108,11 +113,15 @@ for (const vp of viewports) {
   await page.goto(URL, { waitUntil: "networkidle" });
   await page.waitForSelector("#windrose svg");
   console.log("\n== interaksi ==");
-  const countText = async () => (await page.textContent('button:has-text("Unduh CSV")')).trim();
+  // Tombol CSV kini satu per sumber; yang pertama = WROSE-01 (alat yang diuji).
+  const countText = async () => (await page.textContent('button:has-text("CSV WROSE-01")')).trim();
   report((await countText()).includes("288"), `48 jam = 288 baris / 288 interval (${await countText()})`);
   await page.click('[role="radiogroup"][aria-label="Rentang waktu analisis"] >> text=24 jam');
   await page.waitForTimeout(300);
   report((await countText()).includes("144"), `24 jam = 144 baris (${await countText()})`);
+  // CSV pembanding harus punya jumlah baris sendiri (bukan angka yang sama).
+  const countCompare = async () => (await page.textContent('button:has-text("CSV Stasiun 02")')).trim();
+  report(/\(2[0-9]\)|\(1[0-9]\)/.test(await countCompare()), `CSV pembanding punya hitungan sendiri (${await countCompare()})`);
   await page.click('[aria-label="Parameter pollution rose"] >> text=PM10');
   await page.waitForTimeout(300);
   const roseText = await page.textContent("#pollutionrose");
@@ -120,11 +129,24 @@ for (const vp of viewports) {
   await page.click('[aria-label="Parameter grafik tren"] >> text=VOC');
   await page.waitForTimeout(300);
   report((await page.textContent("#tren-title")).includes("VOC"), "grafik tren berganti ke VOC");
-  const [dl] = await Promise.all([page.waitForEvent("download"), page.click('button:has-text("Unduh CSV")')]);
+  const [dl] = await Promise.all([page.waitForEvent("download"), page.click('button:has-text("CSV WROSE-01")')]);
   const path = `${OUT}/${dl.suggestedFilename()}`;
   await dl.saveAs(path);
   const lines = fs.readFileSync(path, "utf8").trim().split("\n");
   report(lines.length === 145 && lines[0].startsWith("created_at,device_id,pm2_5"), `CSV terunduh ${lines.length - 1} baris + header`);
+  // Unduhan pembanding harus berisi data Stasiun 02, bukan salinan data alat utama.
+  const [dl2] = await Promise.all([page.waitForEvent("download"), page.click('button:has-text("CSV Stasiun 02")')]);
+  const path2 = `${OUT}/${dl2.suggestedFilename()}`;
+  await dl2.saveAs(path2);
+  const lines2 = fs.readFileSync(path2, "utf8").trim().split("\n");
+  const semuaStasiun = lines2.slice(1).every((l) => l.includes("STASIUN-02-UNTAN"));
+  report(
+    dl2.suggestedFilename().includes("STASIUN-02-UNTAN") && semuaStasiun && lines2.length < lines.length,
+    `CSV pembanding terpisah: ${lines2.length - 1} baris, semua STASIUN-02-UNTAN (${semuaStasiun})`,
+  );
+  // Panel kelola harus menampilkan formulir masuk bagi pengunjung yang belum login.
+  const kelola = await page.textContent("#kelola");
+  report(kelola.includes("Masuk sebagai admin"), "panel kelola meminta login untuk pengunjung biasa");
   await page.close();
 }
 

@@ -29,6 +29,9 @@ export interface SensorRecord {
   ts: number;
   createdAt: string;
   deviceId: string;
+  // id baris Supabase, dipakai admin untuk mengubah/menghapus data lewat RPC.
+  // Kosong pada data mode demo (file dummy lokal tidak punya id tabel).
+  id: string | null;
   pm25: number;
   pm10: number;
   voc: number;
@@ -101,6 +104,7 @@ export function normalizeRow(row: SensorRow, deviceId: string): SensorRecord {
     ts: new Date(iso).getTime(),
     createdAt: iso,
     deviceId,
+    id: row.id ?? null,
     pm25: num(row.pm2_5),
     pm10: num(row.pm10),
     voc: num(row.voc_index),

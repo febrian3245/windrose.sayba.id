@@ -42,8 +42,8 @@ report(restCalls.length >= 2 && restCalls.every((s) => s === 200), `REST Supabas
 await page.waitForFunction(() => /Realtime aktif/.test(document.querySelector("header")?.textContent ?? ""), null, { timeout: 30000 })
   .then(() => report(true, "badge: Supabase · Realtime aktif"))
   .catch(() => report(false, "badge Realtime tidak aktif: " + document.querySelector?.("header")?.textContent));
-const csvText = await page.textContent("button:has-text('Unduh CSV')");
-report(/baris/.test(csvText), `data Supabase terbaca (${csvText})`);
+const csvText = await page.textContent("button:has-text('CSV WROSE-01')");
+report(/\d/.test(csvText), `data Supabase terbaca (${csvText})`);
 
 // Realtime: kirim satu data lewat RPC seperti ESP32 ke device UTAMA (WROSE-01).
 // RPC akan routing otomatis ke tabel data_wrose01 berdasarkan device_id terdaftar.

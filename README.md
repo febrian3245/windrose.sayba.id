@@ -93,13 +93,31 @@ Content-Type: application/json
 
 Header keamanan (CSP, `X-Frame-Options`, `nosniff`, `Referrer-Policy`) diatur di `next.config.ts`. CSP hanya mengizinkan koneksi ke URL Supabase yang ada di env.
 
+## Kelola data (panel admin)
+
+Panel **Kelola** (`#kelola`) memungkinkan penambahan, pengubahan, dan penghapusan data pada **kedua** sumber tanpa membuka akses tulis ke publik:
+
+- Pengunjung tanpa login hanya melihat formulir masuk; seluruh dasbor tetap dapat dibaca.
+- Hak tulis diputuskan **di server**: RPC `kelola_tambah_data`, `kelola_ubah_data`, `kelola_hapus_data` bersifat `SECURITY DEFINER` dan menolak pemanggil yang bukan admin (`42501`). Kunci publik di browser tidak bisa menulis langsung ke tabel karena RLS hanya mengizinkan `SELECT`.
+- Role disimpan di `public.profil_pengguna` (`admin` / `viewer`); baris dibuat otomatis oleh trigger saat pengguna mendaftar, dengan nilai awal `viewer`.
+- Parameter `p_sumber` (`wrose01` / `stasiun02`) menentukan tabel tujuan, sehingga kedua rangkaian data tidak mungkin tercampur lewat satu formulir.
+- Arah angin `360°` dinormalkan menjadi `0°`, dan penambahan pada waktu yang sudah ada bersifat idempoten (mengembalikan `null`, bukan menggandakan baris).
+
+Menjadikan sebuah akun admin (SQL Editor Supabase):
+
+```sql
+update public.profil_pengguna set role = 'admin'
+where email = 'alamat@contoh.com';
+```
+
 ## Struktur
 
 ```
 src/
   app/            layout, halaman, gaya global (palet terukur WCAG AA)
-  components/     Dashboard, MapPanel (peta Esri), ComparePanel (pembanding), EChart, ui
+  components/     Dashboard, MapPanel (peta Esri), ComparePanel (pembanding), AdminPanel (kelola data), EChart, ui
   hooks/          useSensorData: ambil data dari 2 tabel + langganan Realtime ke keduanya, fallback demo
+                  useAdminAuth: sesi Supabase Auth + pembacaan role admin
   lib/
     ispu.ts         rumus ISPU dan baku mutu
     wind.ts         sektor kompas, Wind Rose, Pollution Rose
