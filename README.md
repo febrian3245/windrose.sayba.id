@@ -103,6 +103,26 @@ Panel **Kelola** (`#kelola`) memungkinkan penambahan, pengubahan, dan penghapusa
 - Parameter `p_sumber` (`wrose01` / `stasiun02`) menentukan tabel tujuan, sehingga kedua rangkaian data tidak mungkin tercampur lewat satu formulir.
 - Arah angin `360°` dinormalkan menjadi `0°`, dan penambahan pada waktu yang sudah ada bersifat idempoten (mengembalikan `null`, bukan menggandakan baris).
 
+### Impor dari CSV atau Excel
+
+Tombol **Templat Excel** / **Templat CSV** mengunduh berkas contoh berisi judul kolom yang benar, satuan, dan dua baris contoh. Templat dapat langsung diisi lalu diunggah tanpa menghapus baris petunjuk (baris berawalan `#` dilewati otomatis). Berkas diperiksa di peramban lebih dulu: jumlah baris sah, baris yang ditolak, dan alasannya ditampilkan sebelum ada satu pun data yang masuk.
+
+| Hal | Perlakuan |
+| --- | --- |
+| Pemisah CSV | Koma atau titik koma (Excel Indonesia), terdeteksi otomatis |
+| Desimal | `12.3` maupun `12,3`; pemisah ribuan `1.008,1` dibaca benar |
+| Tanggal | `YYYY-MM-DD HH:MM`, `DD/MM/YYYY HH:MM`, ISO dengan offset, dan nomor seri Excel |
+| Zona waktu | Waktu tanpa offset dianggap WIB (+07:00) |
+| Judul kolom | Nama Inggris (`pm2_5`) maupun Indonesia (`suhu`, `arah_angin`) |
+| Baris cacat | Dilewati dengan pesan bernomor baris; baris yang sah tetap diimpor |
+| Waktu ganda | Ditolak di dalam berkas; yang sudah ada di basis data dilewati, tidak digandakan |
+
+Impor dibatasi 5.000 baris per berkas dan dijalankan `kelola_impor_data` dalam satu transaksi, sehingga kegagalan di tengah tidak meninggalkan data separuh masuk. Nilai di luar rentang wajar dan waktu di masa depan ditolak **di sisi basis data**, bukan hanya di peramban.
+
+### Ekspor
+
+Setiap sumber diunduh terpisah sebagai Excel (`.xlsx`) atau CSV — satu berkas berisi satu alat saja, supaya lampiran skripsi tidak pernah mencampur data alat uji dengan data acuan. CSV memakai BOM UTF-8 agar Excel di Windows membaca karakter `µ` dengan benar. Penulisan `.xlsx` memakai modul internal `src/lib/sheet.ts` (tanpa dependensi pihak ketiga).
+
 Menjadikan sebuah akun admin (SQL Editor Supabase):
 
 ```sql
@@ -126,10 +146,13 @@ src/
     compare.ts      pemasangan waktu + statistik pembanding dari 2 sumber terpisah (RMSE, MAE, korelasi)
     supabase.ts     klien Supabase, nama 2 tabel (SENSOR_TABLE, COMPARE_TABLE)
     types.ts        model data baris data_wrose01/data_stasiun02, identitas dua device
+    sheet.ts        baca-tulis CSV dan XLSX tanpa dependensi (ZIP + XML sendiri)
+    import-data.ts  pemetaan judul kolom, validasi baris, pembuat templat
   data/dummy-sensor.json  338 baris: 289 WROSE-01 (10 menit) + 49 STASIUN-02-UNTAN (1 jam)
 scripts/
   verify-logic.ts         uji rumus ISPU, sektor, wind rose, pembanding
-  qa.mjs                  uji tampilan 360/768/1440 px dan interaksi
+  verify-sheet.ts         uji baca-tulis CSV/XLSX, pemetaan kolom, templat
+  qa.mjs                  uji tampilan 360/768/1440 px, interaksi, unduhan CSV/Excel
   qa-supabase-error.mjs   uji tampilan saat Supabase gagal
   qa-supabase-live.mjs    uji Supabase asli: REST (2 tabel), Realtime (2 tabel), header keamanan
 supabase/
@@ -144,6 +167,7 @@ firmware/                 contoh kirim data ESP32 + templat secrets.h
 npm run typecheck
 npm run lint
 npm run test:logic
+npm run test:sheet
 npm run build && npm start -- -p 3210   # terminal lain:
 npm run test:ui
 # Supabase asli (butuh .env.local + KUNCI_PERANGKAT di env):

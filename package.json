@@ -9,6 +9,7 @@
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit -p tsconfig.json",
     "test:logic": "node --experimental-strip-types --no-warnings scripts/verify-logic.ts",
+    "test:sheet": "node --experimental-strip-types --no-warnings scripts/verify-sheet.ts",
     "test:ui": "node scripts/qa.mjs"
   },
   "dependencies": {

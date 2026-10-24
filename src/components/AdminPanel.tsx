@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { getSupabase } from "@/lib/supabase";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
 import { MAIN_DEVICE_ID, COMPARE_DEVICE_ID, STATIONS, type SensorRecord } from "@/lib/types";
 import { formatDateTime } from "@/lib/stats";
+import { uraiBerkas, templatCsv, templatXlsx, type BarisImpor } from "@/lib/import-data";
+import { unduhBlob, buatXlsx, susunCsv } from "@/lib/sheet";
 
 // Kode sumber yang dipakai RPC kelola_* untuk memilih tabel tujuan.
 type SumberKode = "wrose01" | "stasiun02";
@@ -87,6 +89,16 @@ export default function AdminPanel({ records, onBerubah }: { records: SensorReco
   const [pesan, setPesan] = useState<{ tipe: "ok" | "galat"; teks: string } | null>(null);
   const [idUbah, setIdUbah] = useState<string | null>(null);
 
+  // Keadaan impor berkas: pratinjau ditampilkan dulu agar admin dapat
+  // memeriksa hasil pembacaan sebelum data benar-benar masuk basis data.
+  const berkasRef = useRef<HTMLInputElement>(null);
+  const [pratinjau, setPratinjau] = useState<{
+    namaBerkas: string;
+    data: BarisImpor[];
+    galat: { baris: number; pesan: string }[];
+  } | null>(null);
+  const [mengimpor, setMengimpor] = useState(false);
+
   const sumberAktif = SUMBER.find((s) => s.kode === sumber)!;
   const barisSumber = records
     .filter((r) => r.deviceId === sumberAktif.deviceId && r.id)
@@ -163,6 +175,125 @@ export default function AdminPanel({ records, onBerubah }: { records: SensorReco
     setForm(FORM_KOSONG);
     setIdUbah(null);
     onBerubah();
+  }
+
+  // Berkas dibaca dan divalidasi di peramban; belum menyentuh basis data.
+  async function pilihBerkas(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setPesan(null);
+    setPratinjau(null);
+    try {
+      const hasil = await uraiBerkas(file);
+      setPratinjau({ namaBerkas: file.name, data: hasil.data, galat: hasil.galat });
+      if (!hasil.data.length) {
+        setPesan({
+          tipe: "galat",
+          teks: hasil.galat[0]?.pesan ?? "Tidak ada baris yang dapat dibaca dari berkas ini.",
+        });
+      }
+    } catch (err) {
+      setPesan({ tipe: "galat", teks: `Gagal membaca berkas: ${err instanceof Error ? err.message : String(err)}` });
+    }
+  }
+
+  // Mengosongkan pratinjau dan input berkas. Pesan TIDAK disentuh di sini
+  // supaya laporan hasil impor tetap terbaca setelah pratinjau dibersihkan.
+  function bersihkanPratinjau() {
+    setPratinjau(null);
+    if (berkasRef.current) berkasRef.current.value = "";
+  }
+
+  function batalImpor() {
+    bersihkanPratinjau();
+    setPesan(null);
+  }
+
+  // Seluruh baris dikirim dalam satu panggilan RPC: lebih cepat dan jumlah
+  // baris yang masuk/dilewati dilaporkan oleh basis data, bukan ditebak.
+  async function jalankanImpor() {
+    if (!pratinjau?.data.length) return;
+    const supabase = getSupabase();
+    if (!supabase) return;
+
+    setMengimpor(true);
+    setPesan(null);
+
+    // Nomor baris berkas hanya untuk pesan galat di peramban; tidak dikirim.
+    const muatan = pratinjau.data.map((b) => ({
+      created_at: b.created_at,
+      pm2_5: b.pm2_5,
+      pm10: b.pm10,
+      voc_index: b.voc_index,
+      temperature: b.temperature,
+      humidity: b.humidity,
+      pressure: b.pressure,
+      wind_speed: b.wind_speed,
+      wind_direction: b.wind_direction,
+      battery_volt: b.battery_volt,
+    }));
+    const { data, error } = await supabase.rpc("kelola_impor_data", { p_sumber: sumber, p_baris: muatan });
+
+    setMengimpor(false);
+
+    if (error) {
+      setPesan({ tipe: "galat", teks: `Impor gagal, tidak ada data yang tersimpan: ${error.message}` });
+      return;
+    }
+
+    const masuk = (data as { masuk?: number } | null)?.masuk ?? 0;
+    const dilewati = (data as { dilewati?: number } | null)?.dilewati ?? 0;
+    setPesan({
+      tipe: "ok",
+      teks:
+        `Impor selesai: ${masuk} baris masuk ke ${sumberAktif.label}` +
+        (dilewati ? `, ${dilewati} baris dilewati karena waktunya sudah ada.` : "."),
+    });
+    bersihkanPratinjau();
+    onBerubah();
+  }
+
+  // Ekspor: seluruh data sumber terpilih, satu berkas per sumber agar
+  // lampiran skripsi tidak mencampur dua rangkaian pengukuran.
+  function ekspor(format: "csv" | "xlsx") {
+    const baris = records.filter((r) => r.deviceId === sumberAktif.deviceId);
+    if (!baris.length) {
+      setPesan({ tipe: "galat", teks: `Belum ada data ${sumberAktif.label} untuk diekspor.` });
+      return;
+    }
+    const judul = [
+      "created_at",
+      "device_id",
+      "pm2_5",
+      "pm10",
+      "voc_index",
+      "temperature",
+      "humidity",
+      "pressure",
+      "wind_speed",
+      "wind_direction",
+      "battery_volt",
+    ];
+    const isi = baris.map((r) => [
+      r.createdAt,
+      r.deviceId,
+      r.pm25,
+      r.pm10,
+      r.voc,
+      r.temperature,
+      r.humidity,
+      r.pressure,
+      r.windSpeed,
+      r.windDirection,
+      r.batteryVolt,
+    ]);
+    const nama = `data_${sumberAktif.deviceId}_${baris.length}baris`;
+    if (format === "xlsx") {
+      unduhBlob(buatXlsx([judul, ...isi], sumberAktif.label), `${nama}.xlsx`);
+    } else {
+      unduhBlob(new Blob(["\uFEFF" + susunCsv([judul, ...isi])], { type: "text/csv;charset=utf-8" }), `${nama}.csv`);
+    }
+    setPesan({ tipe: "ok", teks: `${baris.length} baris ${sumberAktif.label} diekspor sebagai ${format.toUpperCase()}.` });
   }
 
   function mulaiUbah(r: SensorRecord) {
@@ -308,6 +439,167 @@ export default function AdminPanel({ records, onBerubah }: { records: SensorReco
         </div>
         <p className="mt-2 text-sm text-muted">{sumberAktif.catatan}</p>
       </fieldset>
+
+      {/* Impor massal dari CSV/Excel, ekspor, dan templat. Ditempatkan sebelum
+          formulir satuan karena untuk data pembanding yang dicatat per jam,
+          mengunggah berkas jauh lebih praktis daripada mengisi satu per satu. */}
+      <section className="mt-5 rounded-md border border-line bg-surface px-4 py-4">
+        <h3 className="font-semibold">Impor dan ekspor berkas</h3>
+        <p className="mt-1 text-sm text-muted">
+          Unggah banyak data sekaligus dari Excel atau CSV, atau unduh seluruh data {sumberAktif.label} untuk diolah di
+          luar dasbor. Baris yang waktunya sudah ada di basis data akan dilewati, tidak digandakan maupun ditimpa.
+        </p>
+
+        <div className="mt-3 grid gap-4 lg:grid-cols-2">
+          <div>
+            <h4 className="text-sm font-medium">1. Unduh templat</h4>
+            <p className="mt-1 text-sm text-muted">
+              Templat memuat judul kolom yang benar, batas nilai setiap parameter, dan dua baris contoh.
+            </p>
+            <div className="mt-2 flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => unduhBlob(templatXlsx(), "templat-impor-data-pengukuran.xlsx")}
+                className="min-h-10 rounded-md border border-brand px-4 text-sm font-semibold text-brand hover:bg-brand-soft"
+              >
+                Templat Excel (.xlsx)
+              </button>
+              <button
+                type="button"
+                onClick={() => unduhBlob(templatCsv(), "templat-impor-data-pengukuran.csv")}
+                className="min-h-10 rounded-md border border-brand px-4 text-sm font-semibold text-brand hover:bg-brand-soft"
+              >
+                Templat CSV
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-medium">2. Unggah berkas terisi</h4>
+            <p className="mt-1 text-sm text-muted">
+              Data masuk ke <strong className="text-ink">{sumberAktif.label}</strong> sesuai sumber yang dipilih di atas.
+            </p>
+            <label className="mt-2 block text-sm">
+              <span className="sr-only">Pilih berkas CSV atau Excel</span>
+              <input
+                ref={berkasRef}
+                type="file"
+                accept=".csv,.xlsx,.txt,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                onChange={pilihBerkas}
+                className="block w-full cursor-pointer rounded-md border border-line bg-bg px-3 py-2 text-sm file:mr-3 file:min-h-8 file:cursor-pointer file:rounded file:border-0 file:bg-brand file:px-3 file:text-sm file:font-semibold file:text-white"
+              />
+            </label>
+          </div>
+        </div>
+
+        {/* Pratinjau: admin melihat hasil pembacaan sebelum data disimpan. */}
+        {pratinjau ? (
+          <div className="mt-4 border-t border-line pt-4">
+            <h4 className="text-sm font-medium">
+              Pratinjau <span className="font-normal text-muted">· {pratinjau.namaBerkas}</span>
+            </h4>
+            <p className="mt-1 text-sm">
+              <strong className="text-ink">{pratinjau.data.length}</strong> baris siap diimpor
+              {pratinjau.galat.length ? (
+                <>
+                  {" · "}
+                  <strong className="text-alert">{pratinjau.galat.length}</strong> baris ditolak
+                </>
+              ) : null}
+            </p>
+
+            {pratinjau.data.length ? (
+              <div className="-mx-4 mt-2 overflow-x-auto sm:mx-0">
+                <table className="w-full min-w-[520px] text-left text-sm">
+                  <caption className="sr-only">Lima baris pertama yang akan diimpor</caption>
+                  <thead>
+                    <tr className="border-b border-line text-muted">
+                      <th scope="col" className="px-4 py-2 font-medium sm:pl-0">Waktu (WIB)</th>
+                      <th scope="col" className="px-3 py-2 text-right font-medium">PM2.5</th>
+                      <th scope="col" className="px-3 py-2 text-right font-medium">PM10</th>
+                      <th scope="col" className="px-3 py-2 text-right font-medium">VOC</th>
+                      <th scope="col" className="px-3 py-2 text-right font-medium">Angin</th>
+                    </tr>
+                  </thead>
+                  <tbody className="tabular">
+                    {pratinjau.data.slice(0, 5).map((b) => (
+                      <tr key={b.created_at} className="border-b border-line last:border-0">
+                        <td className="whitespace-nowrap px-4 py-2 sm:pl-0">
+                          {formatDateTime(new Date(b.created_at).getTime()).replace(" WIB", "")}
+                        </td>
+                        <td className="px-3 py-2 text-right">{b.pm2_5}</td>
+                        <td className="px-3 py-2 text-right">{b.pm10}</td>
+                        <td className="px-3 py-2 text-right">{b.voc_index}</td>
+                        <td className="px-3 py-2 text-right">
+                          {b.wind_speed} m/s · {b.wind_direction}°
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                {pratinjau.data.length > 5 ? (
+                  <p className="mt-2 px-4 text-sm text-muted sm:px-0">
+                    dan {pratinjau.data.length - 5} baris lainnya
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
+
+            {pratinjau.galat.length ? (
+              <details className="mt-3">
+                <summary className="cursor-pointer text-sm font-medium text-alert">
+                  Lihat {pratinjau.galat.length} baris yang ditolak
+                </summary>
+                <ul className="mt-2 grid gap-1 text-sm text-muted">
+                  {pratinjau.galat.slice(0, 20).map((g, i) => (
+                    <li key={`${g.baris}-${i}`}>
+                      {g.baris ? <span className="text-ink">Baris {g.baris}:</span> : null} {g.pesan}
+                    </li>
+                  ))}
+                  {pratinjau.galat.length > 20 ? <li>dan {pratinjau.galat.length - 20} galat lainnya</li> : null}
+                </ul>
+              </details>
+            ) : null}
+
+            <div className="mt-3 flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={jalankanImpor}
+                disabled={mengimpor || !pratinjau.data.length}
+                className="min-h-10 rounded-md bg-brand px-4 text-sm font-semibold text-white disabled:opacity-60"
+              >
+                {mengimpor ? "Mengimpor…" : `Impor ${pratinjau.data.length} baris ke ${sumberAktif.label}`}
+              </button>
+              <button type="button" onClick={batalImpor} className="min-h-10 rounded-md border border-line px-4 text-sm font-medium">
+                Batal
+              </button>
+            </div>
+          </div>
+        ) : null}
+
+        <div className="mt-4 border-t border-line pt-4">
+          <h4 className="text-sm font-medium">Ekspor data {sumberAktif.label}</h4>
+          <p className="mt-1 text-sm text-muted">
+            Seluruh data sumber ini, satu berkas per sumber agar tidak tercampur saat dilampirkan di skripsi.
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => ekspor("xlsx")}
+              className="min-h-10 rounded-md border border-line px-4 text-sm font-medium"
+            >
+              Ekspor Excel (.xlsx)
+            </button>
+            <button
+              type="button"
+              onClick={() => ekspor("csv")}
+              className="min-h-10 rounded-md border border-line px-4 text-sm font-medium"
+            >
+              Ekspor CSV
+            </button>
+          </div>
+        </div>
+      </section>
 
       {/* noValidate: validasi dijalankan oleh fungsi validasi() agar pesannya
           berbahasa Indonesia dan konsisten. Batas min/max tetap ditulis sebagai

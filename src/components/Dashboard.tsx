@@ -30,6 +30,7 @@ import { STATIONS, MAIN_DEVICE_ID, COMPARE_DEVICE_ID, type Pollutant } from "@/l
 import { buildPollutionRose, buildWindRose, CALM_LIMIT, SECTORS_16, sectorIndex, SPEED_CLASSES } from "@/lib/wind";
 import ComparePanel from "./ComparePanel";
 import AdminPanel from "./AdminPanel";
+import { unduhBlob, buatXlsx } from "@/lib/sheet";
 
 // Leaflet mengakses `window` saat modul dimuat; dimuat hanya di klien.
 const MapPanelClient = dynamic(() => import("./MapPanel"), {
@@ -140,18 +141,21 @@ export default function Dashboard() {
   const battPct = batteryPercent(latest.batteryVolt);
   const latestSector = SECTORS_16[sectorIndex(latest.windDirection)];
 
-  // CSV diunduh per sumber: satu berkas = satu alat, supaya lampiran skripsi
-  // tidak pernah berisi dua rangkaian data yang tercampur dalam satu tabel.
-  const downloadCsv = (sumber: "utama" | "pembanding") => {
+  // CSV/Excel diunduh per sumber: satu berkas = satu alat, supaya lampiran
+  // skripsi tidak pernah berisi dua rangkaian data yang tercampur.
+  const unduhData = (sumber: "utama" | "pembanding", format: "csv" | "xlsx") => {
     const utama = sumber === "utama";
     const baris = utama ? scoped : compareScoped;
     const deviceId = utama ? MAIN_DEVICE_ID : COMPARE_DEVICE_ID;
-    const blob = new Blob([toCsv(baris)], { type: "text/csv;charset=utf-8" });
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = `sensor_udara_${deviceId}_${win}jam.csv`;
-    a.click();
-    URL.revokeObjectURL(a.href);
+    const nama = `sensor_udara_${deviceId}_${win}jam`;
+    if (format === "xlsx") {
+      // Judul kolom sama dengan CSV agar kedua format dapat diolah sama.
+      const [judul, ...isi] = toCsv(baris).split("\n").map((b) => b.split(","));
+      const angka = isi.map((b) => b.map((s) => (s !== "" && Number.isFinite(Number(s)) ? Number(s) : s)));
+      unduhBlob(buatXlsx([judul, ...angka], STATIONS[deviceId].shortName), `${nama}.xlsx`);
+    } else {
+      unduhBlob(new Blob(["\uFEFF" + toCsv(baris)], { type: "text/csv;charset=utf-8" }), `${nama}.csv`);
+    }
   };
 
   return (
@@ -480,10 +484,16 @@ export default function Dashboard() {
         question={`Dua puluh data terbaru dari masing-masing sumber, ditampilkan terpisah: ${STATIONS[MAIN_DEVICE_ID].shortName} (alat yang diuji) dan ${STATIONS[COMPARE_DEVICE_ID].shortName} (acuan resmi). Unduh CSV untuk seluruh rentang analisis.`}
         actions={
           <span className="inline-flex flex-wrap gap-2">
-            <button type="button" onClick={() => downloadCsv("utama")} className="min-h-10 rounded-md border border-brand px-4 text-sm font-semibold text-brand hover:bg-brand-soft">
+            <button type="button" onClick={() => unduhData("utama", "xlsx")} className="min-h-10 rounded-md border border-brand px-4 text-sm font-semibold text-brand hover:bg-brand-soft">
+              Excel {STATIONS[MAIN_DEVICE_ID].shortName} ({scoped.length})
+            </button>
+            <button type="button" onClick={() => unduhData("utama", "csv")} className="min-h-10 rounded-md border border-brand px-4 text-sm font-semibold text-brand hover:bg-brand-soft">
               CSV {STATIONS[MAIN_DEVICE_ID].shortName} ({scoped.length})
             </button>
-            <button type="button" onClick={() => downloadCsv("pembanding")} className="min-h-10 rounded-md border border-brand px-4 text-sm font-semibold text-brand hover:bg-brand-soft">
+            <button type="button" onClick={() => unduhData("pembanding", "xlsx")} className="min-h-10 rounded-md border border-line px-4 text-sm font-medium">
+              Excel {STATIONS[COMPARE_DEVICE_ID].shortName} ({compareScoped.length})
+            </button>
+            <button type="button" onClick={() => unduhData("pembanding", "csv")} className="min-h-10 rounded-md border border-line px-4 text-sm font-medium">
               CSV {STATIONS[COMPARE_DEVICE_ID].shortName} ({compareScoped.length})
             </button>
           </span>

@@ -132,21 +132,38 @@ for (const vp of viewports) {
   const [dl] = await Promise.all([page.waitForEvent("download"), page.click('button:has-text("CSV WROSE-01")')]);
   const path = `${OUT}/${dl.suggestedFilename()}`;
   await dl.saveAs(path);
-  const lines = fs.readFileSync(path, "utf8").trim().split("\n");
+  const lines = fs.readFileSync(path, "utf8").replace(/^\uFEFF/, "").trim().split("\n");
   report(lines.length === 145 && lines[0].startsWith("created_at,device_id,pm2_5"), `CSV terunduh ${lines.length - 1} baris + header`);
+  // BOM wajib ada supaya Excel di Windows membaca berkas sebagai UTF-8.
+  const baitCsv = fs.readFileSync(path);
+  report(baitCsv[0] === 0xef && baitCsv[1] === 0xbb && baitCsv[2] === 0xbf, "CSV memakai BOM UTF-8 (aman dibuka Excel)");
   // Unduhan pembanding harus berisi data Stasiun 02, bukan salinan data alat utama.
   const [dl2] = await Promise.all([page.waitForEvent("download"), page.click('button:has-text("CSV Stasiun 02")')]);
   const path2 = `${OUT}/${dl2.suggestedFilename()}`;
   await dl2.saveAs(path2);
-  const lines2 = fs.readFileSync(path2, "utf8").trim().split("\n");
+  const lines2 = fs.readFileSync(path2, "utf8").replace(/^\uFEFF/, "").trim().split("\n");
   const semuaStasiun = lines2.slice(1).every((l) => l.includes("STASIUN-02-UNTAN"));
   report(
     dl2.suggestedFilename().includes("STASIUN-02-UNTAN") && semuaStasiun && lines2.length < lines.length,
     `CSV pembanding terpisah: ${lines2.length - 1} baris, semua STASIUN-02-UNTAN (${semuaStasiun})`,
   );
+  // Ekspor Excel: berkas .xlsx sah adalah arsip ZIP, diawali tanda "PK".
+  const [dlX] = await Promise.all([page.waitForEvent("download"), page.click('#data button:has-text("Excel WROSE-01")')]);
+  const pathX = `${OUT}/${dlX.suggestedFilename()}`;
+  await dlX.saveAs(pathX);
+  const baitX = fs.readFileSync(pathX);
+  report(
+    dlX.suggestedFilename().endsWith(".xlsx") && baitX[0] === 0x50 && baitX[1] === 0x4b && baitX.length > 1000,
+    `Excel WROSE-01 terunduh dan berupa arsip sah (${baitX.length} bait)`,
+  );
+  const [dlX2] = await Promise.all([page.waitForEvent("download"), page.click('#data button:has-text("Excel Stasiun 02")')]);
+  report(dlX2.suggestedFilename().includes("STASIUN-02-UNTAN"), `Excel pembanding bernama per sumber (${dlX2.suggestedFilename()})`);
   // Panel kelola harus menampilkan formulir masuk bagi pengunjung yang belum login.
   const kelola = await page.textContent("#kelola");
   report(kelola.includes("Masuk sebagai admin"), "panel kelola meminta login untuk pengunjung biasa");
+  // Alat impor/ekspor dan templat hanya untuk admin; tidak boleh terlihat publik.
+  report(!kelola.includes("Impor dan ekspor"), "alat impor berkas tersembunyi dari pengunjung");
+  report(!kelola.includes("Templat Excel"), "tombol templat tersembunyi dari pengunjung");
   await page.close();
 }
 
